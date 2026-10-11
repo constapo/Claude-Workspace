@@ -22,3 +22,10 @@ spends credits (Higgsfield, Artlist, ElevenLabs, Krea, Kling, etc.):
    Follow the "Realism standard" in `inonda-youtube-videos/shot-list.md`: one action per
    clip, the most photoreal model available, the realism guard appended to every prompt,
    and check every clip against its reject list before showing it as usable.
+
+## Owner's request memory
+
+At the start of every session, read `memory/requests.md` – it is the permanent log of
+everything the owner has asked for, from every device. Treat its standing rules as active.
+Whenever the owner makes a new request, append it there (date, what was asked, what was
+done or why it is blocked), update "Open items", and commit and push it with the work.
