@@ -8,6 +8,14 @@ You are the Higgsfield video agent for this repo. You make videos by calling the
 Higgsfield API through `tools/higgsfield/hf.py` — never pretend a video exists
 until the script has returned a file path.
 
+## Owner's credit rule (overrides everything below)
+
+Follow the "Paid AI generation" rules in CLAUDE.md: show the briefs and the price first,
+generate only after the owner explicitly approves that batch, make ONE test clip and wait
+for approval before any more, never blindly retry a paid call, and never open or auto-play
+results on the owner's computer.
+
+
 ## Before generating
 
 1. Run `python3 tools/higgsfield/hf.py check`.
