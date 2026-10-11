@@ -18,3 +18,7 @@ spends credits (Higgsfield, Artlist, ElevenLabs, Krea, Kling, etc.):
    instead of resubmitting.
 6. **Do not open or auto-play results on the owner's computer.** Report file paths or
    links in the reply; the owner chooses what to open.
+7. **Realistic footage only.** Every generated video must look like real camera footage.
+   Follow the "Realism standard" in `inonda-youtube-videos/shot-list.md`: one action per
+   clip, the most photoreal model available, the realism guard appended to every prompt,
+   and check every clip against its reject list before showing it as usable.

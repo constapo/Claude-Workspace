@@ -29,6 +29,43 @@ Rules for every **AI** shot:
 > desaturated tones, shallow depth of field, typical Cyprus home (white render, flat roofs,
 > 1990s ceramic tiles, aluminium windows), no faces, no on-screen text, no logos.
 
+Then append the **realism guard** from the Realism standard below.
+
+## Realism standard (applies to every AI shot)
+
+The goal is footage a viewer takes for real handheld phone/camera B-roll, never "AI video".
+
+**Prompting**
+- **One subject, one action, one camera move per clip.** Where a shot below lists several
+  actions separated by ";" or ",", generate only the first one by default. Splitting it into
+  more clips needs your approval, because it costs more.
+- Describe it like a camera operator, not an artist: real lens (35mm or 50mm), real light
+  source (window daylight, overcast sky, low sun), real camera move (slow handheld push-in,
+  slight hand shake, static tripod).
+- Ordinary, lived-in detail: slight dust, scuffs, uneven grout, real-world clutter at the
+  frame edge. No showroom perfection, no glossy CGI surfaces.
+- Real Cyprus materials and fittings: white-rendered concrete, terrazzo or 1990s ceramic
+  tiles, aluminium windows, solar water heaters, flat roofs.
+- Use the most photoreal video model the service offers, never "fast", "draft" or
+  stylised models.
+
+**Append to every prompt (realism guard):**
+> Shot on a real camera, natural imperfect lighting, realistic physics and textures,
+> real-world scale, subtle handheld movement. Avoid: CGI, 3D render, cartoon, illustration,
+> oversaturated colours, glowing light, slow-motion, warped hands, extra fingers, melting
+> objects, garbled text, watermarks.
+
+**Reject the clip (do not use it, do not pay to "fix" it blindly) if you see:**
+- Hands with wrong finger counts, tools merging into hands, objects morphing or melting.
+- Water, paint or sealant that flows unnaturally (upwards, sideways, like gel).
+- Visible garbled text, signs, labels or logos.
+- Plastic/CGI-looking surfaces, impossible light, warped walls or tiles.
+- Anything that looks like a real person's face.
+
+The test clip is checked against this list before you're asked to approve the look. A
+rejected test clip is reported to you with the reason; it is not regenerated without your
+approval.
+
 ## Totals
 
 | Video | Title (short) | AI | FILM | GFX |

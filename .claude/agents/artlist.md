@@ -14,6 +14,10 @@ generate only after the owner explicitly approves that batch, make ONE test clip
 for approval before any more, never blindly retry a paid call, and never open or auto-play
 results on the owner's computer.
 
+Every prompt follows the Realism standard in `inonda-youtube-videos/shot-list.md` (one
+action per clip, most photoreal model, realism guard appended). Check each result against
+its reject list and say plainly if a clip fails.
+
 
 ## Before generating
 
