@@ -34,8 +34,12 @@ Format: date · what was asked · what was done / status.
 10. **Keep in memory absolutely all my requests from both devices.** → This file, plus a
     `/CLAUDE.md` rule that every session reads it first and appends each new request.
 
+11. **"I connected Artlist, make test clip V01-01."** → Not generated, no credits spent.
+    Artlist tools were not visible in that session (connectors added mid-session only load
+    in a new session). Next: in a new session, price V01-01 and ask for approval first.
+
 ## Open items waiting on the owner
-- Add `HF_KEY` and allow `api.higgsfield.ai` (Higgsfield), **or** connect the Artlist
-  connector, **or** upgrade ElevenLabs – then price and approve test clip V01-01.
+- Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
+  price and approve test clip V01-01.
 - Real job details for videos 17 and 20 (scripts and narration).
 - Fill `[ADD REAL PRICE]`, `[ADD REAL DURATION]`, `[ADD PHONE/WHATSAPP]` placeholders in scripts.
