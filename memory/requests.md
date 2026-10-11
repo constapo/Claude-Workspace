@@ -38,6 +38,10 @@ Format: date · what was asked · what was done / status.
     Artlist tools were not visible in that session (connectors added mid-session only load
     in a new session). Next: in a new session, price V01-01 and ask for approval first.
 
+12. **"Make test clip V01-01 with artlist" (repeated in the same session).** → Not generated,
+    no credits spent: Artlist tools still not loaded in that session. Other paid video
+    tools seen there (vidIQ, Krea) were NOT used – they need the owner's explicit choice.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
