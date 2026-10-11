@@ -42,6 +42,11 @@ Format: date · what was asked · what was done / status.
     no credits spent: Artlist tools still not loaded in that session. Other paid video
     tools seen there (vidIQ, Krea) were NOT used – they need the owner's explicit choice.
 
+13. **"Use vidIQ for V01-01, show me the price."** → Not generated. vidIQ balance 80 credits
+    (refills to 150 on 2026-11-06). vidIQ gives no free estimate; cost = seconds × model rate
+    × 20, rates unpublished, so a realistic 4s clip likely exceeds 80. Prompt shown; waiting
+    for the owner to choose: try vidIQ anyway / wait for Artlist (recommended) / top up.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
