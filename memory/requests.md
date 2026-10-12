@@ -117,6 +117,17 @@ Format: date · what was asked · what was done / status.
     (free voice models) and the stock hosts are blocked by the network policy. Free route:
     owner films/records on phone, free stock (needs Allowed domains), FFmpeg/Remotion graphics.
 
+23. **"Find sources online, do what you wish – I don't care how the AI me looks. I want results
+    as generated videos."** → Built a free pipeline and rendered the first real video:
+    `inonda-youtube-videos/production/v01/build/render/final.mp4` (6:04, 1080p, −14.6 LUFS, EN
+    burned captions + `captions_en.srt`). Free voice: Kokoro TTS (open model from GitHub,
+    male voice "am_michael", labelled "AI voice"). Picture: owner photo (cropped) + section
+    titles. Builder: `tools/video/build_explainer.py`. Price/duration sentence left out and
+    WhatsApp line points to the description until the owner fills the placeholders. Media is
+    git-ignored (container is temporary). Crew also wrote `production/v01/shot-plan.md` and
+    `narration.md` (EN + GR). Next free steps: talking-head animation of the owner photo
+    (SadTalker, CPU), Greek version, videos 02–20.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
