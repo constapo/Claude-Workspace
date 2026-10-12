@@ -102,6 +102,14 @@ Format: date · what was asked · what was done / status.
     Created `inonda-youtube-videos/presenter/` (README with photo/video checklist; images are
     git-ignored for privacy). Waiting on the owner's photos and a 30–60 s talking video.
 
+21. **Owner sent 5 photos for the AI likeness ("can show me working in videos").** → Saved in
+    `inonda-youtube-videos/presenter/` (git-ignored, lost when the container resets – owner keeps
+    originals). Free check: 4 webcam shots (front, both ¾ sides) are usable for a first test but
+    low-res (959×512), backlit by the window; the beach photo is rotated, with sunglasses and an
+    older hairstyle, so it is excluded to keep the face consistent. Next: price one test still
+    of the owner in workwear on a job site, then one test video clip. Nothing generated, no
+    credits spent.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
