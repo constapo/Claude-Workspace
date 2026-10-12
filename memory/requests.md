@@ -157,7 +157,25 @@ Format: date · what was asked · what was done / status.
     Owner should save it as the `PIXABAY_API_KEY` environment secret (so new sessions have it)
     and allow pixabay.com + cdn.pixabay.com, then start a new session.
 
-29. **"Done" / "All domains are allowed now."** (2026-10-12) → Re-tested twice: this
+29. **"Make Inonda video 01 (bathroom renovation, old to new) from Pixabay footage; pixabay.com +
+    cdn.pixabay.com allowed and PIXABAY_API_KEY added."** → Stopped at step 1 (access check), nothing
+    built. In this session (2026-10-12) `stock_search.py pixabay` failed: `PIXABAY_API_KEY` is not
+    in the environment, and the network proxy still answers 403 to pixabay.com and cdn.pixabay.com
+    (policy denial). The settings change has not reached this container. Next: owner checks the
+    environment settings (Allowed domains: `pixabay.com`, `cdn.pixabay.com`; environment variable
+    `PIXABAY_API_KEY`), saves, and starts a NEW session; then rerun the same request.
+
+30. **Same request again (video 01 from Pixabay, "now allowed + key set").** → Re-checked in a new
+    session (2026-10-12): still blocked at step 1, nothing built. `echo ${PIXABAY_API_KEY:+key-set}`
+    prints nothing (no Pixabay variable of any name in the container), and the proxy still
+    answers `CONNECT 403` for both pixabay.com and cdn.pixabay.com. So the saved settings are
+    not reaching new sessions. Owner should open the environment this session runs in (cloud
+    environment menu in the title bar → Edit) and confirm the change is saved on THAT environment:
+    Network access → Allowed domains has `pixabay.com` and `cdn.pixabay.com` (keep "Allow package
+    managers" ticked), and Environment variables has `PIXABAY_API_KEY=<key>`. Then start a new
+    session on that environment.
+
+31. **"Done" / "All domains are allowed now."** (2026-10-12) → Re-tested twice: this
     session and a brand-new session on the `inonda` cloud environment still get
     403 from the proxy for pixabay.com and cdn.pixabay.com, and `PIXABAY_API_KEY` is not set
     there. The setting has not reached the cloud environment yet. Other option: run the
