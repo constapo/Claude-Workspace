@@ -142,6 +142,9 @@ Format: date · what was asked · what was done / status.
     no realistic footage can be fetched yet. Waiting on the owner to allow those domains and
     open a new session.
 
+26. **"Make them one by one – I must see each before you do the next."** → Standing rule 5 in
+    CLAUDE.md video content rules: one video at a time, owner sees it, then the next.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
