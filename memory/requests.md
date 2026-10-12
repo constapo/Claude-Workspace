@@ -157,6 +157,13 @@ Format: date · what was asked · what was done / status.
     Owner should save it as the `PIXABAY_API_KEY` environment secret (so new sessions have it)
     and allow pixabay.com + cdn.pixabay.com, then start a new session.
 
+29. **"Done" / "All domains are allowed now."** (2026-10-12) → Re-tested twice: this
+    session and a brand-new session on the `inonda` cloud environment still get
+    403 from the proxy for pixabay.com and cdn.pixabay.com, and `PIXABAY_API_KEY` is not set
+    there. The setting has not reached the cloud environment yet. Other option: run the
+    video job on the owner's own computer (bridge environments `inonda:Downloads` /
+    `inonda:Claude workspace` exist), where Pixabay is reachable. Asked the owner which.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
