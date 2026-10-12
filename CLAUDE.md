@@ -1,5 +1,12 @@
 # Project rules
 
+## Free tools only — owner's standing rule (2026-10-12)
+
+The owner does not want to pay for any service or co-worker. Use only free tools: local
+FFmpeg/Remotion/Whisper, free stock libraries, the owner's own phone footage and voice, and
+free tiers that need no payment. Do not propose paid generation, paid plans or top-ups. The
+paid-generation rules below stay in force in case the owner ever changes this.
+
 ## Paid AI generation (video, image, voice, music) — owner's standing rule
 
 The owner does not want credits wasted on junk results. For ANY tool or script that

@@ -110,6 +110,13 @@ Format: date · what was asked · what was done / status.
     of the owner in workwear on a job site, then one test video clip. Nothing generated, no
     credits spent.
 
+22. **"Keep going on making the 20 videos." / "I don't want to pay any agents or co-workers."**
+    → New standing rule (CLAUDE.md): free tools only. Cancelled the $0.12 ElevenLabs test-image
+    proposal; nothing was generated or charged. Checked this container: no GPU (4 CPU, 15 GB),
+    so free local AI video and an AI likeness of the owner are not possible here; Hugging Face
+    (free voice models) and the stock hosts are blocked by the network policy. Free route:
+    owner films/records on phone, free stock (needs Allowed domains), FFmpeg/Remotion graphics.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
