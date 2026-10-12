@@ -98,6 +98,10 @@ Format: date · what was asked · what was done / status.
     18 is the owner, filmed for real or as an AI likeness built from the owner's own photos.
     Waiting on the owner: choose film vs AI likeness, and (for AI) provide reference photos/video.
 
+20. **"AI version of me. I will add pictures."** → Owner chose an AI likeness as presenter.
+    Created `inonda-youtube-videos/presenter/` (README with photo/video checklist; images are
+    git-ignored for privacy). Waiting on the owner's photos and a 30–60 s talking video.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
@@ -108,5 +112,5 @@ Format: date · what was asked · what was done / status.
 - Allow stock hosts in the cloud environment's network settings (list in
   `.claude/skills/video-production/SOURCES.md` §8), and optionally add free
   `PEXELS_API_KEY` / `PIXABAY_API_KEY` secrets.
-- Presenter: film yourself or AI likeness of you? For AI, upload 10–20 clear photos and a
-  30–60 s video of you talking (front light, neutral background).
+- Presenter = AI likeness of the owner (chosen). Waiting for 10–20 photos + a 30–60 s talking
+  video (checklist in `inonda-youtube-videos/presenter/README.md`).
