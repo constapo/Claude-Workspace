@@ -128,6 +128,14 @@ Format: date · what was asked · what was done / status.
     `narration.md` (EN + GR). Next free steps: talking-head animation of the owner photo
     (SadTalker, CPU), Greek version, videos 02–20.
 
+24. **"Talking about bathroom, must show bathroom, not my face" / "what the heck is this junk" /
+    "the job talked about must be shown, subtitles in Greek all the time, bathroom must look
+    realistic not drawn, stop all junk now."** → Stopped. The photo-slideshow render and the
+    flat animated drawings were rejected as junk; nothing more rendered. New standing rules in
+    CLAUDE.md: picture shows the exact job narrated, realistic footage only (no drawings or
+    photo slideshows), Greek subtitles always, sample before long renders. Realistic free
+    footage needs the stock sites allowed in the network settings (still blocked).
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.

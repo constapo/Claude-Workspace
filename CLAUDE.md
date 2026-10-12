@@ -7,7 +7,16 @@ FFmpeg/Remotion/Whisper, free stock libraries, the owner's own phone footage and
 free tiers that need no payment. Do not propose paid generation, paid plans or top-ups. The
 paid-generation rules below stay in force in case the owner ever changes this.
 
-## Paid AI generation (video, image, voice, music) — owner's standing rule
+## Video content rules — owner's standing rule (2026-10-12)
+
+1. **Show the job being talked about.** Every second of picture shows exactly the job/work the
+   narration describes at that moment (tiling → real tiling, pipes → real pipes).
+2. **Realistic footage only.** Real-looking camera footage of real-looking places. Never
+   drawings, cartoons, flat illustrations, coloured diagrams or slideshows of the owner's photo.
+3. **Greek subtitles always**, on every video, the whole time.
+4. Follow the video skills' steps (`video-production` → shot list → footage → edit → QA)
+   and show the owner a short sample before rendering anything long.
+
 
 The owner does not want credits wasted on junk results. For ANY tool or script that
 spends credits (Higgsfield, Artlist, ElevenLabs, Krea, Kling, etc.):
