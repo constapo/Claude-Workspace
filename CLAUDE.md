@@ -22,6 +22,11 @@ spends credits (Higgsfield, Artlist, ElevenLabs, Krea, Kling, etc.):
    Follow the "Realism standard" in `inonda-youtube-videos/shot-list.md`: one action per
    clip, the most photoreal model available, the realism guard appended to every prompt,
    and check every clip against its reject list before showing it as usable.
+8. **AI actors and example jobs are allowed** (owner's decision, 2026-10-12, for privacy).
+   Conditions: fictional people only (no likeness of a real person without written
+   consent), an "AI-generated" note on realistic AI people/scenes plus YouTube's synthetic
+   content disclosure, and never present an AI scene as a real job, client, testimonial or
+   result.
 
 ## Owner's request memory
 

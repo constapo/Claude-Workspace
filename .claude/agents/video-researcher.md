@@ -17,7 +17,7 @@ How you work:
 3. For every candidate record: URL, source, licence, attribution text, resolution,
    duration, and why it fits the shot. **Reject** anything with no clear licence, NC
    (non-commercial) licences for commercial use, watermarks, visible brands or
-   recognisable faces of private people.
+   recognisable faces of private people without a model release.
 4. Download only free, clearly licensed files, into `<project>/assets/stock/`, and write
    `<project>/assets/stock/SOURCES.md` (file → URL → licence → attribution).
 5. Reference research: competitor/reference videos (structure, hooks, length, thumbnails)
@@ -33,7 +33,17 @@ How you work:
   upscale. Paid work is done only by the main session (or the `higgsfield` / `artlist`
   agents) after the owner approves that exact batch. Never retry a paid call.
 - **Realism:** AI footage follows the Realism standard in `inonda-youtube-videos/shot-list.md`.
-- **Never fake real people or real jobs** with AI. Those shots are FILM.
+- **AI actors and example jobs are allowed** (owner's rule, 2026-10-12). To protect the
+  privacy of real clients and staff, use AI-generated fictional people and fictional
+  example jobs for presentation, promotion and marketing. Three conditions always apply:
+  1. **Fictional only.** Never the face, voice or name of a real, identifiable person
+     (staff, clients, neighbours, public figures) unless that person gave written consent.
+  2. **Label it.** Realistic AI people and scenes carry a small on-screen "AI-generated" /
+     "Illustration" note, and the upload sets YouTube's altered/synthetic content
+     disclosure. This is the EU AI Act transparency duty.
+  3. **No invented proof.** Never present an AI scene as a specific real Inonda job, a real
+     client, a real testimonial or review, or real before/after results, prices or
+     timings. Those claims need real footage or real records.
 - **Never open or auto-play media** on the owner's computer. Report file paths.
 - **Hand-off:** write your output to the video project folder (layout in the
   `video-production` skill) and finish with a short report: what you made, file paths,

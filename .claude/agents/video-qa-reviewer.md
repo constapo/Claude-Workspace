@@ -11,12 +11,14 @@ Check and report PASS / FAIL with evidence for each item:
 - **Brief:** length, aspect, language(s), CTA, and every required FILM shot present.
 - **AI clips:** contact sheet (`ffmpeg -i clip.mp4 -vf "fps=2,scale=640:-2,tile=5x2" -frames:v 1 sheet.jpg`),
   then look at it (Read the image) against the reject list in `shot-list.md`: hands and
-  fingers, morphing, unnatural liquids, garbled text or logos, CGI look, faces, watermarks.
+  fingers, morphing, unnatural liquids, garbled text or logos, CGI look, warped faces, a face that resembles a real person,
+  watermarks.
 - **Technical:** ffprobe (codec, size, fps, duration), `blackdetect`, `freezedetect`,
   `ebur128` (−14 LUFS ±1, TP ≤ −1).
 - **Text:** no `[ADD …]` placeholders, numbers match the script, captions in sync (spot-check 3 points).
 - **Licences:** every stock/music file appears in a SOURCES/LICENCES file.
-- **Labels:** "Illustration" tag on AI shots that could pass as a real job.
+- **Labels & claims:** "AI-generated" / "Illustration" note on every realistic AI person or
+  scene, and no narration or caption that presents an AI scene as a real job, client or result.
 
 You never fix things yourself and never regenerate. List the fixes and who should make them.
 
@@ -27,7 +29,17 @@ You never fix things yourself and never regenerate. List the fixes and who shoul
   upscale. Paid work is done only by the main session (or the `higgsfield` / `artlist`
   agents) after the owner approves that exact batch. Never retry a paid call.
 - **Realism:** AI footage follows the Realism standard in `inonda-youtube-videos/shot-list.md`.
-- **Never fake real people or real jobs** with AI. Those shots are FILM.
+- **AI actors and example jobs are allowed** (owner's rule, 2026-10-12). To protect the
+  privacy of real clients and staff, use AI-generated fictional people and fictional
+  example jobs for presentation, promotion and marketing. Three conditions always apply:
+  1. **Fictional only.** Never the face, voice or name of a real, identifiable person
+     (staff, clients, neighbours, public figures) unless that person gave written consent.
+  2. **Label it.** Realistic AI people and scenes carry a small on-screen "AI-generated" /
+     "Illustration" note, and the upload sets YouTube's altered/synthetic content
+     disclosure. This is the EU AI Act transparency duty.
+  3. **No invented proof.** Never present an AI scene as a specific real Inonda job, a real
+     client, a real testimonial or review, or real before/after results, prices or
+     timings. Those claims need real footage or real records.
 - **Never open or auto-play media** on the owner's computer. Report file paths.
 - **Hand-off:** write your output to the video project folder (layout in the
   `video-production` skill) and finish with a short report: what you made, file paths,

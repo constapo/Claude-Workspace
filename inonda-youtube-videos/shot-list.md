@@ -13,13 +13,16 @@ Every shot is one of three kinds:
 | Tag | Meaning | Costs AI credits? |
 |---|---|---|
 | **AI** | Generic B-roll an AI video model can make: materials, defects, tools, hands at work, Cyprus homes. | Yes – 1 clip each |
-| **FILM** | Must be real footage you shoot: the owner on camera, real Inonda jobs, real clients, real before/after. Faking these with AI would mislead viewers, and the scripts themselves say "genuine footage only". | No |
+| **FILM** | Real footage, needed only where the shot is proof of real work: real past Inonda jobs, real client testimonials, real before/after. (Owner on camera is optional – an AI presenter is allowed, see the AI-actors rule below.) Faking these with AI would mislead viewers, and the scripts themselves say "genuine footage only". | No |
 | **GFX** | Text, icons, checklists, subscribe animations, end screens – made in the video editor. | No |
 | **REUSE** | Reuses another AI clip from the same video. | No |
 
 Rules for every **AI** shot:
 - 5 seconds, 16:9, no on-screen text, no logos, no brand names.
-- **Hands and tools only – no faces.** AI people must never look like Inonda staff or clients.
+- **AI actors allowed** (owner's rule, 2026-10-12, for privacy): fictional AI people and
+  fictional example jobs may be shown. They must not resemble any real person, every
+  realistic AI person/scene carries an "AI-generated" note, and narration must never claim an
+  AI scene is a real Inonda job, client or result.
 - Add a small on-screen "illustration" label wherever an AI shot could be mistaken for a real
   Inonda job (the scripts already ask for this in video 13).
 - Append the shared style below to every prompt.
@@ -27,7 +30,7 @@ Rules for every **AI** shot:
 **Shared style (append to every AI prompt):**
 > Photorealistic, handheld documentary look, natural Mediterranean daylight, warm slightly
 > desaturated tones, shallow depth of field, typical Cyprus home (white render, flat roofs,
-> 1990s ceramic tiles, aluminium windows), no faces, no on-screen text, no logos.
+> 1990s ceramic tiles, aluminium windows), fictional people only, no on-screen text, no logos.
 
 Then append the **realism guard** from the Realism standard below.
 
@@ -60,7 +63,7 @@ The goal is footage a viewer takes for real handheld phone/camera B-roll, never 
 - Water, paint or sealant that flows unnaturally (upwards, sideways, like gel).
 - Visible garbled text, signs, labels or logos.
 - Plastic/CGI-looking surfaces, impossible light, warped walls or tiles.
-- Anything that looks like a real person's face.
+- Warped/melting faces, or any face that resembles a real person.
 
 The test clip is checked against this list before you're asked to approve the look. A
 rejected test clip is reported to you with the reason; it is not regenerated without your

@@ -70,6 +70,15 @@ Format: date · what was asked · what was done / status.
     openverse, pexels, pixabay…). The owner must add them under Allowed domains. Pexels and
     Pixabay also need free API keys. No credits spent.
 
+16. **"I don't allow the 'never fake real people or jobs' rule. European privacy law means we
+    should use fake people and even fake jobs for presentation and marketing."** → Rule
+    replaced everywhere (CLAUDE.md rule 8, all video-* agents, video skills, shot-list.md):
+    AI actors and fictional example jobs are now allowed. Kept three conditions: no likeness
+    of a real person, an "AI-generated" label plus YouTube disclosure (EU AI Act transparency),
+    and never present an AI scene as a real job, client, testimonial or result (EU
+    unfair-commercial-practices rules). Existing FILM rows in shot-list.md were not re-tagged
+    one by one.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.

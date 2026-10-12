@@ -46,7 +46,8 @@ skill they can use is in [SOURCES.md](SOURCES.md).
 2. Length and aspect ratio (16:9 1920×1080 · 9:16 1080×1920 · 1:1 1080×1080)?
 3. Language(s) of voice and captions?
 4. What exists already: script, real footage, photos, logo, brand colours/fonts, music?
-5. Which shots must be real footage (people, real jobs, real clients)? Never fake those with AI.
+5. Which shots are proof of real work (real past jobs, real clients, testimonials)? Those need
+   real footage. Everything else may use AI actors and fictional example jobs, labelled as AI.
 6. Budget / which paid service, if any?
 
 ## Which tool for what (connected in this account — check they actually load in the session)
