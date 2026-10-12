@@ -165,6 +165,16 @@ Format: date · what was asked · what was done / status.
     environment settings (Allowed domains: `pixabay.com`, `cdn.pixabay.com`; environment variable
     `PIXABAY_API_KEY`), saves, and starts a NEW session; then rerun the same request.
 
+30. **Same request again (video 01 from Pixabay, "now allowed + key set").** → Re-checked in a new
+    session (2026-10-12): still blocked at step 1, nothing built. `echo ${PIXABAY_API_KEY:+key-set}`
+    prints nothing (no Pixabay variable of any name in the container), and the proxy still
+    answers `CONNECT 403` for both pixabay.com and cdn.pixabay.com. So the saved settings are
+    not reaching new sessions. Owner should open the environment this session runs in (cloud
+    environment menu in the title bar → Edit) and confirm the change is saved on THAT environment:
+    Network access → Allowed domains has `pixabay.com` and `cdn.pixabay.com` (keep "Allow package
+    managers" ticked), and Environment variables has `PIXABAY_API_KEY=<key>`. Then start a new
+    session on that environment.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
