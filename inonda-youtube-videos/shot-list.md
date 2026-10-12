@@ -78,34 +78,51 @@ approval.
 
 | Video | Title (short) | AI | FILM | GFX |
 |---|---|---|---|---|
-| 01 | Bathroom renovation, old to new | 13 | 3 | 2 |
-| 02 | Old apartment to modern rental | 12 | 3 | 2 |
-| 03 | Kitchen renovation on a budget | 11 | 3 | 3 |
-| 04 | Leaking roof or terrace repair | 12 | 2 | 2 |
-| 05 | Damp walls and mould in winter | 11 | 3 | 2 |
-| 06 | Roof & terrace before the rainy season | 11 | 2 | 1 |
-| 07 | Salt air damage on coastal homes | 11 | 3 | 1 |
-| 08 | Keeping a Cyprus house cool | 11 | 3 | 1 |
-| 09 | What drives bathroom renovation cost | 9 | 4 | 2 |
-| 10 | Repair or replace: boilers, windows, floors | 10 | 3 | 3 |
-| 11 | Mistakes hiring a contractor | 8 | 3 | 3 |
-| 12 | How to read a renovation quote | 8 | 4 | 3 |
-| 13 | Holiday home maintenance while abroad | 11 | 3 | 1 |
-| 14 | Cheap upgrades for landlords | 11 | 2 | 2 |
-| 15 | Pre-purchase inspection checklist | 11 | 3 | 2 |
-| 16 | Seasonal maintenance calendar | 12 | 2 | 2 |
+| 01 | Bathroom renovation, old to new | 16 | 0 | 2 |
+| 02 | Old apartment to modern rental | 15 | 0 | 2 |
+| 03 | Kitchen renovation on a budget | 14 | 0 | 3 |
+| 04 | Leaking roof or terrace repair | 14 | 0 | 2 |
+| 05 | Damp walls and mould in winter | 14 | 0 | 2 |
+| 06 | Roof & terrace before the rainy season | 13 | 0 | 1 |
+| 07 | Salt air damage on coastal homes | 14 | 0 | 1 |
+| 08 | Keeping a Cyprus house cool | 13 | 1 | 1 |
+| 09 | What drives bathroom renovation cost | 11 | 2 | 2 |
+| 10 | Repair or replace: boilers, windows, floors | 13 | 0 | 3 |
+| 11 | Mistakes hiring a contractor | 9 | 2 | 3 |
+| 12 | How to read a renovation quote | 12 | 0 | 3 |
+| 13 | Holiday home maintenance while abroad | 14 | 0 | 1 |
+| 14 | Cheap upgrades for landlords | 13 | 0 | 2 |
+| 15 | Pre-purchase inspection checklist | 14 | 0 | 2 |
+| 16 | Seasonal maintenance calendar | 14 | 0 | 2 |
 | 17 | Job of the week (real case study) | 3 | 8 | 2 |
-| 18 | 10 quick home repairs | 11 | 3 | 2 |
+| 18 | 10 quick home repairs | 13 | 1 | 2 |
 | 19 | Behind the scenes at Inonda | 3 | 7 | 1 |
 | 20 | A job that went wrong (real case study) | 0 | 8 | 2 |
-| **All** | | **189** | **72** | **39** |
+| **All** | | **232** | **29** | **39** |
 
-189 AI clips ≈ 15.8 minutes of generated footage. **Price this before approving** – the
+232 AI clips ≈ 19.3 minutes of generated footage. **Price this before approving** – the
 cost depends on which service (Artlist, Higgsfield, paid ElevenLabs) and which model.
 
 Suggested order: video 01 test clip (V01-01) → approve look → rest of video 01 → review →
 videos 02–16 and 18 in batches you approve. Videos 17, 19 and 20 are real case studies and
 should be filmed, not generated.
+
+**Re-tag 2026-10-12 (owner's AI-actors rule):** 43 former FILM shots are now AI –
+mostly the presenter and example finished rooms. Still FILM (29): the real case
+studies (videos 17, 19, 20), real past-work montages (V09-03, V11-03), your own reviews page
+(V11-12), and the shots the scripts require to be genuine (V08-03 thermal, V09-06, V18-13).
+
+Rules for the re-tagged shots:
+- **One fictional AI presenter for all 20 videos.** Generate one reference portrait first
+  (part of the test-clip approval), then reuse it so the presenter looks the same everywhere.
+  The presenter must not resemble you or anyone real, and the narration must not say the
+  presenter *is* the owner by name – e.g. "At Inonda we…" is fine.
+- **Speaking presenter shots need lip-sync** (voiceover first, then an audio-driven model such
+  as Wan 2.7 or an avatar tool). These cost more per clip than plain B-roll – price them
+  separately.
+- **Example results** (finished bathroom, kitchen, apartment, railing, dry ceiling) carry an
+  "Illustration – example" label, and the line spoken over them must not say it is a real
+  Inonda job.
 
 ---
 
@@ -118,7 +135,7 @@ Narration: `audio/Inonda_Video01_narration_Emma.mp3` (7:10)
 | V01-02 | Hook | AI | Camera tilts up to a bathroom ceiling corner with a brown damp stain, peeling paint and black mould spots. |
 | V01-03 | Hook | AI | Overhead shot of an old shower tray, murky water draining very slowly around a corroded drain grate. |
 | V01-04 | Hook | AI | Quick dolly-in reveal of the same bathroom renovated: light-grey large porcelain tiles, walk-in glass shower, floating vanity, warm LED mirror. |
-| V01-05 | Intro | FILM | Owner standing in the doorway of the old bathroom. |
+| V01-05 | Intro | AI | AI presenter standing in the doorway of the old bathroom. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V01-06 | Intro | AI | Wide establishing shot of a white-rendered Cyprus apartment block street in morning sun. |
 | V01-07 | Survey | AI | Hand pressing a moisture meter against a stained bathroom wall, display reading high. |
 | V01-08 | Survey | AI | Torch beam tracing old galvanised pipework inside an opened wall cavity. |
@@ -128,8 +145,8 @@ Narration: `audio/Inonda_Video01_narration_Emma.mp3` (7:10)
 | V01-12 | Tiling | AI | Notched trowel combing adhesive on a wall, a large tile pressed in, spirit level placed on top. |
 | V01-13 | Tiling | AI | Slow close-up of a smooth white sealant bead being run along a shower corner. |
 | V01-14 | Fixtures | AI | New chrome tap turned on over a white basin, clear water running; shower running onto clean tiles. |
-| V01-15 | Fixtures | FILM | Owner doing the walkthrough. |
-| V01-16 | Cost & end | FILM | Owner on camera; final reveal of the real finished bathroom. |
+| V01-15 | Fixtures | AI | AI presenter doing the walkthrough. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
+| V01-16 | Cost & end | AI | AI presenter to camera; final reveal of an example finished bathroom. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V01-17 | Mid CTA | GFX | Subscribe lower third over V01-12. |
 | V01-18 | End | GFX | End screen: next video "Old apartment to modern rental". |
 
@@ -141,7 +158,7 @@ Narration: `audio/Inonda_Video02_narration_Emma.mp3`
 | V02-01 | Hook | AI | Dim, dated living room with brown furniture and closed shutters, dust in a thin beam of light. |
 | V02-02 | Hook | AI | Same room renovated and bright: white walls, light floor, shutters open, natural light pouring in. |
 | V02-03 | Intro | AI | Exterior of a 1980s Cyprus apartment block with balconies, slow pan to a front door. |
-| V02-04 | Intro | FILM | Owner walking in through the door. |
+| V02-04 | Intro | AI | AI presenter walking in through the door. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V02-05 | Walkthrough | AI | Close-up of an old electrical consumer unit with dated fuses, torch light across it. |
 | V02-06 | Walkthrough | AI | Hand struggling to close an old aluminium window that sticks and leaves a gap. |
 | V02-07 | Damp | AI | Bubbling, flaking paint over a damp patch on a corner wall, slow push-in. |
@@ -150,9 +167,9 @@ Narration: `audio/Inonda_Video02_narration_Emma.mp3`
 | V02-10 | Floors & walls | AI | Hands swapping old kitchen cabinet doors for new matt white fronts. |
 | V02-11 | Finishing | AI | Light switches flicked on in a finished living room; roller blinds lowered. |
 | V02-12 | Finishing | AI | Phone held up photographing a bright, staged living room for a rental listing. |
-| V02-13 | Cost/montage | FILM | Real finished apartment, room by room. |
+| V02-13 | Cost/montage | AI | Example finished apartment, room by room. *(was FILM – label "Illustration – example")* |
 | V02-14 | End | AI | Close-up of a key turning in a new front-door lock. |
-| V02-15 | Walkthrough | FILM | Owner with notebook and moisture meter. |
+| V02-15 | Walkthrough | AI | AI presenter with notebook and moisture meter. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V02-16 | Mid CTA / End | GFX | Subscribe animation; end screen. |
 | V02-17 | End | GFX | End screen card. |
 
@@ -163,7 +180,7 @@ Narration: `audio/Inonda_Video03_narration_Emma.mp3`
 |---|---|---|---|
 | V03-01 | Hook | AI | Tired 1990s kitchen: worn wood-effect cabinets, chipped laminate worktop, old tiles. |
 | V03-02 | Hook | AI | Same kitchen updated: new door fronts, light worktop, tiled splashback, under-cabinet lights. |
-| V03-03 | Intro | FILM | Owner in the kitchen opening cupboards, pointing at worn surfaces. |
+| V03-03 | Intro | AI | AI presenter in the kitchen opening cupboards, pointing at worn surfaces. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V03-04 | What can stay | AI | Torch under a sink showing a swollen, water-damaged cabinet base. |
 | V03-05 | What can stay | AI | Hand opening and closing drawers, checking runners; tape measure along a wall. |
 | V03-06 | Where to save | AI | Screwdriver fitting a new cabinet door; old handles swapped for modern ones. |
@@ -173,8 +190,8 @@ Narration: `audio/Inonda_Video03_narration_Emma.mp3`
 | V03-10 | Order of work | GFX | Order-of-work graphic. |
 | V03-11 | Order of work | AI | Quick sequence: old units removed, new wiring in an open wall, a worktop being lowered into place. |
 | V03-12 | Quotes | AI | Hidden old pipe discovered behind a removed cabinet, torch light on it. |
-| V03-13 | Quotes | FILM | Owner pointing at an itemised quote line. |
-| V03-14 | Cost/end | FILM | Real finished kitchen, angles and details. |
+| V03-13 | Quotes | AI | AI presenter pointing at an itemised quote line. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
+| V03-14 | Cost/end | AI | Example finished kitchen, angles and details. *(was FILM – label "Illustration – example")* |
 | V03-15 | Cost | AI | Slow pan across a finished budget kitchen, morning light. |
 | V03-16 | Mid CTA / End | GFX | Subscribe animation; end screen. |
 | V03-17 | End | GFX | End screen card. |
@@ -191,13 +208,13 @@ Narration: `audio/Inonda_Video04_narration_Emma.mp3`
 | V04-05 | Inspection | AI | Moisture meter pressed against a stained ceiling. |
 | V04-06 | Inspection | AI | Hose gently flooding a small taped-off area of terrace for a water test. |
 | V04-07 | Diagnosis | AI | Gloved hand clearing leaves and silt from a blocked roof drain outlet. |
-| V04-08 | Diagnosis | FILM | Owner pointing at the defect. |
+| V04-08 | Diagnosis | AI | AI presenter pointing at the defect. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V04-09 | Preparation | AI | Pressure washer cleaning a flat roof; scraper lifting old flaking coating. |
 | V04-10 | Preparation | AI | Trowel filling a crack with repair mortar. |
 | V04-11 | Waterproofing | AI | Brush applying primer; reinforcement fabric pressed into a wall-to-roof corner. |
 | V04-12 | Waterproofing | AI | Roller applying liquid waterproofing membrane; detail brushed around a drain outlet and a pipe. |
 | V04-13 | Finish & test | AI | Ruler standing in shallow flood-test water on a finished terrace. |
-| V04-14 | Prevention/End | FILM | Real dry ceiling below a repaired terrace. |
+| V04-14 | Prevention/End | AI | Example dry ceiling below a repaired terrace. *(was FILM – label "Illustration – example")* |
 | V04-15 | Mid CTA / End | GFX | Subscribe animation; end screen. |
 | V04-16 | End | GFX | End screen card. |
 
@@ -208,7 +225,7 @@ Narration: `audio/Inonda_Video05_narration_Emma.mp3`
 |---|---|---|---|
 | V05-01 | Hook | AI | Handheld shot of a bedroom corner with black mould spots, a cloth wiping it. |
 | V05-02 | Hook | AI | Same corner with mould spots back, winter light from the window. |
-| V05-03 | Who we are | FILM | Owner walking into a real house room. |
+| V05-03 | Who we are | AI | AI presenter walking into a example house room. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V05-04 | Who we are | AI | Quick cuts: toolbox opening, moisture meter switched on. |
 | V05-05 | Why damp | AI | Exterior of typical Cyprus houses and apartment blocks on a grey winter day. |
 | V05-06 | Why damp | AI | Steam rising from a kettle; clothes drying on an indoor rack beside a cold wall. |
@@ -218,8 +235,8 @@ Narration: `audio/Inonda_Video05_narration_Emma.mp3`
 | V05-10 | Condensation fixes | AI | Extractor fan spinning in a bathroom; window opened briefly; dehumidifier running. |
 | V05-11 | Penetrating damp | AI | Cracked render and failed sealant around a window frame; overflowing blocked downpipe. |
 | V05-12 | Cleaning mould | AI | Gloved hand cleaning mould with a cloth; paint peeling over a damp patch. |
-| V05-13 | CTA / specialist | FILM | Presenter/owner to camera; owner photographing a wall. |
-| V05-14 | Mid CTA | FILM | Presenter to camera. |
+| V05-13 | CTA / specialist | AI | AI presenter to camera; AI presenter photographing a wall. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
+| V05-14 | Mid CTA | AI | AI presenter to camera. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V05-15 | Mid CTA / End | GFX | Red-cross overlay; end card. |
 | V05-16 | End | GFX | Subscribe end card. |
 
@@ -230,7 +247,7 @@ Narration: `audio/Inonda_Video06_narration_Emma.mp3`
 |---|---|---|---|
 | V06-01 | Hook | AI | Dry sunny flat roof with solar water heater, blue sky. |
 | V06-02 | Hook | AI | Same roof on a rainy day, water pooling around a drain. |
-| V06-03 | Why now | FILM | Owner on a safe terrace. |
+| V06-03 | Why now | AI | AI presenter on a safe terrace. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V06-04 | Why now | AI | Wide rooftop shot with solar water heater and water tanks. |
 | V06-05 | Safety | AI | Stable ladder being footed and secured against a wall; camera pans to a parapet edge. |
 | V06-06 | Water paths | AI | Close-up of a clogged drain outlet; gloved hand clearing leaves. |
@@ -240,7 +257,7 @@ Narration: `audio/Inonda_Video06_narration_Emma.mp3`
 | V06-10 | Repair options | AI | Patch repair with reinforcement mesh; liquid waterproofing rolled on. |
 | V06-11 | Repair options | AI | Finished, freshly waterproofed terrace in sun. |
 | V06-12 | Apartment blocks | AI | Bucket under a drip in a stairwell; phone photographing a ceiling stain. |
-| V06-13 | CTAs | FILM | Presenter to camera (mid and end). |
+| V06-13 | CTAs | AI | AI presenter to camera (mid and end). *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V06-14 | Mid CTA | REUSE | Reuse V06-11 under the subscribe animation (no new clip). |
 | V06-15 | End | GFX | End card. |
 
@@ -253,7 +270,7 @@ Narration: `audio/Inonda_Video07_narration_Emma.mp3`
 | V07-01 | Hook | AI | Golden-hour sea view from a balcony, camera pans down to rust stains and flaking paint on the railing base. |
 | V07-02 | Why salt | AI | Waves breaking on a Cyprus shoreline; salt crust on a window pane. |
 | V07-03 | Why salt | AI | Wide shot of white coastal homes facing the sea. |
-| V07-04 | Why salt | FILM | Owner on a coastal street or balcony. |
+| V07-04 | Why salt | AI | AI presenter on a coastal street or balcony. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V07-05 | Safety & structure | AI | Rusty railing base where it meets concrete; balcony soffit with rust stains. |
 | V07-06 | Safety & structure | AI | Spalled concrete with exposed rusted rebar; a hand tapping gently on concrete (nobody leaning on railings). |
 | V07-07 | Water out | AI | Cracked sealant around an aluminium window; salt-crusted door threshold. |
@@ -262,8 +279,8 @@ Narration: `audio/Inonda_Video07_narration_Emma.mp3`
 | V07-10 | Metalwork | AI | AC outdoor unit with corroded fins; corroded outdoor light fitting. |
 | V07-11 | Coatings | AI | Hose rinsing salt off a window and railing; painter wire-brushing a railing. |
 | V07-12 | Coatings | AI | Wooden pergola with peeling varnish in strong sun. |
-| V07-13 | CTAs/planning | FILM | Presenter to camera; owner taking notes on a balcony. |
-| V07-14 | Before/after | FILM | Real before/after of a repainted railing. |
+| V07-13 | CTAs/planning | AI | AI presenter to camera; AI presenter taking notes on a balcony. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
+| V07-14 | Before/after | AI | Example before/after of a repainted railing. *(was FILM – label "Illustration – example")* |
 | V07-15 | End | GFX | End card. |
 
 ## Video 08 – Keeping a Cyprus House Cool in Summer
@@ -283,8 +300,8 @@ Narration: `audio/Inonda_Video08_narration_Emma.mp3`
 | V08-10 | Windows | AI | Hands fitting a modern double-glazed window into an opening. |
 | V08-11 | Walls & ventilation | AI | Window open at night with curtains moving in a breeze; ceiling fan turning. |
 | V08-12 | Walls & ventilation | AI | Sealant gun closing a gap around a window frame. |
-| V08-13 | AC / CTAs | FILM | Presenter to camera (mid and end). |
-| V08-14 | Mid CTA | FILM | Quote document on a table (blurred). |
+| V08-13 | AC / CTAs | AI | AI presenter to camera (mid and end). *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
+| V08-14 | Mid CTA | AI | Quote document on a table (blurred). *(was FILM – label "Illustration – example")* |
 | V08-15 | End | GFX | End card. |
 
 ## Video 09 – What Drives the Cost of a Bathroom Renovation
@@ -293,7 +310,7 @@ Narration: `audio/Inonda_Video09_narration_Emma.mp3`
 | ID | Section | Type | Shot |
 |---|---|---|---|
 | V09-01 | Hook | AI | Two different bathrooms mid-renovation, quick cuts: bare walls, exposed pipes. |
-| V09-02 | Hook / end | FILM | Owner to camera in a bathroom (hook and end). |
+| V09-02 | Hook / end | AI | AI presenter to camera in a bathroom (hook and end). *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V09-03 | Intro | FILM | Owner with notepad and tape measure; real montage of past Inonda work (script: genuine only). |
 | V09-04 | Driver 1 | AI | Old toilet and basin being removed; close-up of waste pipes in an open floor. |
 | V09-05 | Driver 1 | GFX | Floor-plan sketch with arrows (toilet moved). |
@@ -305,7 +322,7 @@ Narration: `audio/Inonda_Video09_narration_Emma.mp3`
 | V09-11 | Driver 4 | AI | Sequence of hands at work: plumber, electrician, tiler (no faces). |
 | V09-12 | Budget | AI | Tape measure, notepad and calculator on a table beside a printed itemised quote. |
 | V09-13 | Budget | AI | Slow pan across a finished modern bathroom. |
-| V09-14 | Owner | FILM | Owner to camera, finished bathroom. |
+| V09-14 | Owner | AI | AI presenter to camera, finished bathroom. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V09-15 | End | GFX | End screen. |
 
 ## Video 10 – Repair or Replace? Boilers, Windows and Flooring
@@ -314,7 +331,7 @@ Narration: `audio/Inonda_Video10_narration_Emma.mp3`
 | ID | Section | Type | Shot |
 |---|---|---|---|
 | V10-01 | Hook | AI | Old wall boiler with a corroded fitting; condensation between window panes; cracked floor tile. |
-| V10-02 | Intro | FILM | Owner in a living room with boiler, window and floor behind. |
+| V10-02 | Intro | AI | AI presenter in a living room with boiler, window and floor behind. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V10-03 | Intro | GFX | Four icons appearing. |
 | V10-04 | Boilers | AI | Close-up of a corroded boiler pipe fitting; thermostat dial being turned. |
 | V10-05 | Boilers | AI | Solar water heater on a Cyprus roof against blue sky. |
@@ -326,8 +343,8 @@ Narration: `audio/Inonda_Video10_narration_Emma.mp3`
 | V10-11 | Flooring | AI | Sanding a wooden floor, fine dust in the light. |
 | V10-12 | Checklist | GFX | Checklist graphic building up. |
 | V10-13 | Checklist | AI | Written quote on a table with two options highlighted. |
-| V10-14 | Owner | FILM | Owner to camera (checklist and end). |
-| V10-15 | Boilers | FILM | Owner inspecting a boiler. |
+| V10-14 | Owner | AI | AI presenter to camera (checklist and end). *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
+| V10-15 | Boilers | AI | AI presenter inspecting a boiler. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V10-16 | End | GFX | End screen. |
 
 ## Video 11 – Mistakes People Make When Hiring a Contractor
@@ -336,7 +353,7 @@ Narration: `audio/Inonda_Video11_narration_Emma.mp3`
 | ID | Section | Type | Shot |
 |---|---|---|---|
 | V11-01 | Hook | AI | Half-finished room with tools left on the floor and bare plaster. |
-| V11-02 | Hook / intro / end | FILM | Owner to camera. |
+| V11-02 | Hook / intro / end | AI | AI presenter to camera. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V11-03 | Intro | FILM | Real montage of past Inonda work. |
 | V11-04 | Intro | GFX | Title card listing the six mistakes. |
 | V11-05 | Mistake 1 | AI | Three printed quotes on a table, highlighter marking a line item. |
@@ -356,8 +373,8 @@ Narration: `audio/Inonda_Video12_narration_Emma.mp3`
 | ID | Section | Type | Shot |
 |---|---|---|---|
 | V12-01 | Hook | AI | A one-line handwritten quote on a clipboard. |
-| V12-02 | Hook / owner | FILM | Owner to camera holding an itemised quote (hook, red flags, compare, end). |
-| V12-03 | Intro | FILM | Owner pointing at the top of a quote. |
+| V12-02 | Hook / owner | AI | AI presenter to camera holding an itemised quote (hook, red flags, compare, end). *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
+| V12-03 | Intro | AI | AI presenter pointing at the top of a quote. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V12-04 | Basics | GFX | Sample quote sections highlighted; checklist ticking. |
 | V12-05 | Materials | AI | Tile samples with price tags; a calculator. |
 | V12-06 | Materials | AI | Close-up of the word "allowance" circled in pen on a printed quote. |
@@ -367,8 +384,8 @@ Narration: `audio/Inonda_Video12_narration_Emma.mp3`
 | V12-10 | Red flags | GFX | Red-flag icons over a quote. |
 | V12-11 | Compare | AI | Three quotes and a hand-drawn comparison table, highlighter in hand. |
 | V12-12 | Compare | AI | Pen ticking items on a printed quote. |
-| V12-13 | Owner | FILM | Owner to camera, compare section. |
-| V12-14 | Owner | FILM | Owner to camera, end. |
+| V12-13 | Owner | AI | AI presenter to camera, compare section. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
+| V12-14 | Owner | AI | AI presenter to camera, end. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V12-15 | End | GFX | End screen. |
 
 ## Video 13 – Holiday Home Maintenance While You Are Abroad
@@ -377,7 +394,7 @@ Narration: `audio/Inonda_Video13_narration_Emma.mp3`
 | ID | Section | Type | Shot |
 |---|---|---|---|
 | V13-01 | Hook | AI | Closed-up Cyprus villa, shutters down, slow push-in to the front door and a key in the lock. |
-| V13-02 | Intro | FILM | Presenter to camera outside a property. |
+| V13-02 | Intro | AI | AI presenter to camera outside a property. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V13-03 | Intro | AI | Quick cuts: toolbox, a tap, a roof terrace. |
 | V13-04 | What goes wrong | AI | Dry sink trap; damp corner (label "illustration"). |
 | V13-05 | What goes wrong | AI | Cracked sealant on a window; blocked air vent (label "illustration"). |
@@ -388,8 +405,8 @@ Narration: `audio/Inonda_Video13_narration_Emma.mp3`
 | V13-10 | Keys | AI | Phone showing a chat thread with room photos (generic, no names). |
 | V13-11 | Before you leave | AI | Hand turning the main water valve off; emptied fridge with door propped open. |
 | V13-12 | Before you leave | AI | Shutters half-closed; terrace being cleared of pots and furniture. |
-| V13-13 | CTAs / limits | FILM | Presenter to camera (mid, limits, end). |
-| V13-14 | Limits | FILM | Blank/generic insurance document. |
+| V13-13 | CTAs / limits | AI | AI presenter to camera (mid, limits, end). *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
+| V13-14 | Limits | AI | Blank/generic insurance document. *(was FILM – label "Illustration – example")* |
 | V13-15 | End | GFX | End screen. |
 
 ## Video 14 – Cheap Upgrades for Cyprus Landlords
@@ -398,7 +415,7 @@ Narration: `audio/Inonda_Video14_narration_Emma.mp3`
 | ID | Section | Type | Shot |
 |---|---|---|---|
 | V14-01 | Hook | AI | Two apartment doors side by side: one dull and scuffed, one clean and bright. |
-| V14-02 | Intro | FILM | Presenter to camera in a clean rental (intro, mid, which-first). |
+| V14-02 | Intro | AI | AI presenter to camera in a clean rental (intro, mid, which-first). *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V14-03 | Intro | AI | Keys handed over; viewing in a bright apartment (hands and backs only). |
 | V14-04 | Clean & fixed | AI | Paint roller on a wall; hand re-applying white silicone. |
 | V14-05 | Clean & fixed | AI | Replacing a door handle; a dripping tap being repaired. |
@@ -409,7 +426,7 @@ Narration: `audio/Inonda_Video14_narration_Emma.mp3`
 | V14-10 | Photos & safety | AI | Phone photographing a living room in daylight. |
 | V14-11 | Photos & safety | AI | Smoke alarm on a ceiling being tested; notebook comparing listings. |
 | V14-12 | Which first | GFX | Numbered checklist animation. |
-| V14-13 | Which first | FILM | Presenter to camera. |
+| V14-13 | Which first | AI | AI presenter to camera. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V14-14 | Hook/upgrade | AI | Bright, clean rental living room, slow pan. |
 | V14-15 | End | GFX | End screen with two cards. |
 
@@ -420,7 +437,7 @@ Narration: `audio/Inonda_Video15_narration_Emma.mp3`
 |---|---|---|---|
 | V15-01 | Hook | AI | Slow golden-hour reveal of a Cyprus villa exterior. |
 | V15-02 | Hook | AI | Close-up of a hand tapping a wall. |
-| V15-03 | Intro | FILM | Presenter to camera (intro, mid). |
+| V15-03 | Intro | AI | AI presenter to camera (intro, mid). *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V15-04 | Intro | AI | Surveyor's hand with a moisture meter (label "illustration"); generic documents on a desk. |
 | V15-05 | Water & damp | AI | Terrace with dried water-pooling marks; damp stain on a ceiling. |
 | V15-06 | Water & damp | AI | Torch under a sink checking for leaks; age plate on a hot-water tank. |
@@ -430,9 +447,9 @@ Narration: `audio/Inonda_Video15_narration_Emma.mp3`
 | V15-10 | Electrics | AI | Pool pump room; water meter close-up. |
 | V15-11 | Questions | AI | Snagging list on a clipboard; defect marked with blue tape. |
 | V15-12 | Budget | AI | Calculator and notes on a kitchen table. |
-| V15-13 | Questions | FILM | Presenter with a couple in a kitchen (real people, with permission). |
+| V15-13 | Questions | AI | AI presenter with a couple in a kitchen (fictional AI couple). *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V15-14 | Budget | GFX | Four-step checklist animation. |
-| V15-15 | CTA | FILM | Presenter to camera. |
+| V15-15 | CTA | AI | AI presenter to camera. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V15-16 | End | GFX | End screen. |
 
 ## Video 16 – Home Maintenance Calendar: Every Season
@@ -442,7 +459,7 @@ Narration: `audio/Inonda_Video16_narration_Emma.mp3`
 |---|---|---|---|
 | V16-01 | Hook | AI | Same Cyprus house through the seasons: spring blossom, summer glare, autumn rain clouds, winter rain. |
 | V16-02 | Hook | AI | Wall calendar pages turning. |
-| V16-03 | Intro | FILM | Presenter to camera at a house (intro, mid). |
+| V16-03 | Intro | AI | AI presenter to camera at a house (intro, mid). *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V16-04 | Intro | AI | Flat roof, weathered balcony near the sea, a pool. |
 | V16-05 | Spring | AI | Hand pointing at a ceiling stain; blocked roof outlet being cleared. |
 | V16-06 | Spring | AI | AC filter cleaned; garden irrigation line dripping in spring. |
@@ -454,7 +471,7 @@ Narration: `audio/Inonda_Video16_narration_Emma.mp3`
 | V16-12 | Winter | AI | Hand wiping mould; smoke alarm test button pressed. |
 | V16-13 | Summary | AI | Phone calendar with four seasonal reminders (generic UI). |
 | V16-14 | Summary | GFX | Animated checklist. |
-| V16-15 | CTA | FILM | Presenter to camera (end). |
+| V16-15 | CTA | AI | AI presenter to camera (end). *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V16-16 | End | GFX | End screen. |
 
 ## Video 17 – Job of the Week (real case study)
@@ -485,7 +502,7 @@ Narration: `audio/Inonda_Video18_narration_Emma.mp3`
 | ID | Section | Type | Shot |
 |---|---|---|---|
 | V18-01 | Hook | AI | Fast montage of DIY repairs: silicone, grout, hinge, tap (hands only). |
-| V18-02 | Safety / pro / end | FILM | Owner to camera. |
+| V18-02 | Safety / pro / end | AI | AI presenter to camera. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 | V18-03 | Safety | GFX | Red-and-white graphic of the three exclusions. |
 | V18-04 | Repairs 1–3 | AI | Cutting out old silicone, taping edges, smoothing a new bead. |
 | V18-05 | Repairs 1–3 | AI | Scraping and refilling grout between tiles. |
@@ -499,7 +516,7 @@ Narration: `audio/Inonda_Video18_narration_Emma.mp3`
 | V18-13 | When to call a pro | FILM | Genuine damp and crack examples (script: genuine footage only). |
 | V18-14 | Repairs | AI | Finished neat silicone bead close-up. |
 | V18-15 | When to call a pro | GFX | List appearing line by line; WhatsApp card; end screen. |
-| V18-16 | End | FILM | Owner to camera. |
+| V18-16 | End | AI | AI presenter to camera. *(was FILM – lip-sync clip if the presenter speaks; label as AI)* |
 
 ## Video 19 – Behind the Scenes at Inonda (real company)
 Narration: `audio/Inonda_Video19_narration_Emma.mp3`

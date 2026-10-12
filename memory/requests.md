@@ -86,6 +86,13 @@ Format: date · what was asked · what was done / status.
     signed consent for any real person filmed (kept in `<project>/consent/`, else blur),
     and every AI job shot must match its narration line. QA reviewer checks all three.
 
+18. **"Re-tag the videos I'm still waiting for (3 days)."** → Re-tagged `shot-list.md` under the
+    AI-actors rule: 43 FILM shots → AI (one fictional AI presenter for all videos, example
+    finished rooms labelled "Illustration – example"). Now 232 AI / 29 FILM / 39 GFX. Still
+    FILM: real case studies 17, 19, 20, real past-work montages, own reviews page, and shots
+    the scripts require genuine (V08-03, V09-06, V18-13). Nothing generated yet, no credits
+    spent – next step is still pricing + approval of test clip V01-01.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
