@@ -136,6 +136,12 @@ Format: date · what was asked · what was done / status.
     photo slideshows), Greek subtitles always, sample before long renders. Realistic free
     footage needs the stock sites allowed in the network settings (still blocked).
 
+25. **"Restart from zero on making videos."** → Fresh plan under the current rules (free only,
+    realistic footage showing the narrated job, Greek subtitles always, sample first). Checked
+    again: Pexels, Pixabay, Wikimedia and archive.org are still blocked in this environment, so
+    no realistic footage can be fetched yet. Waiting on the owner to allow those domains and
+    open a new session.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
