@@ -152,6 +152,11 @@ Format: date · what was asked · what was done / status.
     `pixabay.com` and `cdn.pixabay.com` in Allowed domains, then a new session.
     `tools/video/stock_search.py pixabay` already uses that key.
 
+28. **Owner shared the Pixabay API key in chat.** → Not written to the repo. Kept only in this
+    session's scratchpad. Search test still fails: pixabay.com blocked by the network policy.
+    Owner should save it as the `PIXABAY_API_KEY` environment secret (so new sessions have it)
+    and allow pixabay.com + cdn.pixabay.com, then start a new session.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
