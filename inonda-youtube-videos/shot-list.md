@@ -113,10 +113,10 @@ studies (videos 17, 19, 20), real past-work montages (V09-03, V11-03), your own 
 (V11-12), and the shots the scripts require to be genuine (V08-03 thermal, V09-06, V18-13).
 
 Rules for the re-tagged shots:
-- **One fictional AI presenter for all 20 videos.** Generate one reference portrait first
-  (part of the test-clip approval), then reuse it so the presenter looks the same everywhere.
-  The presenter must not resemble you or anyone real, and the narration must not say the
-  presenter *is* the owner by name – e.g. "At Inonda we…" is fine.
+- **The presenter is the owner** (owner consented to their own face, 2026-10-12). Either film
+  the owner for real (free) or make an AI likeness of the owner from the owner's own
+  reference photos/video (paid; labelled "AI-generated"). The narration may say it is the
+  owner. Until the owner chooses, presenter shots stay planned as AI-likeness-or-film.
 - **Speaking presenter shots need lip-sync** (voiceover first, then an audio-driven model such
   as Wan 2.7 or an avatar tool). These cost more per clip than plain B-roll – price them
   separately.

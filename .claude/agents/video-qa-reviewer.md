@@ -40,7 +40,8 @@ You never fix things yourself and never regenerate. List the fixes and who shoul
   example jobs for presentation, promotion and marketing. Three conditions always apply:
   1. **Photoreal but fictional.** AI people must look exactly like real humans on real
      camera footage (natural skin, faces, hands, clothing, movement), never cartoon or CGI.
-     They must not be the likeness, voice or name of any real, identifiable person.
+     They must not be the likeness, voice or name of any real, identifiable person –
+     except the owner, who has consented to their own face being used (2026-10-12).
   1b. **Real people need consent.** Anyone real who is filmed and recognisable (staff,
      clients, neighbours) needs signed written consent before the footage is used; keep it
      in `<project>/consent/`. No consent → blur them or use an AI actor instead.

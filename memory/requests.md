@@ -93,6 +93,11 @@ Format: date · what was asked · what was done / status.
     the scripts require genuine (V08-03, V09-06, V18-13). Nothing generated yet, no credits
     spent – next step is still pricing + approval of test clip V01-01.
 
+19. **"My face can be used in the videos."** → Recorded as the owner's consent (2026-10-12) in
+    CLAUDE.md rule 8, all video-* agents and shot-list.md: the presenter in videos 01–16 and
+    18 is the owner, filmed for real or as an AI likeness built from the owner's own photos.
+    Waiting on the owner: choose film vs AI likeness, and (for AI) provide reference photos/video.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
@@ -103,3 +108,5 @@ Format: date · what was asked · what was done / status.
 - Allow stock hosts in the cloud environment's network settings (list in
   `.claude/skills/video-production/SOURCES.md` §8), and optionally add free
   `PEXELS_API_KEY` / `PIXABAY_API_KEY` secrets.
+- Presenter: film yourself or AI likeness of you? For AI, upload 10–20 clear photos and a
+  30–60 s video of you talking (front light, neutral background).

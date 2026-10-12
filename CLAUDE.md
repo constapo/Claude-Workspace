@@ -24,7 +24,8 @@ spends credits (Higgsfield, Artlist, ElevenLabs, Krea, Kling, etc.):
    and check every clip against its reject list before showing it as usable.
 8. **AI actors and example jobs are allowed** (owner's decision, 2026-10-12, for privacy).
    AI people must look like real humans on real camera footage (never cartoon/CGI) yet be
-   fictional (no likeness of a real person). AI jobs must look like real job sites and match
+   fictional (no likeness of a real person). Exception: the owner has consented (2026-10-12)
+   to their own face being used – filmed or as an AI likeness – as the videos' presenter. AI jobs must look like real job sites and match
    exactly what the narration describes over them. Real people who are filmed must give
    signed written consent first. Also: an "AI-generated" note on realistic AI people/scenes plus YouTube's synthetic
    content disclosure, and never present an AI scene as a real job, client, testimonial or
