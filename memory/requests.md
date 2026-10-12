@@ -145,6 +145,13 @@ Format: date · what was asked · what was done / status.
 26. **"Make them one by one – I must see each before you do the next."** → Standing rule 5 in
     CLAUDE.md video content rules: one video at a time, owner sees it, then the next.
 
+27. **"Use https://pixabay.com/users/constapo-58008077/ to get access to inspirational
+    materials."** → Owner has a free Pixabay account. Tried it: pixabay.com and cdn.pixabay.com
+    are still blocked here (curl and web fetch both fail). Needs: owner's free Pixabay API key
+    (pixabay.com/api/docs while logged in) saved as secret `PIXABAY_API_KEY`, plus
+    `pixabay.com` and `cdn.pixabay.com` in Allowed domains, then a new session.
+    `tools/video/stock_search.py pixabay` already uses that key.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
