@@ -157,6 +157,14 @@ Format: date · what was asked · what was done / status.
     Owner should save it as the `PIXABAY_API_KEY` environment secret (so new sessions have it)
     and allow pixabay.com + cdn.pixabay.com, then start a new session.
 
+29. **"Make Inonda video 01 (bathroom renovation, old to new) from Pixabay footage; pixabay.com +
+    cdn.pixabay.com allowed and PIXABAY_API_KEY added."** → Stopped at step 1 (access check), nothing
+    built. In this session (2026-10-12) `stock_search.py pixabay` failed: `PIXABAY_API_KEY` is not
+    in the environment, and the network proxy still answers 403 to pixabay.com and cdn.pixabay.com
+    (policy denial). The settings change has not reached this container. Next: owner checks the
+    environment settings (Allowed domains: `pixabay.com`, `cdn.pixabay.com`; environment variable
+    `PIXABAY_API_KEY`), saves, and starts a NEW session; then rerun the same request.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
