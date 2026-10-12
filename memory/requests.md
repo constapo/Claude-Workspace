@@ -58,6 +58,18 @@ Format: date · what was asked · what was done / status.
     commands for the external skills are in `.claude/skills/video-production/CATALOG.md`
     – installing any of them is the owner's choice. No credits spent.
 
+15. **"Use all sources available online as workers and co-workers in making videos, and
+    harness as many skills as needed."** → Built a video crew of 8 subagents in
+    `.claude/agents/video-*.md` (researcher, scriptwriter, shot-planner, editor, sound,
+    captioner, packager, QA reviewer). None of them can spend credits; paid generation
+    stays with the owner-approved `higgsfield`/`artlist` agents. Added
+    `video-production/CREW.md` (director playbook), `video-production/SOURCES.md` (free
+    footage/music/SFX/fonts, open-source tools, open models, paid co-workers, plugin
+    skills) and `tools/video/stock_search.py` (Wikimedia, Openverse, Pexels, Pixabay).
+    *Blocked:* this environment's network policy denies the stock hosts (wikimedia,
+    openverse, pexels, pixabay…). The owner must add them under Allowed domains. Pexels and
+    Pixabay also need free API keys. No credits spent.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
@@ -65,3 +77,6 @@ Format: date · what was asked · what was done / status.
 - Fill `[ADD REAL PRICE]`, `[ADD REAL DURATION]`, `[ADD PHONE/WHATSAPP]` placeholders in scripts.
 - Optional: choose whether to install any external video skills listed in
   `.claude/skills/video-production/CATALOG.md` (e.g. Remotion official skills).
+- Allow stock hosts in the cloud environment's network settings (list in
+  `.claude/skills/video-production/SOURCES.md` §8), and optionally add free
+  `PEXELS_API_KEY` / `PIXABAY_API_KEY` secrets.

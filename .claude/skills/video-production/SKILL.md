@@ -16,6 +16,14 @@ plan free → price it → explicit approval for *this* batch → ONE test clip 
 Never retry a paid call blindly, never auto-open results. Free local work (FFmpeg, Remotion,
 Whisper, writing scripts and shot lists) needs no approval.
 
+## The crew
+
+You are the director. Real work goes to the crew of subagents in `.claude/agents/`
+(researcher, scriptwriter, shot-planner, editor, sound, captioner, packager, QA reviewer,
+plus the paid `higgsfield` / `artlist` generators). The roles and the step-by-step
+playbook are in [CREW.md](CREW.md). Every free and paid source, tool, model and plugin
+skill they can use is in [SOURCES.md](SOURCES.md).
+
 ## The pipeline
 
 | # | Step | Output | Skill |
