@@ -20,9 +20,12 @@ Every shot is one of three kinds:
 Rules for every **AI** shot:
 - 5 seconds, 16:9, no on-screen text, no logos, no brand names.
 - **AI actors allowed** (owner's rule, 2026-10-12, for privacy): fictional AI people and
-  fictional example jobs may be shown. They must not resemble any real person, every
-  realistic AI person/scene carries an "AI-generated" note, and narration must never claim an
-  AI scene is a real Inonda job, client or result.
+  fictional example jobs may be shown. AI people must look like real humans filmed on a real
+  camera (never cartoon/CGI) but must not resemble any real person. Every AI job must look like
+  a real Cyprus job site and match exactly what the narration says over it. Realistic AI
+  people/scenes carry an "AI-generated" note, and narration must never claim an AI scene is a
+  real Inonda job, client or result.
+- **Real people filmed** (owner, staff, clients) need signed written consent before use.
 - Add a small on-screen "illustration" label wherever an AI shot could be mistaken for a real
   Inonda job (the scripts already ask for this in video 13).
 - Append the shared style below to every prompt.
@@ -63,7 +66,9 @@ The goal is footage a viewer takes for real handheld phone/camera B-roll, never 
 - Water, paint or sealant that flows unnaturally (upwards, sideways, like gel).
 - Visible garbled text, signs, labels or logos.
 - Plastic/CGI-looking surfaces, impossible light, warped walls or tiles.
-- Warped/melting faces, or any face that resembles a real person.
+- People who don't pass as real: waxy/doll-like skin, dead eyes, odd teeth, stiff or
+  floaty movement, warped/melting faces – or any face that resembles a real person.
+- The shot doesn't match its narration line (wrong task, material, room, tool or stage).
 
 The test clip is checked against this list before you're asked to approve the look. A
 rejected test clip is reported to you with the reason; it is not regenerated without your

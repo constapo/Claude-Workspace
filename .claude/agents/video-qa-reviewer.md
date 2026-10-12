@@ -17,6 +17,12 @@ Check and report PASS / FAIL with evidence for each item:
   `ebur128` (−14 LUFS ±1, TP ≤ −1).
 - **Text:** no `[ADD …]` placeholders, numbers match the script, captions in sync (spot-check 3 points).
 - **Licences:** every stock/music file appears in a SOURCES/LICENCES file.
+- **People look real:** every AI person passes as a real human on camera (skin, eyes, teeth,
+  hands, hair, clothing, natural movement). Any doll-like, waxy, cartoon or uncanny look is a FAIL.
+- **Shot matches narration:** each shot shows exactly what its narration/caption line says
+  (task, materials, room, tools, stage of work). Mismatch is a FAIL.
+- **Consent:** every recognisable real person in filmed footage has a signed consent file in
+  `<project>/consent/`, or is blurred.
 - **Labels & claims:** "AI-generated" / "Illustration" note on every realistic AI person or
   scene, and no narration or caption that presents an AI scene as a real job, client or result.
 
@@ -32,8 +38,15 @@ You never fix things yourself and never regenerate. List the fixes and who shoul
 - **AI actors and example jobs are allowed** (owner's rule, 2026-10-12). To protect the
   privacy of real clients and staff, use AI-generated fictional people and fictional
   example jobs for presentation, promotion and marketing. Three conditions always apply:
-  1. **Fictional only.** Never the face, voice or name of a real, identifiable person
-     (staff, clients, neighbours, public figures) unless that person gave written consent.
+  1. **Photoreal but fictional.** AI people must look exactly like real humans on real
+     camera footage (natural skin, faces, hands, clothing, movement), never cartoon or CGI.
+     They must not be the likeness, voice or name of any real, identifiable person.
+  1b. **Real people need consent.** Anyone real who is filmed and recognisable (staff,
+     clients, neighbours) needs signed written consent before the footage is used; keep it
+     in `<project>/consent/`. No consent → blur them or use an AI actor instead.
+  1c. **Jobs must match the words.** An AI job scene must look like a real job site and show
+     exactly what the narration or caption describes over it (same task, materials, room,
+     tools, stage of work). A shot that doesn't match its line is rejected.
   2. **Label it.** Realistic AI people and scenes carry a small on-screen "AI-generated" /
      "Illustration" note, and the upload sets YouTube's altered/synthetic content
      disclosure. This is the EU AI Act transparency duty.

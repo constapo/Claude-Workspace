@@ -79,6 +79,13 @@ Format: date · what was asked · what was done / status.
     unfair-commercial-practices rules). Existing FILM rows in shot-list.md were not re-tagged
     one by one.
 
+17. **"Anything generated must look like a real person even if fake; filming real people
+    needs their consent; generated jobs must look realistic and match the description over
+    them."** → Added to CLAUDE.md rule 8, all video-* agents, video-ai-generation skill and
+    shot-list.md: photoreal fictional AI people (reject anything doll-like/CGI/uncanny),
+    signed consent for any real person filmed (kept in `<project>/consent/`, else blur),
+    and every AI job shot must match its narration line. QA reviewer checks all three.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.

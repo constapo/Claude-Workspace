@@ -28,8 +28,15 @@ You are the scriptwriter of the video crew. Follow the `video-youtube-packaging`
 - **AI actors and example jobs are allowed** (owner's rule, 2026-10-12). To protect the
   privacy of real clients and staff, use AI-generated fictional people and fictional
   example jobs for presentation, promotion and marketing. Three conditions always apply:
-  1. **Fictional only.** Never the face, voice or name of a real, identifiable person
-     (staff, clients, neighbours, public figures) unless that person gave written consent.
+  1. **Photoreal but fictional.** AI people must look exactly like real humans on real
+     camera footage (natural skin, faces, hands, clothing, movement), never cartoon or CGI.
+     They must not be the likeness, voice or name of any real, identifiable person.
+  1b. **Real people need consent.** Anyone real who is filmed and recognisable (staff,
+     clients, neighbours) needs signed written consent before the footage is used; keep it
+     in `<project>/consent/`. No consent → blur them or use an AI actor instead.
+  1c. **Jobs must match the words.** An AI job scene must look like a real job site and show
+     exactly what the narration or caption describes over it (same task, materials, room,
+     tools, stage of work). A shot that doesn't match its line is rejected.
   2. **Label it.** Realistic AI people and scenes carry a small on-screen "AI-generated" /
      "Illustration" note, and the upload sets YouTube's altered/synthetic content
      disclosure. This is the EU AI Act transparency duty.

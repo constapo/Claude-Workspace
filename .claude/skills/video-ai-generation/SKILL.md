@@ -19,7 +19,8 @@ description: Plan, prompt, price and quality-check AI-generated video clips (tex
 | Shot need | Approach |
 |---|---|
 | Proof of real work: a specific real job, real client, testimonial, real before/after | **FILM** it (real footage or records) |
-| People at work, presenters, homeowners, example jobs | **AI actors / fictional example job**, labelled "AI-generated". Never the likeness of a real person |
+| People at work, presenters, homeowners, example jobs | **Photoreal AI actors / fictional example job** that look like real camera footage and match the narration exactly, labelled "AI-generated". Never the likeness of a real person |
+| Real people you film (owner, staff, clients) | **FILM** with signed written consent; otherwise blur or use an AI actor |
 | Text, icons, checklists, end screens | **GFX** in Remotion/editor (free) |
 | Generic B-roll that exists in stock libraries | **Stock** (Artlist, Pexels, Pixabay), usually cheaper and more realistic |
 | Generic B-roll with no stock match | **Text-to-video** |
