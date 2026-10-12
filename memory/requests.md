@@ -47,8 +47,21 @@ Format: date · what was asked · what was done / status.
     × 20, rates unpublished, so a realistic 4s clip likely exceeds 80. Prompt shown; waiting
     for the owner to choose: try vidIQ anyway / wait for Artlist (recommended) / top up.
 
+14. **"Seek as many skills as possible from the internet for future video making and
+    generating."** → Researched ~30 open-source video skills (Remotion official, ECC
+    video-editing/remotion/manim, erichowens FFmpeg + AI-production + voice, BenAI
+    repurposing/YouTube chain, RunComfy model router, Tella). Third-party files were NOT
+    copied in (unreviewed scripts would auto-load every session); instead wrote 8 original
+    skills distilled from them in `.claude/skills/video-*` (production router + catalog,
+    ai-generation, ffmpeg-editing, captions-transcription, remotion, repurposing-shorts,
+    voiceover-music, youtube-packaging). All FFmpeg recipes tested locally. Install
+    commands for the external skills are in `.claude/skills/video-production/CATALOG.md`
+    – installing any of them is the owner's choice. No credits spent.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
 - Real job details for videos 17 and 20 (scripts and narration).
 - Fill `[ADD REAL PRICE]`, `[ADD REAL DURATION]`, `[ADD PHONE/WHATSAPP]` placeholders in scripts.
+- Optional: choose whether to install any external video skills listed in
+  `.claude/skills/video-production/CATALOG.md` (e.g. Remotion official skills).

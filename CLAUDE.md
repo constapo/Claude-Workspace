@@ -29,3 +29,8 @@ At the start of every session, read `memory/requests.md` – it is the permanent
 everything the owner has asked for, from every device. Treat its standing rules as active.
 Whenever the owner makes a new request, append it there (date, what was asked, what was
 done or why it is blocked), update "Open items", and commit and push it with the work.
+
+## Video work
+
+For any video task, start with the `video-production` skill (`.claude/skills/video-production/`).
+It routes to the `video-*` step skills. The paid-generation rule above still overrides every skill.
