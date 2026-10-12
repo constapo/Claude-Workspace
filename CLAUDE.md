@@ -15,7 +15,8 @@ paid-generation rules below stay in force in case the owner ever changes this.
    drawings, cartoons, flat illustrations, coloured diagrams or slideshows of the owner's photo.
 3. **Greek subtitles always**, on every video, the whole time.
 4. Follow the video skills' steps (`video-production` → shot list → footage → edit → QA)
-   and show the owner a short sample before rendering anything long.
+   No samples (owner, 2026-10-12): make each video complete, end to end, and show the
+   finished video.
 5. **One video at a time.** Finish one video, show it to the owner, and start the next one
    only after the owner has seen it and says go.
 

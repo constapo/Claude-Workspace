@@ -182,6 +182,13 @@ Format: date · what was asked · what was done / status.
     video job on the owner's own computer (bridge environments `inonda:Downloads` /
     `inonda:Claude workspace` exist), where Pixabay is reachable. Asked the owner which.
 
+32. **"I don't need sample videos. Make full videos, one by one: finish one, show it, continue
+    only when I say it's OK."** (2026-10-12) → CLAUDE.md rule 4 changed: no samples, each
+    video made complete and shown finished; rule 5 (one at a time, wait for OK) kept. Still
+    blocked: every footage host (Pixabay, Pexels, Wikimedia, archive.org) is refused by this
+    cloud environment's proxy. Asked the owner to choose: fix the cloud setting, or make the
+    video on their own computer.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
