@@ -81,6 +81,12 @@ def mixkit(q, n):
         if vid in seen:
             continue
         seen.add(vid)
+        # Only clips under the free licence may be used on the channel; "Restricted" clips are
+        # personal-use only (their free file is the 720p one), so check the clip page first.
+        page_html = fetch("https://mixkit.co" + page) or ""
+        if "Restricted License" in page_html or "Free License" not in page_html:
+            print(f"  - skip mixkit {vid}: not under the Mixkit free licence")
+            continue
         out.append({"source": "mixkit", "page": "https://mixkit.co" + page,
                     "file": f"https://assets.mixkit.co/videos/{vid}/{vid}-1080.mp4",
                     "fallback": f"https://assets.mixkit.co/videos/{vid}/{vid}-720.mp4",

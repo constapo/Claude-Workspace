@@ -276,6 +276,15 @@ Format: date · what was asked · what was done / status.
     the repo secrets (runs 2/3 of kaggle-ai-clip showed no KAGGLE_*/PIXABAY_* secret or variable
     in constapo/Dope).
 
+45. **"Then find me more free sources."** (2026-10-15) → Researched, written to
+    `.claude/skills/video-production/FREE-STOCK-SOURCES.md` (ranked, licences, how to script each).
+    Top: Pixabay (free key), Pexels (stopped issuing NEW API keys 2026-10-14 – manual download only
+    without an existing key), Mixkit (no key; free-licence clips only), Coverr (free key; filter out
+    its AI clips), Wikimedia Commons (no key), Vecteezy (free key, credit line needed). Fake-free /
+    unusable: Dreamstime, Pro/Premium tiers, SplitShire (now mostly AI). Fixed fetch_stock.py so
+    Mixkit "Restricted" (personal-use) clips are skipped. Still needs the owner: PIXABAY_API_KEY
+    (and optionally COVERR_API_KEY / VECTEEZY_API_KEY) as GitHub repo secrets.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
