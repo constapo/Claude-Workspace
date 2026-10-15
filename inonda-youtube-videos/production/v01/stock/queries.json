@@ -1,0 +1,31 @@
+{
+  "_note": "Search terms per narration line for video 01. Read by tools/video/fetch_stock.py (run in GitHub Actions). Edit and push this file to fetch again.",
+  "per_shot": 4,
+  "max_seconds": 20,
+  "shots": [
+    {"id": "1.1", "line": "Cracked tiles.", "queries": ["cracked tiles", "broken tile floor", "damaged bathroom tiles"]},
+    {"id": "1.2", "line": "A damp ceiling.", "queries": ["damp ceiling", "mould ceiling", "water stain ceiling", "mold wall"]},
+    {"id": "1.3", "line": "A shower that never drains properly.", "queries": ["shower drain water", "shower drain", "water draining shower floor"]},
+    {"id": "1.5", "line": "old to new, step by step", "queries": ["bathroom renovation", "bathroom remodel", "modern bathroom"]},
+    {"id": "1.6", "line": "the one step that nobody sees (waterproofing)", "queries": ["waterproofing", "waterproof membrane", "liquid waterproofing roller"]},
+    {"id": "2.1", "line": "We're Inonda Limited.", "queries": ["renovation worker", "construction worker interior", "handyman tools"]},
+    {"id": "2.2", "line": "homes and apartments across Cyprus", "queries": ["cyprus", "apartment building mediterranean", "white houses sunny"]},
+    {"id": "2.3", "line": "repairs, bathrooms, kitchens, damp, painting, roofing", "queries": ["painting wall roller", "kitchen renovation", "roof repair", "home repair"]},
+    {"id": "3.3", "line": "We check the walls for damp.", "queries": ["moisture meter", "damp wall"]},
+    {"id": "3.4", "line": "pipes, drain, electrics", "queries": ["plumbing pipes", "old pipes", "plumber"]},
+    {"id": "4.2", "line": "Out come the old tiles", "queries": ["tile removal", "demolition bathroom", "chisel tiles", "hammer drill wall"]},
+    {"id": "4.8", "line": "protect the rest of your home", "queries": ["floor protection construction", "rubble bags", "construction debris"]},
+    {"id": "6.3", "line": "New supply pipes, new waste lines", "queries": ["installing pipes", "plumber installing", "pex pipe"]},
+    {"id": "6.4", "line": "Electrics in a bathroom", "queries": ["electrician", "electrical wiring wall"]},
+    {"id": "6.7", "line": "pressure test", "queries": ["pressure gauge", "manometer"]},
+    {"id": "7.2", "line": "waterproof membrane on shower and floor", "queries": ["waterproofing bathroom", "waterproof coating floor", "applying membrane"]},
+    {"id": "8.2", "line": "Flat surfaces.", "queries": ["spirit level wall", "plastering wall"]},
+    {"id": "8.3", "line": "The correct adhesive", "queries": ["tile adhesive trowel", "notched trowel", "laying tiles"]},
+    {"id": "8.4", "line": "Even spacing", "queries": ["tiling", "tile spacers", "tiler"]},
+    {"id": "8.6", "line": "Then comes the grout.", "queries": ["grouting tiles", "grout"]},
+    {"id": "8.7", "line": "flexible sealant", "queries": ["silicone sealant", "caulking"]},
+    {"id": "9.2", "line": "Toilet, basin, shower, taps, mirror, lighting", "queries": ["toilet installation", "installing sink", "faucet installation", "shower head"]},
+    {"id": "9.3", "line": "check every tap, run the shower", "queries": ["water tap running", "shower running water", "faucet water"]},
+    {"id": "9.5", "line": "finished bathroom", "queries": ["luxury bathroom", "new bathroom interior", "bathroom interior"]}
+  ]
+}
