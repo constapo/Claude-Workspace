@@ -324,22 +324,22 @@
   "why": "NO ACCEPTABLE CLIP: no curing membrane footage"
  },
  "7.5": {
-  "clip": null,
-  "in": 0,
-  "status": "missing",
-  "why": "NO ACCEPTABLE CLIP: generic line; no general renovation-work footage arrived that is not already used (need: tradesman working in a bathroom, hands with tools)"
+  "clip": "../gfx/videos/waterproof_layers/1080p60/waterproof_layers.mp4",
+  "in": 0.4,
+  "status": "ok",
+  "why": "DIAGRAM (owner approved 2026-10-15): layers wall/membrane/adhesive/tile appear"
  },
  "7.6": {
-  "clip": null,
-  "in": 0,
-  "status": "missing",
-  "why": "NO ACCEPTABLE CLIP: generic line; no general renovation-work footage arrived that is not already used (need: tradesman working in a bathroom, hands with tools)"
+  "clip": "../gfx/videos/waterproof_layers/1080p60/waterproof_layers.mp4",
+  "in": 3.5,
+  "status": "ok",
+  "why": "DIAGRAM: membrane fades out = the skipped layer"
  },
  "7.7": {
-  "clip": null,
-  "in": 0,
-  "status": "missing",
-  "why": "NO ACCEPTABLE CLIP: no water damage in wall/ceiling footage"
+  "clip": "../gfx/videos/waterproof_layers/1080p60/waterproof_layers.mp4",
+  "in": 5.7,
+  "status": "ok",
+  "why": "DIAGRAM: water path into the wall and down"
  },
  "7.8": {
   "clip": null,

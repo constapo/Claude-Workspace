@@ -244,6 +244,11 @@ Format: date · what was asked · what was done / status.
     Diagrams still need the owner's yes per scene (CLAUDE.md rule 2: realistic footage only).
     Also told the owner `ext install anthropic.claude-code` is a VS Code command for their own PC.
 
+40. **"Use the diagram."** (2026-10-15) → Owner allowed the Manim waterproofing cross-section
+    (`production/v01/gfx/waterproof_layers.py`) for video 01 lines 7.5–7.7 only: an explicit
+    exception to CLAUDE.md video rule 2 for this scene. Put into `edl.json` (7.5 in 0.4 s,
+    7.6 in 3.5 s, 7.7 in 5.7 s). Other diagrams still need a yes each.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
