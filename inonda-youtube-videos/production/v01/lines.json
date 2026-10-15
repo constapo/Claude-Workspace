@@ -15,7 +15,7 @@
   "id": "1.3",
   "en": "A shower that never drains properly.",
   "tts": "A shower that never drains properly.",
-  "gr": "Ένα ντους που δεν αδειάζει ποτέ σωστά."
+  "gr": "Ντους που δεν τραβάει ποτέ καλά το νερό."
  },
  {
   "id": "1.4",
@@ -33,13 +33,13 @@
   "id": "1.6",
   "en": "And we'll share the one step that nobody sees.",
   "tts": "And we'll share the one step that nobody sees.",
-  "gr": "Και θα σας πούμε για το ένα βήμα που δεν το βλέπει κανείς."
+  "gr": "Και θα σας πούμε για το βήμα που κανείς δεν βλέπει."
  },
  {
   "id": "1.7",
   "en": "The one homeowners regret skipping more than any other.",
   "tts": "The one homeowners regret skipping more than any other.",
-  "gr": "Αυτό που οι ιδιοκτήτες μετανιώνουν περισσότερο απ' όλα όταν το παραλείπουν."
+  "gr": "Αυτό που οι ιδιοκτήτες πιο πολύ μετανιώνουν ότι παρέλειψαν."
  },
  {
   "id": "1.8",
@@ -57,7 +57,7 @@
   "id": "2.2",
   "en": "We repair, renovate and maintain homes and apartments across Cyprus.",
   "tts": "We repair, renovate and maintain homes and apartments across Cyprus.",
-  "gr": "Κάνουμε επισκευές, ανακαινίσεις και συντήρηση σε σπίτια και διαμερίσματα σε όλη την Κύπρο."
+  "gr": "Επισκευάζουμε, ανακαινίζουμε και συντηρούμε σπίτια και διαμερίσματα σε όλη την Κύπρο."
  },
  {
   "id": "2.3",
@@ -75,31 +75,31 @@
   "id": "2.5",
   "en": "But the technician in charge of every job has up to twenty-two years of hands-on repair experience.",
   "tts": "But the technician in charge of every job has up to twenty-two years of hands-on repair experience.",
-  "gr": "Όμως ο τεχνικός που έχει την ευθύνη σε κάθε δουλειά έχει μέχρι και είκοσι δύο χρόνια εμπειρίας στις επισκευές."
+  "gr": "Όμως ο υπεύθυνος τεχνικός κάθε δουλειάς έχει έως 22 χρόνια πρακτικής εμπειρίας σε επισκευές."
  },
  {
   "id": "2.6",
   "en": "Enough to know how Cyprus buildings cope with heat, humidity and sudden rain.",
   "tts": "Enough to know how Cyprus buildings cope with heat, humidity and sudden rain.",
-  "gr": "Ξέρει καλά πώς αντέχουν τα κτίρια στην Κύπρο τη ζέστη, την υγρασία και τις ξαφνικές μπόρες."
+  "gr": "Ξέρει πώς αντέχουν τα κτίρια της Κύπρου τη ζέστη, την υγρασία και τις ξαφνικές βροχές."
  },
  {
   "id": "2.7",
   "en": "Today is a full bathroom renovation, and we'll keep it honest.",
   "tts": "Today is a full bathroom renovation, and we'll keep it honest.",
-  "gr": "Σήμερα έχουμε μια πλήρη ανακαίνιση μπάνιου, και θα σας μιλήσουμε ειλικρινά."
+  "gr": "Σήμερα, μια πλήρης ανακαίνιση μπάνιου, και θα μιλήσουμε ειλικρινά."
  },
  {
   "id": "2.8",
   "en": "We'll tell you what each stage involves, what can go wrong, and where the real cost sits.",
   "tts": "We'll tell you what each stage involves, what can go wrong, and where the real cost sits.",
-  "gr": "Θα σας πούμε τι περιλαμβάνει κάθε στάδιο, τι μπορεί να πάει στραβά και πού βρίσκεται το πραγματικό κόστος."
+  "gr": "Θα πούμε τι περιλαμβάνει κάθε στάδιο, τι μπορεί να στραβώσει και πού είναι το πραγματικό κόστος."
  },
  {
   "id": "2.9",
   "en": "If you're planning a bathroom, this will help you ask the right questions before anyone picks up a hammer.",
   "tts": "If you're planning a bathroom, this will help you ask the right questions before anyone picks up a hammer.",
-  "gr": "Αν σκέφτεστε να φτιάξετε μπάνιο, αυτό θα σας βοηθήσει να κάνετε τις σωστές ερωτήσεις, πριν πιάσει κανείς σφυρί."
+  "gr": "Αν σκέφτεστε να φτιάξετε μπάνιο, αυτό θα σας βοηθήσει να κάνετε τις σωστές ερωτήσεις πριν πιάσει κανείς σφυρί."
  },
  {
   "id": "3.1",
@@ -123,19 +123,19 @@
   "id": "3.4",
   "en": "We check where the pipes run, test the drain, and look at the electrics.",
   "tts": "We check where the pipes run, test the drain, and look at the electrics.",
-  "gr": "Βλέπουμε από πού περνούν οι σωλήνες, δοκιμάζουμε την αποχέτευση και ελέγχουμε τα ηλεκτρικά."
+  "gr": "Εντοπίζουμε τους σωλήνες, δοκιμάζουμε την αποχέτευση, ελέγχουμε τα ηλεκτρικά."
  },
  {
   "id": "3.5",
   "en": "In Cyprus, many older bathrooms have old galvanised or poorly joined pipework.",
   "tts": "In Cyprus, many older bathrooms have old galvanised or poorly joined pipework.",
-  "gr": "Στην Κύπρο, πολλά παλιά μπάνια έχουν παλιές γαλβανιζέ σωληνώσεις, ή σωλήνες κακοσυνδεδεμένους."
+  "gr": "Στην Κύπρο, πολλά παλιά μπάνια έχουν γαλβανιζέ σωλήνες ή κακοσυνδεδεμένες σωληνώσεις."
  },
  {
   "id": "3.6",
   "en": "Sometimes there's a shower tray that's been leaking quietly for years.",
   "tts": "Sometimes there's a shower tray that's been leaking quietly for years.",
-  "gr": "Και καμιά φορά υπάρχει μια ντουζιέρα που χάνει νερό αθόρυβα εδώ και χρόνια."
+  "gr": "Καμιά φορά, μια βάση ντουζιέρας χάνει αθόρυβα νερό εδώ και χρόνια."
  },
  {
   "id": "3.7",
@@ -147,7 +147,7 @@
   "id": "3.8",
   "en": "Moving a toilet or a shower costs more than keeping it in place, so it's worth deciding early.",
   "tts": "Moving a toilet or a shower costs more than keeping it in place, so it's worth deciding early.",
-  "gr": "Αν μετακινήσετε τη λεκάνη ή το ντους, κοστίζει περισσότερο απ' το να μείνουν εκεί που είναι. Γι' αυτό αξίζει να το αποφασίσετε νωρίς."
+  "gr": "Η μετακίνηση της λεκάνης ή του ντους κοστίζει περισσότερο, γι' αυτό αξίζει να το αποφασίσετε νωρίς."
  },
  {
   "id": "3.9",
@@ -165,7 +165,7 @@
   "id": "3.11",
   "en": "We're always happy to explain, in plain language, what's likely to apply to your building.",
   "tts": "We're always happy to explain, in plain language, what's likely to apply to your building.",
-  "gr": "Εμείς είμαστε πάντα πρόθυμοι να σας εξηγήσουμε, με απλά λόγια, τι πιθανόν ισχύει για το δικό σας κτίριο."
+  "gr": "Είμαστε πάντα πρόθυμοι να σας εξηγήσουμε απλά τι πιθανότατα ισχύει για το κτίριό σας."
  },
  {
   "id": "4.1",
@@ -177,7 +177,7 @@
   "id": "4.2",
   "en": "Out come the old tiles, the sanitaryware, and any rotten flooring.",
   "tts": "Out come the old tiles, the sanitaryware, and any rotten flooring.",
-  "gr": "Βγαίνουν τα παλιά πλακάκια, τα είδη υγιεινής, και ό,τι πάτωμα έχει σαπίσει."
+  "gr": "Βγαίνουν τα παλιά πλακάκια, τα είδη υγιεινής και ό,τι πάτωμα έχει σαπίσει."
  },
  {
   "id": "4.3",
@@ -195,19 +195,19 @@
   "id": "4.5",
   "en": "That's normal. What matters is how it's handled.",
   "tts": "That's normal. What matters is how it's handled.",
-  "gr": "Αυτό είναι φυσιολογικό. Σημασία έχει πώς το χειρίζεται κανείς."
+  "gr": "Είναι φυσιολογικό. Σημασία έχει ο χειρισμός."
  },
  {
   "id": "4.6",
   "en": "A good contractor tells you straight away and shows you photos, rather than quietly adding a charge later.",
   "tts": "A good contractor tells you straight away and shows you photos, rather than quietly adding a charge later.",
-  "gr": "Ένας σωστός εργολάβος σας το λέει αμέσως και σας δείχνει φωτογραφίες. Δεν σας βάζει σιωπηλά μια επιπλέον χρέωση αργότερα."
+  "gr": "Ένας σωστός εργολάβος σας το λέει αμέσως και σας δείχνει φωτογραφίες, αντί να σας χρεώσει κρυφά κάτι παραπάνω αργότερα."
  },
  {
   "id": "4.7",
   "en": "That's how we work, because honest communication matters more to us than any single job.",
   "tts": "That's how we work, because honest communication matters more to us than any single job.",
-  "gr": "Έτσι δουλεύουμε εμείς, γιατί η ειλικρινής επικοινωνία μάς νοιάζει περισσότερο από οποιαδήποτε μεμονωμένη δουλειά."
+  "gr": "Έτσι δουλεύουμε, γιατί η ειλικρινής επικοινωνία μετράει πιο πολύ από οποιαδήποτε δουλειά."
  },
  {
   "id": "4.8",
@@ -231,13 +231,13 @@
   "id": "5.2",
   "en": "If this is useful, please subscribe.",
   "tts": "If this is useful, please subscribe.",
-  "gr": "Αν σας φαίνεται χρήσιμο, κάντε εγγραφή στο κανάλι."
+  "gr": "Αν σας φαίνεται χρήσιμο, κάντε εγγραφή."
  },
  {
   "id": "5.3",
   "en": "Soon we're covering how to turn an old Cyprus apartment into a modern rental.",
   "tts": "Soon we're covering how to turn an old Cyprus apartment into a modern rental.",
-  "gr": "Σύντομα θα δούμε πώς ένα παλιό διαμέρισμα στην Κύπρο γίνεται σύγχρονο διαμέρισμα για ενοικίαση."
+  "gr": "Σύντομα θα δούμε πώς ένα παλιό διαμέρισμα στην Κύπρο γίνεται μοντέρνο για ενοικίαση."
  },
  {
   "id": "5.4",
@@ -255,7 +255,7 @@
   "id": "6.1",
   "en": "Step three is first fix.",
   "tts": "Step three is first fix.",
-  "gr": "Το τρίτο βήμα είναι η πρώτη φάση των εργασιών."
+  "gr": "Το τρίτο βήμα: οι εγκαταστάσεις."
  },
  {
   "id": "6.2",
@@ -267,7 +267,7 @@
   "id": "6.3",
   "en": "New supply pipes, new waste lines, and a proper fall on the drain, so water actually leaves the room.",
   "tts": "New supply pipes, new waste lines, and a proper fall on the drain, so water actually leaves the room.",
-  "gr": "Καινούργιοι σωλήνες παροχής, καινούργιες αποχετεύσεις, και σωστή κλίση προς το σιφόνι, για να φεύγει πραγματικά το νερό από το μπάνιο."
+  "gr": "Καινούργιοι σωλήνες παροχής και αποχέτευσης, με σωστή κλίση, για να φεύγει πραγματικά το νερό από το μπάνιο."
  },
  {
   "id": "6.4",
@@ -285,7 +285,7 @@
   "id": "6.6",
   "en": "Please don't let anyone convince you this is a place to save money.",
   "tts": "Please don't let anyone convince you this is a place to save money.",
-  "gr": "Σας παρακαλούμε, μην αφήσετε κανέναν να σας πείσει ότι εδώ μπορείτε να κάνετε οικονομία."
+  "gr": "Σας παρακαλούμε, μην αφήσετε κανέναν να σας πείσει να κάνετε οικονομία εδώ."
  },
  {
   "id": "6.7",
@@ -303,7 +303,7 @@
   "id": "7.1",
   "en": "Here's the step we promised. Waterproofing.",
   "tts": "Here's the step we promised. Waterproofing.",
-  "gr": "Και τώρα, το βήμα που σας υποσχεθήκαμε. Η στεγανοποίηση."
+  "gr": "Και τώρα, το βήμα που υποσχεθήκαμε. Η στεγανοποίηση."
  },
  {
   "id": "7.2",
@@ -315,19 +315,19 @@
   "id": "7.3",
   "en": "and seal the corners and joints with tape.",
   "tts": "and seal the corners and joints with tape.",
-  "gr": "και σφραγίζουμε τις γωνίες και τους αρμούς με ταινία."
+  "gr": "και σφραγίζουμε γωνίες και αρμούς με ταινία."
  },
  {
   "id": "7.4",
   "en": "Then we let it cure fully, following the manufacturer's instructions.",
   "tts": "Then we let it cure fully, following the manufacturer's instructions.",
-  "gr": "Μετά την αφήνουμε να στεγνώσει τελείως, όπως λένε οι οδηγίες του κατασκευαστή."
+  "gr": "Μετά την αφήνουμε να στεγνώσει πλήρως, όπως ορίζει ο κατασκευαστής."
  },
  {
   "id": "7.5",
   "en": "You never see this layer once the tiles are on.",
   "tts": "You never see this layer once the tiles are on.",
-  "gr": "Αυτό το στρώμα δεν το βλέπετε ποτέ, μόλις μπουν τα πλακάκια."
+  "gr": "Μόλις μπουν τα πλακάκια, το στρώμα αυτό δεν φαίνεται."
  },
  {
   "id": "7.6",
@@ -339,7 +339,7 @@
   "id": "7.7",
   "en": "When it fails, the water goes into the wall, or through to the neighbour below.",
   "tts": "When it fails, the water goes into the wall, or through to the neighbour below.",
-  "gr": "Όταν αποτύχει, το νερό μπαίνει μέσα στον τοίχο, ή κατεβαίνει στον γείτονα από κάτω."
+  "gr": "Όταν αποτύχει, το νερό μπαίνει στον τοίχο ή κατεβαίνει στον γείτονα από κάτω."
  },
  {
   "id": "7.8",
@@ -351,7 +351,7 @@
   "id": "7.9",
   "en": "This is the most expensive shortcut in any bathroom.",
   "tts": "This is the most expensive shortcut in any bathroom.",
-  "gr": "Είναι η πιο ακριβή οικονομία που μπορείτε να κάνετε σε ένα μπάνιο."
+  "gr": "Είναι η πιο ακριβή οικονομία που γίνεται σε ένα μπάνιο."
  },
  {
   "id": "7.10",
@@ -369,7 +369,7 @@
   "id": "8.1",
   "en": "Step five is tiling. Good tiling is mostly preparation.",
   "tts": "Step five is tiling. Good tiling is mostly preparation.",
-  "gr": "Το πέμπτο βήμα είναι τα πλακάκια. Το καλό πλακάκωμα είναι κυρίως προετοιμασία."
+  "gr": "Το πέμπτο βήμα είναι τα πλακάκια. Το καλό στρώσιμο είναι κυρίως προετοιμασία."
  },
  {
   "id": "8.2",
@@ -387,7 +387,7 @@
   "id": "8.4",
   "en": "Even spacing. And a plan for where the cuts fall, so you don't end up with thin slivers by the door.",
   "tts": "Even spacing. And a plan for where the cuts fall, so you don't end up with thin slivers by the door.",
-  "gr": "Ομοιόμορφοι αρμοί. Και ένα σχέδιο για το πού θα πέσουν τα κοψίματα, για να μη μείνουν στενές λωρίδες δίπλα στην πόρτα."
+  "gr": "Ομοιόμορφοι αρμοί. Και σχέδιο για το πού θα πέσουν τα κοψίματα, για να μη μείνουν λωρίδες δίπλα στην πόρτα."
  },
  {
   "id": "8.5",
@@ -411,7 +411,7 @@
   "id": "8.8",
   "en": "Rigid grout in a corner will crack.",
   "tts": "Rigid grout in a corner will crack.",
-  "gr": "Ο σκληρός αρμόστοκος σε μια γωνία θα ραγίσει."
+  "gr": "Ο σκληρός αρμόστοκος στη γωνία ραγίζει."
  },
  {
   "id": "8.9",
@@ -429,25 +429,25 @@
   "id": "9.2",
   "en": "Toilet, basin, shower, taps, mirror, lighting, and the final clean.",
   "tts": "Toilet, basin, shower, taps, mirror, lighting, and the final clean.",
-  "gr": "Λεκάνη, νιπτήρας, ντους, μπαταρίες, καθρέφτης, φωτισμός, και το τελικό καθάρισμα."
+  "gr": "Λεκάνη, νιπτήρας, ντους, μπαταρίες, καθρέφτης, φωτισμός και το τελικό καθάρισμα."
  },
  {
   "id": "9.3",
   "en": "We check every tap, flush every cistern, and run the shower for a while, to confirm there are no drips and the drain keeps up.",
   "tts": "We check every tap, flush every cistern, and run the shower for a while, to confirm there are no drips and the drain keeps up.",
-  "gr": "Ελέγχουμε κάθε βρύση, τραβούμε κάθε καζανάκι, και αφήνουμε το ντους να τρέξει για λίγη ώρα, για να σιγουρευτούμε ότι δεν στάζει τίποτα και ότι η αποχέτευση προλαβαίνει."
+  "gr": "Ελέγχουμε κάθε βρύση, τραβούμε κάθε καζανάκι και αφήνουμε το ντους να τρέξει λίγη ώρα, να δούμε ότι δεν στάζει τίποτα κι ότι η αποχέτευση προλαβαίνει."
  },
  {
   "id": "9.4",
   "en": "Then we do a walkthrough with you and make a snag list, so any small things are fixed before we leave.",
   "tts": "Then we do a walkthrough with you and make a snag list, so any small things are fixed before we leave.",
-  "gr": "Μετά κάνουμε μαζί σας μια βόλτα στον χώρο και γράφουμε μια λίστα με τις μικρές εκκρεμότητες, ώστε να διορθωθούν όλες πριν φύγουμε."
+  "gr": "Μετά ελέγχουμε μαζί σας τον χώρο και γράφουμε τις μικρές εκκρεμότητες, για να διορθωθούν πριν φύγουμε."
  },
  {
   "id": "9.5",
   "en": "We want you to be happy with the room, not just to have finished the job.",
   "tts": "We want you to be happy with the room, not just to have finished the job.",
-  "gr": "Θέλουμε να είστε ευχαριστημένοι με το μπάνιο σας, όχι απλώς να έχουμε τελειώσει τη δουλειά."
+  "gr": "Θέλουμε να είστε ευχαριστημένοι με τον χώρο, όχι απλώς να τελειώσει η δουλειά."
  },
  {
   "id": "10.1",
@@ -459,13 +459,13 @@
   "id": "10.2",
   "en": "That depends on the size, the tiles, the fixtures, and what we find behind the walls.",
   "tts": "That depends on the size, the tiles, the fixtures, and what we find behind the walls.",
-  "gr": "Εξαρτάται από το μέγεθος, τα πλακάκια, τα είδη που θα διαλέξετε, και από το τι θα βρούμε πίσω από τους τοίχους."
+  "gr": "Εξαρτάται από το μέγεθος, τα πλακάκια, τα είδη υγιεινής και το τι θα βρούμε πίσω από τους τοίχους."
  },
  {
   "id": "10.3",
   "en": "So we won't guess on camera.",
   "tts": "So we won't guess on camera.",
-  "gr": "Γι' αυτό δεν θα μαντέψουμε μπροστά στην κάμερα."
+  "gr": "Γι' αυτό δεν θα μαντέψουμε εδώ."
  },
  {
   "id": "10.6",
@@ -477,7 +477,7 @@
   "id": "10.7",
   "en": "That's why we visit, listen to what you want, and give you a clear written quote,",
   "tts": "That's why we visit, listen to what you want, and give you a clear written quote,",
-  "gr": "Γι' αυτό ερχόμαστε στον χώρο, ακούμε τι θέλετε, και σας δίνουμε μια καθαρή γραπτή προσφορά,"
+  "gr": "Γι' αυτό ερχόμαστε να δούμε, ακούμε τι θέλετε και σας δίνουμε σαφή γραπτή προσφορά,"
  },
  {
   "id": "10.8",
@@ -489,19 +489,19 @@
   "id": "11.1",
   "en": "That's a bathroom, from old to new.",
   "tts": "That's a bathroom, from old to new.",
-  "gr": "Αυτό ήταν ένα μπάνιο, από παλιό σε καινούργιο."
+  "gr": "Έτσι ένα παλιό μπάνιο γίνεται καινούργιο."
  },
  {
   "id": "11.2",
   "en": "If it helped, please subscribe.",
   "tts": "If it helped, please subscribe.",
-  "gr": "Αν σας βοήθησε, κάντε εγγραφή στο κανάλι."
+  "gr": "Αν σας βοήθησε, κάντε εγγραφή."
  },
  {
   "id": "11.3",
   "en": "In the next video, we'll turn an old Cyprus apartment into a modern rental, with a full walkthrough.",
   "tts": "In the next video, we'll turn an old Cyprus apartment into a modern rental, with a full walkthrough.",
-  "gr": "Στο επόμενο βίντεο θα κάνουμε ένα παλιό διαμέρισμα στην Κύπρο σύγχρονο διαμέρισμα για ενοικίαση, με πλήρη ξενάγηση."
+  "gr": "Στο επόμενο βίντεο, ένα παλιό διαμέρισμα στην Κύπρο γίνεται μοντέρνο για ενοικίαση, με πλήρη ξενάγηση."
  },
  {
   "id": "11.4",
@@ -513,12 +513,12 @@
   "id": "11.5",
   "en": "Message us on WhatsApp. The number is in the description, or use the link there, and we'll talk it through.",
   "tts": "Message us on WhatsApp. The number is in the description, or use the link there, and we'll talk it through.",
-  "gr": "Στείλτε μας μήνυμα στο WhatsApp. Ο αριθμός είναι στην περιγραφή, ή πατήστε τον σύνδεσμο εκεί, και θα τα συζητήσουμε."
+  "gr": "Στείλτε μας μήνυμα στο WhatsApp. Ο αριθμός και ο σύνδεσμος είναι στην περιγραφή, και θα τα συζητήσουμε."
  },
  {
   "id": "11.6",
   "en": "Thank you for watching, and take care.",
   "tts": "Thank you for watching, and take care.",
-  "gr": "Σας ευχαριστούμε που μας παρακολουθήσατε. Να είστε καλά."
+  "gr": "Ευχαριστούμε που μας παρακολουθήσατε. Να είστε καλά."
  }
 ]

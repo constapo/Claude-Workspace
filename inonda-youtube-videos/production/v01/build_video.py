@@ -33,34 +33,70 @@ def ts(t):
     return f"{int(h):02d}:{int(m):02d}:{int(s):02d},{int(round((s % 1) * 1000)) % 1000:03d}"
 
 
-def split_cue(text, a, b, limit=84):
-    """Split a long subtitle into readable parts, timed by length."""
-    parts, cur = [], ""
-    for chunk in [c for c in text.replace(", ", ",| ").replace(". ", ".| ").split("| ")]:
-        if cur and len(cur) + len(chunk) > limit:
-            parts.append(cur.strip())
-            cur = ""
-        cur += chunk + " "
-    parts.append(cur.strip())
+# Short Greek/English function words that must not end a subtitle line ("the | roof").
+GLUE = set("""ο η το οι τα τον την τη του της των τους τις στο στον στην στη στα στους στις σε με
+για από υπό προς να θα και κι ή αν που πως πώς ότι τι κάθε μια ένα έναν μη μην δεν πιο ως
+a an the of to in on at by for and or with""".split())
+WIDTH, MAX_CUE = 48, 2 * 48         # chars per line (fits ~1700 px at FontSize 18); longer cues are split
+
+
+def _bad_end(words):
+    return words[-1].lower().strip(",.") in GLUE
+
+
+def wrap2(text, width=WIDTH):
+    """At most two lines, broken near the middle, never after an article/preposition,
+    preferably after punctuation."""
+    if len(text) <= width:
+        return text
+    words, best = text.split(), None
+    for i in range(1, len(words)):
+        l1, l2 = " ".join(words[:i]), " ".join(words[i:])
+        score = max(len(l1), len(l2)) + (100 if max(len(l1), len(l2)) > width else 0)
+        score += 30 if _bad_end(words[:i]) else 0
+        score += 15 if len(words[i:]) == 1 or i == 1 else 0           # orphan word
+        score -= 10 if l1[-1] in ",.;:?" else 0
+        if best is None or score < best[0]:
+            best = (score, l1 + "\n" + l2)
+    return best[1]
+
+
+def _split2(text):
+    """Best single split of a long cue: at a sentence/comma break if one gives two parts that
+    each fit two lines and are not tiny; otherwise at the most central allowed word break."""
+    words, best = text.split(), None
+    for i in range(1, len(words)):
+        p1, p2 = " ".join(words[:i]), " ".join(words[i:])
+        score = max(len(p1), len(p2))
+        if min(len(p1), len(p2)) < 22:
+            score += 200                                              # no flash cues
+        if p1[-1] in ".?!;":
+            score -= 40
+        elif p1[-1] in ",:":
+            score -= 25
+        elif _bad_end(words[:i]):
+            score += 60
+        if best is None or score < best[0]:
+            best = (score, p1, p2)
+    return best[1], best[2]
+
+
+def split_cue(text, a, b, limit=MAX_CUE):
+    """Split a long subtitle into readable parts (each at most two lines), timed by length."""
+    parts, todo = [], [text]
+    while todo:
+        p = todo.pop(0)
+        if len(p) <= limit and max(map(len, wrap2(p).split("\n"))) <= WIDTH:
+            parts.append(p)
+        else:
+            p1, p2 = _split2(p)
+            todo[:0] = [p1, p2]
     total, t, out = sum(len(p) for p in parts), a, []
     for p in parts:
         e = t + (b - a) * len(p) / total
         out.append((t, e, p))
         t = e
     return out
-
-
-def wrap2(text, width=48):
-    """Two lines at most, broken near the middle."""
-    if len(text) <= width:
-        return text
-    words, best = text.split(), None
-    for i in range(1, len(words)):
-        l1, l2 = " ".join(words[:i]), " ".join(words[i:])
-        score = max(len(l1), len(l2))
-        if best is None or score < best[0]:
-            best = (score, l1 + "\n" + l2)
-    return best[1]
 
 
 def main():
@@ -114,13 +150,13 @@ def main():
     for lang in ("gr", "en"):
         n, out = 1, []
         for x in timeline:
-            for a, b, txt in split_cue(x[lang], x["start"], x["start"] + x["speech"] + min(x["gap"], 0.3)):
+            for a, b, txt in split_cue(x[lang], x["start"], x["start"] + x["slot"] - 0.1):
                 out.append(f"{n}\n{ts(a)} --> {ts(b)}\n{wrap2(txt)}\n")
                 n += 1
         open(os.path.join(B, f"v01.{lang}.srt"), "w", encoding="utf-8").write("\n".join(out))
 
-    style = ("FontName=DejaVu Sans,FontSize=20,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,"
-             "BackColour=&H80000000,BorderStyle=1,Outline=2.2,Shadow=1,Alignment=2,MarginV=38")
+    style = ("FontName=DejaVu Sans,FontSize=18,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,"
+             "BackColour=&H80000000,BorderStyle=1,Outline=2.2,Shadow=1,Alignment=2,MarginV=44")
     srt = os.path.join(B, "v01.gr.srt").replace(":", r"\:")
     run("ffmpeg", "-y", "-loglevel", "error", "-i", picture, "-i", voice, "-map", "0:v", "-map", "1:a",
         "-vf", f"subtitles='{srt}':fontsdir={FONT_DIR}:force_style='{style}'",
