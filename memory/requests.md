@@ -215,6 +215,15 @@ Format: date · what was asked · what was done / status.
     checks the render). "Co-workers" stay FREE ones only (CLAUDE.md free-tools rule): no paid
     services or paid people.
 
+37. **"Add serena_jetbrains_plugin to improve your own code day by day."** (2026-10-15) → Serena's
+    core is free (MIT) but its JetBrains plugin is PAID and needs a JetBrains IDE running on the
+    owner's computer, so it cannot run in the cloud session and conflicts with the free-tools rule.
+    Owner allowed committing the free Serena config: project MCP server in `.mcp.json`
+    (`uvx --from serena-agent serena start-mcp-server --context claude-code --language-backend LSP`),
+    project config in `.serena/`. Tested: starts and activates project "Dope". Loads in the next
+    session (approve the project MCP server when asked). JetBrains backend later only if the owner
+    buys the plugin: change `--language-backend LSP` to `JetBrains`.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "serena": {
+      "command": "uvx",
+      "args": ["--from", "serena-agent", "serena", "start-mcp-server",
+               "--context", "claude-code", "--project-from-cwd",
+               "--language-backend", "LSP",
+               "--enable-web-dashboard", "false", "--open-web-dashboard", "false"]
+    }
+  }
+}
