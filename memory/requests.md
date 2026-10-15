@@ -249,6 +249,14 @@ Format: date · what was asked · what was done / status.
     exception to CLAUDE.md video rule 2 for this scene. Put into `edl.json` (7.5 in 0.4 s,
     7.6 in 3.5 s, 7.7 in 5.7 s). Other diagrams still need a yes each.
 
+41. **Install the website-cloner skill** (`andreasskyt/claude-website-cloner-skill`, MIT) + Playwright.
+    (2026-10-15) → Read first (2 scripts, browser + file writes only). Installed to
+    `~/.claude/skills/website-cloner` (user-level, in this container only – a new cloud session
+    starts without it unless it is copied into the repo's `.claude/skills/`). Playwright pinned to
+    1.56.0 to match the pre-installed Chromium (build 1194; newest Playwright wants 1248). Did not
+    run `playwright install chromium` (environment says not to re-download). Tested: screenshot OK.
+    Note: sites blocked by the network policy (pixabay, pexels, …) still cannot be opened.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
