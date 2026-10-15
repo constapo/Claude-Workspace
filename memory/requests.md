@@ -257,6 +257,13 @@ Format: date · what was asked · what was done / status.
     run `playwright install chromium` (environment says not to re-download). Tested: screenshot OK.
     Note: sites blocked by the network policy (pixabay, pexels, …) still cannot be opened.
 
+42. **"Use the model tweening_conv3d."** (2026-10-15) → Found it: Google's 2019 TF Hub research
+    model "Video inbetweening using 3D convolutions". Not usable for our videos: 64×64-pixel output,
+    trained only on a robot arm (BAIR) and people walking (KTH), needs real start/end frames, and
+    TF Hub/Kaggle is blocked here. Used the same idea in a free, useful form instead: FFmpeg
+    motion-interpolated slow motion (`minterpolate`, mci) in `build_video.py` for clips slowed to fit
+    a narration line. Tested on a stock clip at half speed: smooth, no artefacts.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.

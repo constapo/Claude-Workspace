@@ -137,7 +137,10 @@ def main():
             avail = dur(clip) - e.get("in", 0)
             speed = min(1.0, avail / x["slot"])          # <1 = slow motion to fill the slot
             seg = os.path.join(seg_dir, f"v_{i:03d}.mp4")
-            vf = (f"setpts=PTS/{max(speed, 0.5):.4f},scale=1920:1080:force_original_aspect_ratio=increase,"
+            # Slowed clips get motion-interpolated in-between frames (free, local FFmpeg) instead of
+            # repeated frames, so slow motion stays smooth.
+            interp = ",minterpolate=fps=30:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1" if speed < 0.95 else ""
+            vf = (f"setpts=PTS/{max(speed, 0.5):.4f}{interp},scale=1920:1080:force_original_aspect_ratio=increase,"
                   f"crop=1920:1080,fps=30,format=yuv420p")
             loop = ["-stream_loop", "-1"] if speed < 0.5 else []
             run("ffmpeg", "-y", "-loglevel", "error", *loop, "-ss", str(e.get("in", 0)), "-i", clip, "-t",
