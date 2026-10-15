@@ -203,6 +203,18 @@ Format: date · what was asked · what was done / status.
     subtitle cue / every N s / per stock clip, and web-page screenshots with the pre-installed
     Chromium, which Claude opens and looks at before showing any video. Tested (Greek labels OK).
 
+35. **"Push the GitHub fetcher" / "keep going and show me the finished video."** (2026-10-15) →
+    Pushed `.github/workflows/fetch-stock.yml`; run #1 downloads free stock candidates on GitHub's
+    runners into branch `stock-media-v01`. English voice made with free Kokoro (voice `am_michael`,
+    87 lines, 5:46 of speech). Pipeline: `production/v01/make_lines.py` → `lines.json`,
+    `make_voice.py`, `build_video.py` (Greek subtitles burned in, 1080p, -14 LUFS).
+
+36. **"Using agents and co-workers from all over the internet, by all means, is mandatory."**
+    (2026-10-15) → Standing rule: use the project's agent crew in parallel for every video
+    (researcher picks footage, captioner checks Greek, packager writes YouTube texts, QA reviewer
+    checks the render). "Co-workers" stay FREE ones only (CLAUDE.md free-tools rule): no paid
+    services or paid people.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
