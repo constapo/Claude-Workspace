@@ -264,6 +264,12 @@ Format: date · what was asked · what was done / status.
     motion-interpolated slow motion (`minterpolate`, mci) in `build_video.py` for clips slowed to fit
     a narration line. Tested on a stock clip at half speed: smooth, no artefacts.
 
+43. **"Add the model VideoFlow."** (2026-10-15) → Found: Google Research 2019/ICLR 2020 flow-based
+    video PREDICTION (continues given frames), tested on the BAIR robot-arm dataset at research
+    size, code in deprecated tensor2tensor (TF1). Not usable: cannot create new scenes or realistic
+    1080p footage. Modern free equivalent already set up: Wan 2.2 via Kaggle (item 38), waiting
+    for the KAGGLE_* repo secrets.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
