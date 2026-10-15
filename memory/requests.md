@@ -270,6 +270,12 @@ Format: date · what was asked · what was done / status.
     1080p footage. Modern free equivalent already set up: Wan 2.2 via Kaggle (item 38), waiting
     for the KAGGLE_* repo secrets.
 
+44. **Owner sent dreamstime.com/stock-footage/grouting.html** (2026-10-15) → Not used: Dreamstime
+    footage is paid (per-clip licence) and free previews are watermarked – breaks the free-tools
+    rule and the no-watermark rule. Same footage exists free on Pixabay/Pexels; still waiting for
+    the repo secrets (runs 2/3 of kaggle-ai-clip showed no KAGGLE_*/PIXABAY_* secret or variable
+    in constapo/Dope).
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
