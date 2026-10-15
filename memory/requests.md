@@ -224,6 +224,18 @@ Format: date · what was asked · what was done / status.
     session (approve the project MCP server when asked). JetBrains backend later only if the owner
     buys the plugin: change `--language-backend LSP` to `JetBrains`.
 
+38. **"Find all free AI video generators; install what can be used as agents/co-workers."**
+    (2026-10-15) → Research in `.claude/skills/video-production/FREE-AI-VIDEO.md`: no hosted free
+    tier is usable (watermark / no commercial use); open models are (Wan 2.2 Apache-2.0, Kandinsky 6
+    MIT; HunyuanVideo excluded in the EU). Owner's PC has Intel Iris (no NVIDIA) → cannot run them.
+    Route chosen: Kaggle free GPU driven from GitHub Actions (`.github/workflows/kaggle-ai-clip.yml`,
+    `production/v01/ai/kaggle/gen_clip.py`, `ai/prompts.json`, test clip V01-01 only). Owner's Kaggle
+    user: constantinapopei. Owner shared a Kaggle API token in chat: stored only in
+    `~/.kaggle/access_token` of that session (not in git); the container cannot reach api.kaggle.com,
+    so the owner must add it as GitHub repo secret `KAGGLE_API_TOKEN` (and should regenerate it,
+    since it was pasted in chat). Importing 5 MIT video skills was refused by the safety check;
+    waits for the owner to allow it in Claude Code, or say "text-only".
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.

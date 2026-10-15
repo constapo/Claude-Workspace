@@ -1,0 +1,70 @@
+# Generates AI clips for free on Kaggle's GPU (open Wan models) and pushes them to branch
+# ai-media-v01. Needs repo secret KAGGLE_API_TOKEN (Kaggle → Settings → API → token).
+# Runs when the prompts file changes, or by hand.
+name: kaggle-ai-clip
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - inonda-youtube-videos/production/v01/ai/prompts.json
+      - inonda-youtube-videos/production/v01/ai/kaggle/gen_clip.py
+permissions:
+  contents: write
+env:
+  KAGGLE_USER: constantinapopei
+  SLUG: inonda-v01-ai-clip
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check secret
+        env:
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+        run: |
+          if [ -z "$KAGGLE_API_TOKEN" ]; then echo "::error::Add repo secret KAGGLE_API_TOKEN first"; exit 1; fi
+      - run: pip install -q kaggle
+      - name: Push notebook to Kaggle (free T4 GPU)
+        env:
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+        run: |
+          mkdir -p /tmp/k && cp inonda-youtube-videos/production/v01/ai/kaggle/gen_clip.py inonda-youtube-videos/production/v01/ai/prompts.json /tmp/k/
+          python3 - <<'EOF'
+          import json, os
+          code = open("/tmp/k/gen_clip.py").read()
+          prompts = open("/tmp/k/prompts.json").read()
+          # Kaggle script kernels are one file: embed prompts.json next to the script at runtime.
+          code = ("import os\nos.makedirs('/kaggle/working', exist_ok=True)\n"
+                  f"open('prompts.json','w').write({prompts!r})\n") + code
+          open("/tmp/k/gen_clip.py", "w").write(code)
+          json.dump({"id": f"{os.environ['KAGGLE_USER']}/{os.environ['SLUG']}", "title": os.environ["SLUG"],
+                     "code_file": "gen_clip.py", "language": "python", "kernel_type": "script",
+                     "is_private": True, "enable_gpu": True, "enable_internet": True,
+                     "dataset_sources": [], "competition_sources": [], "kernel_sources": []},
+                    open("/tmp/k/kernel-metadata.json", "w"))
+          EOF
+          rm /tmp/k/prompts.json
+          kaggle kernels push -p /tmp/k --accelerator NvidiaTeslaT4 || kaggle kernels push -p /tmp/k
+      - name: Wait for Kaggle to finish
+        env:
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+        run: |
+          for i in $(seq 1 330); do
+            s=$(kaggle kernels status "$KAGGLE_USER/$SLUG" 2>&1 || true); echo "$(date -u +%H:%M) $s"
+            case "$s" in *complete*|*COMPLETE*) exit 0;; *error*|*ERROR*|*cancel*|*CANCEL*) exit 1;; esac
+            sleep 60
+          done; exit 1
+      - name: Download output
+        if: always()
+        env:
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+        run: mkdir -p /tmp/out && kaggle kernels output "$KAGGLE_USER/$SLUG" -p /tmp/out || true; ls -la /tmp/out
+      - name: Push clips to media branch
+        if: always()
+        run: |
+          cd /tmp/out && ls *.mp4 >/dev/null 2>&1 || ls *.json >/dev/null 2>&1 || exit 0
+          git init -q -b ai-media-v01
+          git config user.name "github-actions"; git config user.email "github-actions@users.noreply.github.com"
+          git add -A && git commit -qm "AI clips v01 (${GITHUB_SHA::7})"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git" ai-media-v01

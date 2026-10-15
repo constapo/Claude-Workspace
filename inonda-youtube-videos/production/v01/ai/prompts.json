@@ -1,0 +1,10 @@
+{
+  "_note": "AI clips generated FREE on Kaggle's GPU by .github/workflows/kaggle-ai-clip.yml. Test clip first (CLAUDE.md rule 4): only V01-01 until the owner approves the look. Every prompt gets the realism guard from shot-list.md appended by the script.",
+  "clips": [
+    {
+      "id": "V01-01",
+      "line": "1.1 Cracked tiles.",
+      "prompt": "Slow handheld push-in close-up on a cracked, chipped beige ceramic wall tile beside a shower in an old 1990s bathroom, grout lines stained dark, slight dust and soap scum, soft window daylight from the side, 50mm lens, shallow depth of field."
+    }
+  ]
+}
