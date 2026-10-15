@@ -1,31 +1,315 @@
 {
-  "_note": "Search terms per narration line for video 01. Read by tools/video/fetch_stock.py (run in GitHub Actions). Edit and push this file to fetch again.",
-  "per_shot": 4,
-  "max_seconds": 20,
-  "shots": [
-    {"id": "1.1", "line": "Cracked tiles.", "queries": ["cracked tiles", "broken tile floor", "damaged bathroom tiles"]},
-    {"id": "1.2", "line": "A damp ceiling.", "queries": ["damp ceiling", "mould ceiling", "water stain ceiling", "mold wall"]},
-    {"id": "1.3", "line": "A shower that never drains properly.", "queries": ["shower drain water", "shower drain", "water draining shower floor"]},
-    {"id": "1.5", "line": "old to new, step by step", "queries": ["bathroom renovation", "bathroom remodel", "modern bathroom"]},
-    {"id": "1.6", "line": "the one step that nobody sees (waterproofing)", "queries": ["waterproofing", "waterproof membrane", "liquid waterproofing roller"]},
-    {"id": "2.1", "line": "We're Inonda Limited.", "queries": ["renovation worker", "construction worker interior", "handyman tools"]},
-    {"id": "2.2", "line": "homes and apartments across Cyprus", "queries": ["cyprus", "apartment building mediterranean", "white houses sunny"]},
-    {"id": "2.3", "line": "repairs, bathrooms, kitchens, damp, painting, roofing", "queries": ["painting wall roller", "kitchen renovation", "roof repair", "home repair"]},
-    {"id": "3.3", "line": "We check the walls for damp.", "queries": ["moisture meter", "damp wall"]},
-    {"id": "3.4", "line": "pipes, drain, electrics", "queries": ["plumbing pipes", "old pipes", "plumber"]},
-    {"id": "4.2", "line": "Out come the old tiles", "queries": ["tile removal", "demolition bathroom", "chisel tiles", "hammer drill wall"]},
-    {"id": "4.8", "line": "protect the rest of your home", "queries": ["floor protection construction", "rubble bags", "construction debris"]},
-    {"id": "6.3", "line": "New supply pipes, new waste lines", "queries": ["installing pipes", "plumber installing", "pex pipe"]},
-    {"id": "6.4", "line": "Electrics in a bathroom", "queries": ["electrician", "electrical wiring wall"]},
-    {"id": "6.7", "line": "pressure test", "queries": ["pressure gauge", "manometer"]},
-    {"id": "7.2", "line": "waterproof membrane on shower and floor", "queries": ["waterproofing bathroom", "waterproof coating floor", "applying membrane"]},
-    {"id": "8.2", "line": "Flat surfaces.", "queries": ["spirit level wall", "plastering wall"]},
-    {"id": "8.3", "line": "The correct adhesive", "queries": ["tile adhesive trowel", "notched trowel", "laying tiles"]},
-    {"id": "8.4", "line": "Even spacing", "queries": ["tiling", "tile spacers", "tiler"]},
-    {"id": "8.6", "line": "Then comes the grout.", "queries": ["grouting tiles", "grout"]},
-    {"id": "8.7", "line": "flexible sealant", "queries": ["silicone sealant", "caulking"]},
-    {"id": "9.2", "line": "Toilet, basin, shower, taps, mirror, lighting", "queries": ["toilet installation", "installing sink", "faucet installation", "shower head"]},
-    {"id": "9.3", "line": "check every tap, run the shower", "queries": ["water tap running", "shower running water", "faucet water"]},
-    {"id": "9.5", "line": "finished bathroom", "queries": ["luxury bathroom", "new bathroom interior", "bathroom interior"]}
-  ]
+ "_note": "Search terms per narration line for video 01. Read by tools/video/fetch_stock.py (run in GitHub Actions). Edit and push this file to fetch again.",
+ "per_shot": 4,
+ "max_seconds": 20,
+ "shots": [
+  {
+   "id": "1.1",
+   "line": "Cracked tiles.",
+   "queries": [
+    "cracked tile",
+    "broken bathroom tile",
+    "old bathroom tiles"
+   ]
+  },
+  {
+   "id": "1.2",
+   "line": "A damp ceiling.",
+   "queries": [
+    "mold on ceiling",
+    "ceiling water damage",
+    "damp wall mould"
+   ]
+  },
+  {
+   "id": "1.3",
+   "line": "A shower that never drains properly.",
+   "queries": [
+    "shower drain",
+    "water in shower tray",
+    "clogged drain"
+   ]
+  },
+  {
+   "id": "1.6",
+   "line": "waterproofing membrane",
+   "queries": [
+    "waterproofing bathroom floor",
+    "liquid membrane brush",
+    "bitumen waterproofing"
+   ]
+  },
+  {
+   "id": "2.1",
+   "line": "renovation workers (generic)",
+   "queries": [
+    "renovation",
+    "tradesman working",
+    "workers renovating apartment"
+   ]
+  },
+  {
+   "id": "2.2",
+   "line": "homes and apartments across Cyprus",
+   "queries": [
+    "mediterranean apartment building",
+    "whitewashed houses",
+    "limassol",
+    "nicosia street"
+   ]
+  },
+  {
+   "id": "2.3",
+   "line": "repairs, kitchens, painting, roofing",
+   "queries": [
+    "painter roller wall",
+    "kitchen installation",
+    "roofer",
+    "handyman repair"
+   ]
+  },
+  {
+   "id": "2.6",
+   "line": "Cyprus buildings in heat and rain",
+   "queries": [
+    "rain on roof",
+    "sunny apartment balcony",
+    "heat haze city"
+   ]
+  },
+  {
+   "id": "2.9",
+   "line": "before anyone picks up a hammer",
+   "queries": [
+    "hammer",
+    "demolition hammer",
+    "sledgehammer wall"
+   ]
+  },
+  {
+   "id": "3.3",
+   "line": "We check the walls for damp.",
+   "queries": [
+    "moisture meter wall",
+    "damp patch wall",
+    "peeling paint damp"
+   ]
+  },
+  {
+   "id": "3.5",
+   "line": "old galvanised pipework",
+   "queries": [
+    "rusty pipe",
+    "old plumbing",
+    "corroded pipe"
+   ]
+  },
+  {
+   "id": "3.7",
+   "line": "agree the layout",
+   "queries": [
+    "floor plan",
+    "architect drawing plan",
+    "measuring tape room"
+   ]
+  },
+  {
+   "id": "3.9",
+   "line": "building exterior / shared walls",
+   "queries": [
+    "apartment building exterior",
+    "residential building facade"
+   ]
+  },
+  {
+   "id": "4.1",
+   "line": "strip-out (generic)",
+   "queries": [
+    "demolition interior",
+    "removing tiles",
+    "renovation demolition"
+   ]
+  },
+  {
+   "id": "4.2",
+   "line": "Out come the old tiles",
+   "queries": [
+    "chisel tiles",
+    "demolition hammer tiles",
+    "bathroom demolition"
+   ]
+  },
+  {
+   "id": "4.4",
+   "line": "hidden leaks, walls not straight",
+   "queries": [
+    "water leak wall",
+    "leaking pipe",
+    "wet wall"
+   ]
+  },
+  {
+   "id": "4.6",
+   "line": "shows you photos",
+   "queries": [
+    "taking photo with phone",
+    "phone camera photo"
+   ]
+  },
+  {
+   "id": "4.9",
+   "line": "waste removed daily",
+   "queries": [
+    "rubble bags",
+    "construction waste",
+    "wheelbarrow rubble"
+   ]
+  },
+  {
+   "id": "6.2",
+   "line": "plumbing and electrics, walls open",
+   "queries": [
+    "plumber pipes wall",
+    "electrical wiring renovation",
+    "cable in wall"
+   ]
+  },
+  {
+   "id": "6.3",
+   "line": "New supply pipes, new waste lines",
+   "queries": [
+    "plumber installing pipe",
+    "pvc pipe",
+    "copper pipe soldering"
+   ]
+  },
+  {
+   "id": "6.7",
+   "line": "pressure test",
+   "queries": [
+    "pressure gauge pipe",
+    "manometer plumbing",
+    "water pressure gauge"
+   ]
+  },
+  {
+   "id": "7.2",
+   "line": "waterproof membrane on shower and floor",
+   "queries": [
+    "waterproofing",
+    "paint roller floor",
+    "applying coating floor"
+   ]
+  },
+  {
+   "id": "7.3",
+   "line": "seal corners with tape",
+   "queries": [
+    "tape corner",
+    "sealing tape",
+    "masking tape wall"
+   ]
+  },
+  {
+   "id": "7.10",
+   "line": "terraces and roofs",
+   "queries": [
+    "roof waterproofing",
+    "flat roof",
+    "terrace waterproofing"
+   ]
+  },
+  {
+   "id": "8.1",
+   "line": "Tiling",
+   "queries": [
+    "tiler",
+    "laying tiles",
+    "tile installation",
+    "bathroom tiling"
+   ]
+  },
+  {
+   "id": "8.2",
+   "line": "Flat surfaces.",
+   "queries": [
+    "spirit level",
+    "plastering",
+    "skim coat wall"
+   ]
+  },
+  {
+   "id": "8.3",
+   "line": "The correct adhesive",
+   "queries": [
+    "tile adhesive",
+    "notched trowel",
+    "mortar trowel"
+   ]
+  },
+  {
+   "id": "8.4",
+   "line": "Even spacing",
+   "queries": [
+    "tile spacers",
+    "ceramic tiles wall",
+    "tile cutter"
+   ]
+  },
+  {
+   "id": "8.6",
+   "line": "Then comes the grout.",
+   "queries": [
+    "grouting",
+    "grout float",
+    "tile grout"
+   ]
+  },
+  {
+   "id": "8.7",
+   "line": "flexible sealant",
+   "queries": [
+    "silicone gun",
+    "caulking bathtub",
+    "sealant bead"
+   ]
+  },
+  {
+   "id": "9.4",
+   "line": "walkthrough",
+   "queries": [
+    "new bathroom tour",
+    "bathroom interior modern",
+    "walking into bathroom"
+   ]
+  },
+  {
+   "id": "9.5",
+   "line": "finished bathroom",
+   "queries": [
+    "modern bathroom",
+    "bathroom interior",
+    "bathroom sink mirror"
+   ]
+  },
+  {
+   "id": "10.6",
+   "line": "see the room in person",
+   "queries": [
+    "inspecting wall",
+    "contractor inspection",
+    "measuring wall"
+   ]
+  },
+  {
+   "id": "11.4",
+   "line": "kitchen, damp wall, leaking terrace",
+   "queries": [
+    "kitchen interior",
+    "water stain wall",
+    "terrace rain"
+   ]
+  }
+ ],
+ "_note2": "2026-10-15: run 38786380337 returned 79 clips but only 8 usable; Wikimedia keyword search returns mostly off-topic files. Add free PEXELS_API_KEY / PIXABAY_API_KEY repo secrets – these queries are written for Pexels/Pixabay/Mixkit."
 }
