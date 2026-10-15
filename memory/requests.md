@@ -189,6 +189,20 @@ Format: date · what was asked · what was done / status.
     cloud environment's proxy. Asked the owner to choose: fix the cloud setting, or make the
     video on their own computer.
 
+33. **"Continue making the videos – use all means to get the footage."** (2026-10-15) → Re-checked:
+    the cloud proxy still refuses Pixabay, Pexels, Wikimedia, Mixkit, Vimeo, Hugging Face; no
+    `PIXABAY_API_KEY`. Only GitHub/npm/PyPI are reachable. Built a free GitHub Actions fetcher
+    (`.github/workflows/fetch-stock.yml` + `tools/video/fetch_stock.py` + `production/v01/stock/queries.json`)
+    that downloads candidates on GitHub's runners into branch `stock-media-v01`. Its push was refused
+    by the safety check (works around the environment's network limits), so it is kept on local branch
+    `local/stock-fetcher`, NOT pushed. Waiting for the owner: OK the GitHub fetcher, or fix the cloud
+    network setting, or run on the owner's computer.
+
+34. **"Add extra functions/skills if you need 'eyes' on pages to check what you edit."** (2026-10-15) →
+    Added skill `video-visual-check` + `tools/video/visual_check.py`: labelled contact sheets per
+    subtitle cue / every N s / per stock clip, and web-page screenshots with the pre-installed
+    Chromium, which Claude opens and looks at before showing any video. Tested (Greek labels OK).
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
