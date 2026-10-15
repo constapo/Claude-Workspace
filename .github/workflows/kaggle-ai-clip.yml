@@ -22,18 +22,21 @@ jobs:
       - uses: actions/checkout@v4
       - name: Check secret
         env:
-          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
-          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
-          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN || vars.KAGGLE_API_TOKEN }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME || vars.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY || vars.KAGGLE_KEY }}
         run: |
+          echo "Seen (names only, values hidden):"
+          echo "  secrets: KAGGLE_API_TOKEN=${{ secrets.KAGGLE_API_TOKEN != '' }} KAGGLE_USERNAME=${{ secrets.KAGGLE_USERNAME != '' }} KAGGLE_KEY=${{ secrets.KAGGLE_KEY != '' }} PIXABAY_API_KEY=${{ secrets.PIXABAY_API_KEY != '' }} PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY != '' }}"
+          echo "  variables: KAGGLE_API_TOKEN=${{ vars.KAGGLE_API_TOKEN != '' }} KAGGLE_USERNAME=${{ vars.KAGGLE_USERNAME != '' }} KAGGLE_KEY=${{ vars.KAGGLE_KEY != '' }}"
           if [ -z "$KAGGLE_API_TOKEN" ] && [ -z "$KAGGLE_KEY" ]; then echo "::error::Add repo secret KAGGLE_API_TOKEN, or KAGGLE_USERNAME + KAGGLE_KEY"; exit 1; fi
           [ -n "$KAGGLE_API_TOKEN" ] || echo "using KAGGLE_USERNAME/KAGGLE_KEY"
       - run: pip install -q kaggle
       - name: Push notebook to Kaggle (free T4 GPU)
         env:
-          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
-          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
-          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN || vars.KAGGLE_API_TOKEN }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME || vars.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY || vars.KAGGLE_KEY }}
         run: |
           mkdir -p /tmp/k && cp inonda-youtube-videos/production/v01/ai/kaggle/gen_clip.py inonda-youtube-videos/production/v01/ai/prompts.json /tmp/k/
           python3 - <<'EOF'
@@ -54,9 +57,9 @@ jobs:
           kaggle kernels push -p /tmp/k --accelerator NvidiaTeslaT4 || kaggle kernels push -p /tmp/k
       - name: Wait for Kaggle to finish
         env:
-          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
-          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
-          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN || vars.KAGGLE_API_TOKEN }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME || vars.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY || vars.KAGGLE_KEY }}
         run: |
           for i in $(seq 1 330); do
             s=$(kaggle kernels status "$KAGGLE_USER/$SLUG" 2>&1 || true); echo "$(date -u +%H:%M) $s"
@@ -66,9 +69,9 @@ jobs:
       - name: Download output
         if: always()
         env:
-          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
-          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
-          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN || vars.KAGGLE_API_TOKEN }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME || vars.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY || vars.KAGGLE_KEY }}
         run: mkdir -p /tmp/out && kaggle kernels output "$KAGGLE_USER/$SLUG" -p /tmp/out || true; ls -la /tmp/out
       - name: Push clips to media branch
         if: always()
