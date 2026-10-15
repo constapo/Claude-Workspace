@@ -17,10 +17,13 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: Which keys can this job see (names only)
+        run: |
+          echo "PIXABAY_API_KEY=${{ secrets.PIXABAY_API_KEY != '' || vars.PIXABAY_API_KEY != '' }} PEXELS_API_KEY=${{ secrets.PEXELS_API_KEY != '' || vars.PEXELS_API_KEY != '' }}"
       - name: Fetch clips
         env:
-          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
-          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY || vars.PIXABAY_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY || vars.PEXELS_API_KEY }}
         run: python3 tools/video/fetch_stock.py inonda-youtube-videos/production/v01/stock/queries.json /tmp/media
       - name: Push to media branch
         run: |

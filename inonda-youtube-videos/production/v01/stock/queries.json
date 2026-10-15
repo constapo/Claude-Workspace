@@ -311,5 +311,6 @@
    ]
   }
  ],
- "_note2": "2026-10-15: run 38786380337 returned 79 clips but only 8 usable; Wikimedia keyword search returns mostly off-topic files. Add free PEXELS_API_KEY / PIXABAY_API_KEY repo secrets – these queries are written for Pexels/Pixabay/Mixkit."
+ "_note2": "2026-10-15: run 38786380337 returned 79 clips but only 8 usable; Wikimedia keyword search returns mostly off-topic files. Add free PEXELS_API_KEY / PIXABAY_API_KEY repo secrets – these queries are written for Pexels/Pixabay/Mixkit.",
+ "_run": "2026-10-15 run 2: with Pixabay key (owner added secret)"
 }
