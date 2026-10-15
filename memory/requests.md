@@ -236,6 +236,14 @@ Format: date · what was asked · what was done / status.
     since it was pasted in chat). Importing 5 MIT video skills was refused by the safety check;
     waits for the owner to allow it in Claude Code, or say "text-only".
 
+39. **"You will need the Code2Video skill" / "try to achieve it here."** (2026-10-15) → Code2Video
+    (showlab, MIT) makes Manim animated-diagram videos and calls paid Claude/Gemini APIs. Set up
+    free here instead: Manim 0.22 in `~/.venvs/manim` (+ libpango1.0-dev), new skill
+    `video-code2video` (planner → coder → critic done by Claude, no paid API). Test scene
+    `production/v01/gfx/waterproof_layers.py` (Greek labels, line 7.5–7.7) rendered and checked.
+    Diagrams still need the owner's yes per scene (CLAUDE.md rule 2: realistic footage only).
+    Also told the owner `ext install anthropic.claude-code` is a VS Code command for their own PC.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
