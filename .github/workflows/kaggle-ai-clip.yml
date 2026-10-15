@@ -1,5 +1,6 @@
 # Generates AI clips for free on Kaggle's GPU (open Wan models) and pushes them to branch
-# ai-media-v01. Needs repo secret KAGGLE_API_TOKEN (Kaggle → Settings → API → token).
+# ai-media-v01. Needs repo secret KAGGLE_API_TOKEN (new token), or KAGGLE_USERNAME + KAGGLE_KEY
+# (values from the classic kaggle.json file).
 # Runs when the prompts file changes, or by hand.
 name: kaggle-ai-clip
 on:
@@ -22,12 +23,17 @@ jobs:
       - name: Check secret
         env:
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: |
-          if [ -z "$KAGGLE_API_TOKEN" ]; then echo "::error::Add repo secret KAGGLE_API_TOKEN first"; exit 1; fi
+          if [ -z "$KAGGLE_API_TOKEN" ] && [ -z "$KAGGLE_KEY" ]; then echo "::error::Add repo secret KAGGLE_API_TOKEN, or KAGGLE_USERNAME + KAGGLE_KEY"; exit 1; fi
+          [ -n "$KAGGLE_API_TOKEN" ] || echo "using KAGGLE_USERNAME/KAGGLE_KEY"
       - run: pip install -q kaggle
       - name: Push notebook to Kaggle (free T4 GPU)
         env:
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: |
           mkdir -p /tmp/k && cp inonda-youtube-videos/production/v01/ai/kaggle/gen_clip.py inonda-youtube-videos/production/v01/ai/prompts.json /tmp/k/
           python3 - <<'EOF'
@@ -49,6 +55,8 @@ jobs:
       - name: Wait for Kaggle to finish
         env:
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: |
           for i in $(seq 1 330); do
             s=$(kaggle kernels status "$KAGGLE_USER/$SLUG" 2>&1 || true); echo "$(date -u +%H:%M) $s"
@@ -59,6 +67,8 @@ jobs:
         if: always()
         env:
           KAGGLE_API_TOKEN: ${{ secrets.KAGGLE_API_TOKEN }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: mkdir -p /tmp/out && kaggle kernels output "$KAGGLE_USER/$SLUG" -p /tmp/out || true; ls -la /tmp/out
       - name: Push clips to media branch
         if: always()
