@@ -47,8 +47,14 @@ Format: date · what was asked · what was done / status.
     × 20, rates unpublished, so a realistic 4s clip likely exceeds 80. Prompt shown; waiting
     for the owner to choose: try vidIQ anyway / wait for Artlist (recommended) / top up.
 
+14. **"Categorize connectors by category of usage and fields of projects" (2026-10-20).** → Done:
+    `/mnt/project-files/connectors/connectors-by-category.md` (11 categories, status per connector,
+    "say this" phrases for commands). Needs sign-in again: Agility CMS, CData Connect AI, Tella,
+    Adobe Journey Optimizer, BioRender, domainkits; Canvs.io failed to connect.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
 - Real job details for videos 17 and 20 (scripts and narration).
 - Fill `[ADD REAL PRICE]`, `[ADD REAL DURATION]`, `[ADD PHONE/WHATSAPP]` placeholders in scripts.
+- Re-sign-in for expired connectors listed in item 14 (only if needed).
