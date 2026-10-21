@@ -109,10 +109,9 @@ Format: date · what was asked · what was done / status.
     path fixed. All tested. Auto-activation hooks (caveman, ponytail) not installed.
 
 25. **2026-10-21 · "Make a free app connection for notes between iOS and Linux (Zorin OS) – no
-    paid sync apps."** → Started: free options compared (Joplin + free sync target, Simplenote,
-    Standard Notes free, Obsidian + Syncthing, or a small self-made app). Waiting for the owner's
-    answers: where the notes live now, ready-made app vs. build our own, and same-Wi-Fi-only vs.
-    sync from anywhere.
+    paid sync apps."** → Owner chose **Simplenote** (free, syncs anywhere), notes now in Apple
+    Notes. Wrote the setup guide `notes-sync/SIMPLENOTE-SETUP.md` (install on iPhone and Zorin,
+    move Apple Notes via icloud.com copy-paste). Owner does the install on their own devices.
 
 ## Open items waiting on the owner
 - Praxist (item 19): allow the pip install here, or run on your own computer:
