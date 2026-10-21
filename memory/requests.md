@@ -113,6 +113,10 @@ Format: date · what was asked · what was done / status.
     Notes. Wrote the setup guide `notes-sync/SIMPLENOTE-SETUP.md` (install on iPhone and Zorin,
     move Apple Notes via icloud.com copy-paste). Owner does the install on their own devices.
 
+26. **2026-10-21 · "Save all notes from here as content in one .docx file."** → Done:
+    `notes/all-notes.docx` with the project rules (CLAUDE.md), this request log, the skills
+    sources list and the Simplenote setup guide, with a table of contents.
+
 ## Open items waiting on the owner
 - Notes sync (item 25): follow `notes-sync/SIMPLENOTE-SETUP.md` on the iPhone and Zorin PC.
 - Praxist (item 19): allow the pip install here, or run on your own computer:
