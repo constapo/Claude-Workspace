@@ -13,3 +13,4 @@
 | frontend-design, webapp-testing, academy-guide, discernment-nudge | https://github.com/anthropics/skills |
 | AI employees (`ai-employees/`) | ai-employees plugin / https://github.com/markfulton/ai-employees |
 | praxist-* (control, diagnostic, onboarding, runtime-install, scientific-research, takeover, task-initialization, interactive-task-init), terminal-line-plot | https://github.com/sapientinc/praxist |
+| harness, evolve (Harness v2.1) | https://github.com/revfactory/harness |

@@ -82,6 +82,10 @@ Format: date · what was asked · what was done / status.
     itself is not installed. Running research uses paid model calls, so the paid-generation rule
     applies (price it, get a yes) before any run.
 
+20. **2026-10-21 · "Find and install Harness 2."** → Found revfactory/harness v2.1 (builds an agent
+    team plus its skills for a project from one sentence). Skills `harness` and `evolve` added to
+    `.claude/skills/` (text only, no scripts).
+
 ## Open items waiting on the owner
 - Praxist (item 19): allow the pip install here, or run on your own computer:
   `python3 -m pip install "praxist[agents,codex]" && praxist setup --interactive --install-skills claude`
