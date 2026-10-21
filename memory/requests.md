@@ -114,6 +114,7 @@ Format: date · what was asked · what was done / status.
     move Apple Notes via icloud.com copy-paste). Owner does the install on their own devices.
 
 ## Open items waiting on the owner
+- Notes sync (item 25): follow `notes-sync/SIMPLENOTE-SETUP.md` on the iPhone and Zorin PC.
 - Praxist (item 19): allow the pip install here, or run on your own computer:
   `python3 -m pip install "praxist[agents,codex]" && praxist setup --interactive --install-skills claude`
 - Say what "REA" means (item 18), in case it names a specific tool or method.
