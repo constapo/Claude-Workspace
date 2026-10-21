@@ -102,9 +102,13 @@ Format: date · what was asked · what was done / status.
     reply), addyosmani's hooks. Also found ui-ux-pro-max pointing at a wrong script path.
     *Blocked:* the session's safety check refused changing `.claude/settings.json` and the skill
     files (self-modification). Nothing changed.
+24. **2026-10-21 · "Option 1, go ahead."** → Done. In `.claude/hooks/`: barnuri's
+    stop-completion-gate.sh (wired through the 4 skills' own Stop hooks), agent-env.sh,
+    usage-snapshot.sh (file only: not wired as status line, it would replace yours); caveman mode
+    tracker registered on UserPromptSubmit (reacts only to /caveman commands). ui-ux-pro-max script
+    path fixed. All tested. Auto-activation hooks (caveman, ponytail) not installed.
 
 ## Open items waiting on the owner
-- Hooks (item 23): allow the change (add a permission rule) or approve it on your own computer.
 - Praxist (item 19): allow the pip install here, or run on your own computer:
   `python3 -m pip install "praxist[agents,codex]" && praxist setup --interactive --install-skills claude`
 - Say what "REA" means (item 18), in case it names a specific tool or method.

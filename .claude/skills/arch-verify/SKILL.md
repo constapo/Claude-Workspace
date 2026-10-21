@@ -9,7 +9,7 @@ hooks:
   Stop:
     - hooks:
         - type: command
-          command: 'bash "${CLAUDE_PLUGIN_ROOT}/hooks/stop-completion-gate.sh" arch-design-diff.%HARNESS%.md "(❌ Missing|⚠️ Partial|🔄 Deviated)( ⚡ REGRESSION)? \|" arch-verify'
+          command: 'bash "${CLAUDE_PROJECT_DIR}/.claude/hooks/stop-completion-gate.sh" arch-design-diff.%HARNESS%.md "(❌ Missing|⚠️ Partial|🔄 Deviated)( ⚡ REGRESSION)? \|" arch-verify'
 ---
 
 # Architecture Verification

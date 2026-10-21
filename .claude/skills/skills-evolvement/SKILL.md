@@ -10,7 +10,7 @@ hooks:
   Stop:
     - hooks:
         - type: command
-          command: 'bash "${CLAUDE_PLUGIN_ROOT}/hooks/stop-completion-gate.sh" tasks.md "^- \[ \]" skills-evolvement'
+          command: 'bash "${CLAUDE_PROJECT_DIR}/.claude/hooks/stop-completion-gate.sh" tasks.md "^- \[ \]" skills-evolvement'
 ---
 
 # Skills Evolvement

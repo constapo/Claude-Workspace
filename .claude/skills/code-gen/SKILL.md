@@ -9,7 +9,7 @@ hooks:
   Stop:
     - hooks:
         - type: command
-          command: 'bash "${CLAUDE_PLUGIN_ROOT}/hooks/stop-completion-gate.sh" tasks.md "^- \[ \]" code-gen # plugin root; auto-fix-agent workspace copy uses CLAUDE_PROJECT_DIR'
+          command: 'bash "${CLAUDE_PROJECT_DIR}/.claude/hooks/stop-completion-gate.sh" tasks.md "^- \[ \]" code-gen # plugin root; auto-fix-agent workspace copy uses CLAUDE_PROJECT_DIR'
 ---
 
 # Code Generation
