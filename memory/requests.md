@@ -86,7 +86,14 @@ Format: date · what was asked · what was done / status.
     team plus its skills for a project from one sentence). Skills `harness` and `evolve` added to
     `.claude/skills/` (text only, no scripts).
 
+21. **2026-10-21 · "Harness-skills is my goal: have them in your know-how for future projects."**
+    → Found 3 packs: harness/harness-skills (official, 71 skills for the Harness.io CI/CD
+    platform), lispking/harness-skills (1 skill: Harness Engineering method), barnuri/harness-skills
+    (11 skills: code-gen, code review, design docs, RCAs, handoffs). *Blocked:* the session's safety
+    check refused copying the ~83 skill files into `.claude/skills/`. Waiting for the owner.
+
 ## Open items waiting on the owner
+- Harness-skills (item 21): choose which packs to add, or allow the copy.
 - Praxist (item 19): allow the pip install here, or run on your own computer:
   `python3 -m pip install "praxist[agents,codex]" && praxist setup --interactive --install-skills claude`
 - Say what "REA" means (item 18), in case it names a specific tool or method.
