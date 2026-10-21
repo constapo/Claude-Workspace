@@ -95,7 +95,16 @@ Format: date · what was asked · what was done / status.
     renamed `bh-handoff`; its 3 auto-run hooks were NOT installed. The 71 official skills only work
     with a Harness.io account (via the Harness MCP server).
 
+23. **2026-10-21 · "Install all the hooks needed."** → Reviewed every pack's hooks. Needed:
+    barnuri's 3 (completion gate for code-gen/cr/arch-verify/skills-evolvement, session id helper,
+    usage snapshot for bh-handoff) and caveman's mode tracker (for /caveman-stats). Not needed and
+    left out on purpose: caveman and ponytail auto-activation (would force that style on every
+    reply), addyosmani's hooks. Also found ui-ux-pro-max pointing at a wrong script path.
+    *Blocked:* the session's safety check refused changing `.claude/settings.json` and the skill
+    files (self-modification). Nothing changed.
+
 ## Open items waiting on the owner
+- Hooks (item 23): allow the change (add a permission rule) or approve it on your own computer.
 - Praxist (item 19): allow the pip install here, or run on your own computer:
   `python3 -m pip install "praxist[agents,codex]" && praxist setup --interactive --install-skills claude`
 - Say what "REA" means (item 18), in case it names a specific tool or method.
