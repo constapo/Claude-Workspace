@@ -14,3 +14,6 @@
 | AI employees (`ai-employees/`) | ai-employees plugin / https://github.com/markfulton/ai-employees |
 | praxist-* (control, diagnostic, onboarding, runtime-install, scientific-research, takeover, task-initialization, interactive-task-init), terminal-line-plot | https://github.com/sapientinc/praxist |
 | harness, evolve (Harness v2.1) | https://github.com/revfactory/harness |
+| 71 Harness.io CI/CD skills (create-pipeline, debug-pipeline, manage-*, configure-*-scan, fme flags, dora-metrics, …) | https://github.com/harness/harness-skills |
+| harness-engineering | https://github.com/lispking/harness-skills |
+| code-gen, cr, rca, arch-design, arch-verify, agent-spec, dev-guidelines, context-declutter, session-slug, skills-evolvement, bh-handoff (hooks not installed) | https://github.com/barnuri/harness-skills |
