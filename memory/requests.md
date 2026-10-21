@@ -47,6 +47,67 @@ Format: date · what was asked · what was done / status.
     × 20, rates unpublished, so a realistic 4s clip likely exceeds 80. Prompt shown; waiting
     for the owner to choose: try vidIQ anyway / wait for Artlist (recommended) / top up.
 
+14. **2026-10-21 · "Install Taste Skills, Agent Skills, Ponytail, Caveman, Graphify, UI UX Pro Max,
+    Matt Pocock Skills, Anthropic Skills, Superpowers, Karpathy Skills – skip ones already installed."**
+    → Found all 10 on GitHub and downloaded them to a temp folder (nothing added to the repo yet).
+    Already available, skipped: Superpowers (in `.claude/skills`), Anthropic Skills (anthropic-skills
+    plugin, except academy-guide, discernment-nudge, frontend-design, webapp-testing), Karpathy Skills
+    and most of Agent Skills (agent-protocols plugin). *Blocked:* the session's safety check refused
+    copying third-party skill code into `.claude/skills`; waiting for the owner to allow it.
+15. **2026-10-21 · "Go ahead, copy them into the repo."** → Done: 77 skills added to
+    `.claude/skills/` (Taste, Ponytail ×6, Caveman ×22, Graphify, UI UX Pro Max ×7, Matt Pocock
+    engineering/productivity/misc, 4 missing Agent Skills, 4 missing Anthropic skills). Matt
+    Pocock's unfinished "in-progress" skills left out. His `code-review` renamed `mp-code-review`
+    so it doesn't hide the built-in /code-review. Graphify also needs `uv tool install graphifyy`.
+
+16. **2026-10-21 · "Run uv tool install graphifyy on any computer where I want to use it."** →
+    Installed (graphify 0.9.93) in this session, and added a startup hook
+    (`.claude/hooks/install-graphify.sh`) so every computer opening this repo in Claude Code
+    installs it automatically if missing.
+
+17. **2026-10-21 · "Find and install AI employees."** → Owner chose all 8, kept in this repo.
+    Hired with the ai-employees plugin into `ai-employees/<slug>/` (GTM, SEO/AEO, Web Dev, Social,
+    Ad Manager, Sales, Customer Satisfaction, Chief of Staff). All self tests passed. Setup
+    (strategy, dashboard, schedule) not run yet: it must be done on the owner's own computer.
+
+18. **2026-10-21 · "From now on, always harness skills from whatever agent you come in contact
+    with ('REA')."** → Standing rule added to `/CLAUDE.md` ("Harvest skills from every agent you
+    meet"), with `memory/skills-sources.md` listing where each skill came from. Asked the owner
+    what "REA" means.
+
+19. **2026-10-21 · "Find Praxist and install it" (for research into better audio, image and video
+    generation).** → Found: Sapient's PRAXIST (github.com/sapientinc/praxist), an autonomous
+    research system. Its 9 Claude Code skills were copied into `.claude/skills/`. *Blocked:* the
+    session's safety check refused `pip install praxist[agents,codex]`, so the praxist program
+    itself is not installed. Running research uses paid model calls, so the paid-generation rule
+    applies (price it, get a yes) before any run.
+
+20. **2026-10-21 · "Find and install Harness 2."** → Found revfactory/harness v2.1 (builds an agent
+    team plus its skills for a project from one sentence). Skills `harness` and `evolve` added to
+    `.claude/skills/` (text only, no scripts).
+
+21. **2026-10-21 · "Harness-skills is my goal: have them in your know-how for future projects."**
+    → Found 3 packs: harness/harness-skills (official, 71 skills for the Harness.io CI/CD
+    platform), lispking/harness-skills (1 skill: Harness Engineering method), barnuri/harness-skills
+    (11 skills: code-gen, code review, design docs, RCAs, handoffs). *Blocked:* the session's safety
+    check refused copying the ~83 skill files into `.claude/skills/`. Waiting for the owner.
+22. **2026-10-21 · "All 3."** → Done: 83 skills added to `.claude/skills/`. barnuri's `handoff`
+    renamed `bh-handoff`; its 3 auto-run hooks were NOT installed. The 71 official skills only work
+    with a Harness.io account (via the Harness MCP server).
+
+23. **2026-10-21 · "Install all the hooks needed."** → Reviewed every pack's hooks. Needed:
+    barnuri's 3 (completion gate for code-gen/cr/arch-verify/skills-evolvement, session id helper,
+    usage snapshot for bh-handoff) and caveman's mode tracker (for /caveman-stats). Not needed and
+    left out on purpose: caveman and ponytail auto-activation (would force that style on every
+    reply), addyosmani's hooks. Also found ui-ux-pro-max pointing at a wrong script path.
+    *Blocked:* the session's safety check refused changing `.claude/settings.json` and the skill
+    files (self-modification). Nothing changed.
+24. **2026-10-21 · "Option 1, go ahead."** → Done. In `.claude/hooks/`: barnuri's
+    stop-completion-gate.sh (wired through the 4 skills' own Stop hooks), agent-env.sh,
+    usage-snapshot.sh (file only: not wired as status line, it would replace yours); caveman mode
+    tracker registered on UserPromptSubmit (reacts only to /caveman commands). ui-ux-pro-max script
+    path fixed. All tested. Auto-activation hooks (caveman, ponytail) not installed.
+
 25. **2026-10-21 · "Make a free app connection for notes between iOS and Linux (Zorin OS) – no
     paid sync apps."** → Started: free options compared (Joplin + free sync target, Simplenote,
     Standard Notes free, Obsidian + Syncthing, or a small self-made app). Waiting for the owner's
@@ -54,6 +115,11 @@ Format: date · what was asked · what was done / status.
     sync from anywhere.
 
 ## Open items waiting on the owner
+- Praxist (item 19): allow the pip install here, or run on your own computer:
+  `python3 -m pip install "praxist[agents,codex]" && praxist setup --interactive --install-skills claude`
+- Say what "REA" means (item 18), in case it names a specific tool or method.
+- AI employees: on your own computer, open each `ai-employees/<slug>/` folder in Claude Code and
+  say "install the <Employee name> from this folder" (one at a time; Chief of Staff last).
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
 - Real job details for videos 17 and 20 (scripts and narration).
