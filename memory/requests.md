@@ -75,7 +75,16 @@ Format: date · what was asked · what was done / status.
     meet"), with `memory/skills-sources.md` listing where each skill came from. Asked the owner
     what "REA" means.
 
+19. **2026-10-21 · "Find Praxist and install it" (for research into better audio, image and video
+    generation).** → Found: Sapient's PRAXIST (github.com/sapientinc/praxist), an autonomous
+    research system. Its 9 Claude Code skills were copied into `.claude/skills/`. *Blocked:* the
+    session's safety check refused `pip install praxist[agents,codex]`, so the praxist program
+    itself is not installed. Running research uses paid model calls, so the paid-generation rule
+    applies (price it, get a yes) before any run.
+
 ## Open items waiting on the owner
+- Praxist (item 19): allow the pip install here, or run on your own computer:
+  `python3 -m pip install "praxist[agents,codex]" && praxist setup --interactive --install-skills claude`
 - Say what "REA" means (item 18), in case it names a specific tool or method.
 - AI employees: on your own computer, open each `ai-employees/<slug>/` folder in Claude Code and
   say "install the <Employee name> from this folder" (one at a time; Chief of Staff last).

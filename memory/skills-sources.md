@@ -12,3 +12,4 @@
 | interview-me, observability-and-instrumentation, constraint-driven-development, doubt-driven-development | https://github.com/addyosmani/agent-skills |
 | frontend-design, webapp-testing, academy-guide, discernment-nudge | https://github.com/anthropics/skills |
 | AI employees (`ai-employees/`) | ai-employees plugin / https://github.com/markfulton/ai-employees |
+| praxist-* (control, diagnostic, onboarding, runtime-install, scientific-research, takeover, task-initialization, interactive-task-init), terminal-line-plot | https://github.com/sapientinc/praxist |
