@@ -47,6 +47,12 @@ Format: date · what was asked · what was done / status.
     × 20, rates unpublished, so a realistic 4s clip likely exceeds 80. Prompt shown; waiting
     for the owner to choose: try vidIQ anyway / wait for Artlist (recommended) / top up.
 
+25. **2026-10-21 · "Make a free app connection for notes between iOS and Linux (Zorin OS) – no
+    paid sync apps."** → Started: free options compared (Joplin + free sync target, Simplenote,
+    Standard Notes free, Obsidian + Syncthing, or a small self-made app). Waiting for the owner's
+    answers: where the notes live now, ready-made app vs. build our own, and same-Wi-Fi-only vs.
+    sync from anywhere.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
