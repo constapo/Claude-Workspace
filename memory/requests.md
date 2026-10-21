@@ -60,6 +60,11 @@ Format: date · what was asked · what was done / status.
     Pocock's unfinished "in-progress" skills left out. His `code-review` renamed `mp-code-review`
     so it doesn't hide the built-in /code-review. Graphify also needs `uv tool install graphifyy`.
 
+16. **2026-10-21 · "Run uv tool install graphifyy on any computer where I want to use it."** →
+    Installed (graphify 0.9.93) in this session, and added a startup hook
+    (`.claude/hooks/install-graphify.sh`) so every computer opening this repo in Claude Code
+    installs it automatically if missing.
+
 ## Open items waiting on the owner
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
