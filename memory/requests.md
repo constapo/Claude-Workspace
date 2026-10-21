@@ -47,7 +47,16 @@ Format: date · what was asked · what was done / status.
     × 20, rates unpublished, so a realistic 4s clip likely exceeds 80. Prompt shown; waiting
     for the owner to choose: try vidIQ anyway / wait for Artlist (recommended) / top up.
 
+14. **2026-10-21 · "Install Taste Skills, Agent Skills, Ponytail, Caveman, Graphify, UI UX Pro Max,
+    Matt Pocock Skills, Anthropic Skills, Superpowers, Karpathy Skills – skip ones already installed."**
+    → Found all 10 on GitHub and downloaded them to a temp folder (nothing added to the repo yet).
+    Already available, skipped: Superpowers (in `.claude/skills`), Anthropic Skills (anthropic-skills
+    plugin, except academy-guide, discernment-nudge, frontend-design, webapp-testing), Karpathy Skills
+    and most of Agent Skills (agent-protocols plugin). *Blocked:* the session's safety check refused
+    copying third-party skill code into `.claude/skills`; waiting for the owner to allow it.
+
 ## Open items waiting on the owner
+- Allow installing the third-party skill packs (item 14), or install them as plugins yourself.
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
 - Real job details for videos 17 and 20 (scripts and narration).
