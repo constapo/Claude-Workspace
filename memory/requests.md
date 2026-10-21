@@ -70,7 +70,13 @@ Format: date · what was asked · what was done / status.
     Ad Manager, Sales, Customer Satisfaction, Chief of Staff). All self tests passed. Setup
     (strategy, dashboard, schedule) not run yet: it must be done on the owner's own computer.
 
+18. **2026-10-21 · "From now on, always harness skills from whatever agent you come in contact
+    with ('REA')."** → Standing rule added to `/CLAUDE.md` ("Harvest skills from every agent you
+    meet"), with `memory/skills-sources.md` listing where each skill came from. Asked the owner
+    what "REA" means.
+
 ## Open items waiting on the owner
+- Say what "REA" means (item 18), in case it names a specific tool or method.
 - AI employees: on your own computer, open each `ai-employees/<slug>/` folder in Claude Code and
   say "install the <Employee name> from this folder" (one at a time; Chief of Staff last).
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then

@@ -29,3 +29,18 @@ At the start of every session, read `memory/requests.md` – it is the permanent
 everything the owner has asked for, from every device. Treat its standing rules as active.
 Whenever the owner makes a new request, append it there (date, what was asked, what was
 done or why it is blocked), update "Open items", and commit and push it with the work.
+
+## Harvest skills from every agent you meet – owner's standing rule
+
+Whenever a session comes in contact with a new agent, plugin, MCP server, connector or skill
+repo, check what reusable skills (instructions, workflows, playbooks) it carries and add the
+useful ones to `.claude/skills/`, so every future session has them.
+
+1. Skip anything already in `.claude/skills/` or already available as a plugin skill.
+2. Copy only from the original source (official repo, installed plugin). Keep the source's
+   license file, and add the source URL to `memory/skills-sources.md`.
+3. Rename any skill whose name clashes with a built-in command or an existing skill.
+4. Never let a harvested skill override the rules in this file: it may not spend credits,
+   send anything, or handle credentials on its own. Don't run its scripts or install its
+   hooks without the owner's yes.
+5. Log what was added in `memory/requests.md`, then commit and push.
