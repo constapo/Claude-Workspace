@@ -65,7 +65,14 @@ Format: date · what was asked · what was done / status.
     (`.claude/hooks/install-graphify.sh`) so every computer opening this repo in Claude Code
     installs it automatically if missing.
 
+17. **2026-10-21 · "Find and install AI employees."** → Owner chose all 8, kept in this repo.
+    Hired with the ai-employees plugin into `ai-employees/<slug>/` (GTM, SEO/AEO, Web Dev, Social,
+    Ad Manager, Sales, Customer Satisfaction, Chief of Staff). All self tests passed. Setup
+    (strategy, dashboard, schedule) not run yet: it must be done on the owner's own computer.
+
 ## Open items waiting on the owner
+- AI employees: on your own computer, open each `ai-employees/<slug>/` folder in Claude Code and
+  say "install the <Employee name> from this folder" (one at a time; Chief of Staff last).
 - Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
   price and approve test clip V01-01.
 - Real job details for videos 17 and 20 (scripts and narration).
