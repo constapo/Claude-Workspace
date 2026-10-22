@@ -128,7 +128,16 @@ Format: date · what was asked · what was done / status.
     attacker TTPs to detect and stop them; any live technique test stays scoped to owned/authorized
     assets.
 
+29. **2026-10-22 · "This matters in all surfaces now."** → Turned the defensive skills on across
+    all surfaces. Did the work that needs no live systems: a defensive review of the repo's own
+    scripts (`tools/higgsfield/hf.py`, hooks, v01-scene1.sh) — clean, credentials from env vars, no
+    hardcoded secrets, no shell=True/eval, no TLS bypass. Wrote `security/baseline.md`: a
+    per-surface hardening + detection checklist (web, AD, cloud, endpoint, detection-eng, hunting)
+    tied to each defend-* skill. Deep per-surface work still needs the owner to point at a real asset.
+
 ## Open items waiting on the owner
+- Security (item 29): point me at a real asset per surface (code, config, or logs) to go deep;
+  work `security/baseline.md` on each live system.
 - Notes sync (item 25): follow `notes-sync/SIMPLENOTE-SETUP.md` on the iPhone and Zorin PC.
 - Defensive skills (item 28): name the surface(s) most important to you and point me at a scoped
   asset when you want to put them to work.
