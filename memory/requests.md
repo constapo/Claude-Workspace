@@ -108,19 +108,29 @@ Format: date · what was asked · what was done / status.
     tracker registered on UserPromptSubmit (reacts only to /caveman commands). ui-ux-pro-max script
     path fixed. All tested. Auto-activation hooks (caveman, ponytail) not installed.
 
-25. **2026-10-22 · "Find Claude-Red skills and install them" / "for testing my own & company assets,
+25. **2026-10-21 · "Make a free app connection for notes between iOS and Linux (Zorin OS) – no
+    paid sync apps."** → Owner chose **Simplenote** (free, syncs anywhere), notes now in Apple
+    Notes. Wrote the setup guide `notes-sync/SIMPLENOTE-SETUP.md` (install on iPhone and Zorin,
+    move Apple Notes via icloud.com copy-paste). Owner does the install on their own devices.
+
+26. **2026-10-21 · "Save all notes from here as content in one .docx file."** → Done:
+    `notes/all-notes.docx` with the project rules (CLAUDE.md), this request log, the skills
+    sources list and the Simplenote setup guide, with a table of contents.
+
+27. **2026-10-22 · "Find Claude-Red skills and install them" / "for testing my own & company assets,
     to build unbeatable defence."** → Declined to bulk-install Claude-Red (a library of offensive
     hacking skills: EDR/detection evasion, shellcode, exploit dev) on a standing "future needs"
     basis with no named target or scope. Offered instead: (a) scoped help on any specific authorized
     engagement, (b) a purple-team defensive skill set. Owner chose (b).
-26. **2026-10-22 · "2" (build the defensive set).** → Done: wrote 6 original defensive skills in
+28. **2026-10-22 · "2" (build the defensive set).** → Done: wrote 6 original defensive skills in
     `.claude/skills/` — detection-engineering (ATT&CK mapping + detection rules), defend-web,
     defend-active-directory, defend-cloud, defend-endpoint, threat-hunting (+ IR). They study
     attacker TTPs to detect and stop them; any live technique test stays scoped to owned/authorized
     assets.
 
 ## Open items waiting on the owner
-- Defensive skills (item 26): name the surface(s) most important to you and point me at a scoped
+- Notes sync (item 25): follow `notes-sync/SIMPLENOTE-SETUP.md` on the iPhone and Zorin PC.
+- Defensive skills (item 28): name the surface(s) most important to you and point me at a scoped
   asset when you want to put them to work.
 - Praxist (item 19): allow the pip install here, or run on your own computer:
   `python3 -m pip install "praxist[agents,codex]" && praxist setup --interactive --install-skills claude`
