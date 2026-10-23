@@ -142,9 +142,13 @@ Format: date · what was asked · what was done / status.
     No name clash. Not run yet: its launcher downloads a helper binary on first use, and its
     optional design-detector hook was not turned on – both wait for the owner's yes.
 
+31. **2026-10-23 · "/impeccable hooks on."** → Turned on Impeccable's design checker. Its helper
+    program was downloaded from the official GitHub releases (SHA-256 checked). The hook runs after
+    every Edit/Write on a UI file, plus a deeper pass at the end of each turn. It's in the shared
+    `.claude/settings.json` (not settings.local.json) so it works on every device; project setting
+    in `.impeccable/config.json`. Turn off with `/impeccable hooks off`.
+
 ## Open items waiting on the owner
-- Impeccable (item 30): say yes to let its launcher download its helper binary on first use,
-  and say whether to turn on its design-detector hook (`/impeccable hooks on`).
 - Security (item 29): point me at a real asset per surface (code, config, or logs) to go deep;
   work `security/baseline.md` on each live system.
 - Notes sync (item 25): follow `notes-sync/SIMPLENOTE-SETUP.md` on the iPhone and Zorin PC.
