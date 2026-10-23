@@ -194,7 +194,15 @@ Format: date · what was asked · what was done / status.
     reference examples, no scripts run. The rest of that pack (gsap-web, lottie, svg, micro-
     interaction, glassmorphism, ascii, 60fps, accessible-animation) was left out — offered to add.
 
+36. **2026-10-23 · "Add Claude x Jev repo for use."** → Installed charlesdove977/claude-x-jev into
+    `.claude/skills/claude-x-jev/` (SKILL.md, jev.py, presets, task docs). Jev is a fast/cheap
+    decision model (sort, score, gate, verify) served via OpenRouter. NOT wired its PreToolUse gate
+    hook (it would call Jev on every Bash command — spends credits, gates my own tools) and did not
+    set a key. To use it: set OPENROUTER_API_KEY and run /jev-setup; Jev calls cost money, so the
+    paid-generation rule applies.
+
 ## Open items waiting on the owner
+- claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org.
 - Security (item 29): point me at a real asset per surface (code, config, or logs) to go deep;

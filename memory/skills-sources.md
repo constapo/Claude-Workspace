@@ -28,3 +28,4 @@
 | react-bits-catalog (renamed from `react-bits` to avoid clash) | https://github.com/kmshihab7878/claude-code-setup |
 | gsap-core, gsap-timeline, gsap-scrolltrigger, gsap-plugins, gsap-react, gsap-frameworks, gsap-utils, gsap-performance (official GreenSock AI skills) | https://github.com/greensock/gsap-skills |
 | page-transition-animation (page/route transitions: View Transitions API, FLIP, shared-element, overlay wipes) | https://github.com/iart-ai/web-animation-skills |
+| claude-x-jev (fast cheap decision model Jev for sort/gate/score/verify; needs OpenRouter key + spends credits; PreToolUse gate hook NOT wired) | https://github.com/charlesdove977/claude-x-jev |
