@@ -188,6 +188,12 @@ Format: date · what was asked · what was done / status.
     They teach correct GSAP usage (tweens, timelines, ScrollTrigger, plugins, React, 60fps perf).
     Text only, no scripts or hooks.
 
+35. **2026-10-23 · "Transition skill — find it and install it."** → Installed the page-transition
+    skill from iart-ai/web-animation-skills as `.claude/skills/page-transition-animation/`
+    (page/route transitions, View Transitions API, shared-element, overlay wipes). Text +
+    reference examples, no scripts run. The rest of that pack (gsap-web, lottie, svg, micro-
+    interaction, glassmorphism, ascii, 60fps, accessible-animation) was left out — offered to add.
+
 ## Open items waiting on the owner
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org.
