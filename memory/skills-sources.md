@@ -19,3 +19,4 @@
 | code-gen, cr, rca, arch-design, arch-verify, agent-spec, dev-guidelines, context-declutter, session-slug, skills-evolvement, bh-handoff (hooks not installed) | https://github.com/barnuri/harness-skills |
 | impeccable (v4.7.0, commit 5cb95ee; launcher binary and hook not run) | https://github.com/pbakaus/impeccable |
 | detection-engineering, defend-web, defend-active-directory, defend-cloud, defend-endpoint, threat-hunting | Authored in-repo (original purple-team/defensive skills, not harvested) |
+| designlang (extract-design: pull a site's colors/fonts/tokens into Tailwind/React/shadcn/Figma/W3C, with WCAG scoring) | https://github.com/Manavarya09/design-extract |

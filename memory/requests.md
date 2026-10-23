@@ -157,6 +157,13 @@ Format: date · what was asked · what was done / status.
     not allowed to edit its own permissions, so the rules are in the README for the owner to add.
     *Waiting on:* the owner to run Remote Control on the PC and say what to change on each site.
 
+30. **2026-10-23 · "Find and install designlang skill."** → Found Manavarya09/design-extract.
+    Its skill (named extract-design in source, which the project registers as "designlang")
+    was copied into `.claude/skills/designlang/`. It extracts a website's design language —
+    colors, fonts, spacing — into Tailwind/React/shadcn/Figma/W3C tokens with WCAG scoring.
+    One SKILL.md, no scripts or hooks. It drives a browser + Node tooling to crawl a site; that
+    part needs running on a machine with those tools, but the skill guidance loads here now.
+
 ## Open items waiting on the owner
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org.
