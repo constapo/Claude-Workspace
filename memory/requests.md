@@ -148,7 +148,18 @@ Format: date · what was asked · what was done / status.
     `.claude/settings.json` (not settings.local.json) so it works on every device; project setting
     in `.impeccable/config.json`. Turn off with `/impeccable hooks off`.
 
+32. **2026-10-23 · "Find repos/folders on my PC when it's open, save settings for full remote
+    control, and update my websites inonda.site & inonda.org (hosted on wasmer.io)."** → This cloud
+    session can't reach the PC, and its network blocks both sites (HTTP 403 from here; not a site
+    fault). Added `tools/wasmer/find-sites.sh` (read-only finder for Wasmer project folders, tested)
+    and `tools/wasmer/README.md` (PC setup: install Wasmer CLI, `wasmer login` yourself,
+    `claude remote-control` in this repo; safe-update steps; optional permission rules). Claude was
+    not allowed to edit its own permissions, so the rules are in the README for the owner to add.
+    *Waiting on:* the owner to run Remote Control on the PC and say what to change on each site.
+
 ## Open items waiting on the owner
+- Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
+  `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org.
 - Security (item 29): point me at a real asset per surface (code, config, or logs) to go deep;
   work `security/baseline.md` on each live system.
 - Notes sync (item 25): follow `notes-sync/SIMPLENOTE-SETUP.md` on the iPhone and Zorin PC.
