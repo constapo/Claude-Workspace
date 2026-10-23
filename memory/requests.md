@@ -176,6 +176,12 @@ Format: date · what was asked · what was done / status.
     The helper runs on demand inside a React project (needs Node); nothing auto-runs. The skill
     guidance loads here now.
 
+33. **2026-10-23 · "Add them too" (the other React Bits skills I named).** → Added two more:
+    hwj23016021425/reactbits-claude-skill as `reactbits-builder` (website-builder mode; its global
+    reactbits-dev MCP server was NOT installed, so that mode's live fetch needs the server),
+    and kmshihab7878/claude-code-setup's react-bits skill as `react-bits-catalog` (renamed to avoid
+    clashing with the react-bits already installed). Skill files only, no scripts/hooks run.
+
 ## Open items waiting on the owner
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org.
