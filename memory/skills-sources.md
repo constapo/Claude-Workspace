@@ -23,3 +23,4 @@
 | superdesign | https://github.com/superdesigndev/superdesign-skill |
 | better-design, animate-text | https://github.com/marvkr/better-design (MCP server not installed, skills only) |
 | styleseed, ss-learn | https://github.com/bitjaru/styleseed |
+| react-bits (fetch React Bits animated components from reactbits.dev registry into a project) | https://github.com/Philotheephilix/reactbits.dev-skill |

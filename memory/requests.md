@@ -170,6 +170,12 @@ Format: date · what was asked · what was done / status.
     so its one-command component installs need that server; the design guidance loads here now.
     No scripts or hooks pulled in.
 
+32. **2026-10-23 · "Seek and install react bits skills."** → Installed Philotheephilix/reactbits.dev-skill
+    into `.claude/skills/react-bits/` (165+ component catalog + an rb-add.mjs helper that pulls a
+    component's real source from the reactbits.dev shadcn registry, with optional npm install).
+    The helper runs on demand inside a React project (needs Node); nothing auto-runs. The skill
+    guidance loads here now.
+
 ## Open items waiting on the owner
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org.
