@@ -20,3 +20,6 @@
 | impeccable (v4.7.0, commit 5cb95ee; launcher binary and hook not run) | https://github.com/pbakaus/impeccable |
 | detection-engineering, defend-web, defend-active-directory, defend-cloud, defend-endpoint, threat-hunting | Authored in-repo (original purple-team/defensive skills, not harvested) |
 | designlang (extract-design: pull a site's colors/fonts/tokens into Tailwind/React/shadcn/Figma/W3C, with WCAG scoring) | https://github.com/Manavarya09/design-extract |
+| superdesign | https://github.com/superdesigndev/superdesign-skill |
+| better-design, animate-text | https://github.com/marvkr/better-design (MCP server not installed, skills only) |
+| styleseed, ss-learn | https://github.com/bitjaru/styleseed |

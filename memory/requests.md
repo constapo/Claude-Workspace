@@ -164,6 +164,12 @@ Format: date · what was asked · what was done / status.
     One SKILL.md, no scripts or hooks. It drives a browser + Node tooling to crawl a site; that
     part needs running on a machine with those tools, but the skill guidance loads here now.
 
+31. **2026-10-23 · "Add this one too" → (clarified) all three design skills.** → Installed 5 skills:
+    superdesign (superdesigndev), better-design + animate-text (marvkr), styleseed + ss-learn
+    (bitjaru). Skill files only — better-design's MCP server / shadcn registry was NOT installed,
+    so its one-command component installs need that server; the design guidance loads here now.
+    No scripts or hooks pulled in.
+
 ## Open items waiting on the owner
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org.
