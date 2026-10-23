@@ -201,6 +201,15 @@ Format: date · what was asked · what was done / status.
     set a key. To use it: set OPENROUTER_API_KEY and run /jev-setup; Jev calls cost money, so the
     paid-generation rule applies.
 
+37. **2026-10-23 · "Install plugin FreeLLMAPI" + pasted `git clone shashankpandya/claude-code-freellmapi`.**
+    → The repo is a documentation + LiteLLM bridge, NOT a Claude Code skill/plugin, and it runs
+    as a local gateway on the owner's own machine — it cannot run in this cloud session, so nothing
+    was copied into `.claude/skills/`. Instead wrote `memory/plugins/freellmapi-setup.md`: what it is
+    (LiteLLM translates between Claude Code's Anthropic format and FreeLLMAPI's OpenAI format), the
+    local setup steps (clone → `pip install litellm[proxy]` → `litellm-config.yaml` → run proxy →
+    point Claude Code's `ANTHROPIC_BASE_URL` at it), and caveats (routes prompts through third-party
+    free providers — nothing private; weaker than Claude; keys stay local). No install performed here.
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
