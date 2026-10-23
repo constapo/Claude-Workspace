@@ -182,6 +182,12 @@ Format: date · what was asked · what was done / status.
     and kmshihab7878/claude-code-setup's react-bits skill as `react-bits-catalog` (renamed to avoid
     clashing with the react-bits already installed). Skill files only, no scripts/hooks run.
 
+34. **2026-10-23 · "Find and install GSAP AI skills."** → Installed the official GreenSock set,
+    greensock/gsap-skills: 8 skills into `.claude/skills/` — gsap-core, gsap-timeline,
+    gsap-scrolltrigger, gsap-plugins, gsap-react, gsap-frameworks, gsap-utils, gsap-performance.
+    They teach correct GSAP usage (tweens, timelines, ScrollTrigger, plugins, React, 60fps perf).
+    Text only, no scripts or hooks.
+
 ## Open items waiting on the owner
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org.

@@ -26,3 +26,4 @@
 | react-bits (fetch React Bits animated components from reactbits.dev registry into a project) | https://github.com/Philotheephilix/reactbits.dev-skill |
 | reactbits-builder (renamed from `reactbits`; MCP-backed website-builder mode — global MCP server NOT installed) | https://github.com/hwj23016021425/reactbits-claude-skill |
 | react-bits-catalog (renamed from `react-bits` to avoid clash) | https://github.com/kmshihab7878/claude-code-setup |
+| gsap-core, gsap-timeline, gsap-scrolltrigger, gsap-plugins, gsap-react, gsap-frameworks, gsap-utils, gsap-performance (official GreenSock AI skills) | https://github.com/greensock/gsap-skills |
