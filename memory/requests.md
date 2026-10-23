@@ -135,7 +135,16 @@ Format: date · what was asked · what was done / status.
     per-surface hardening + detection checklist (web, AD, cloud, endpoint, detection-eng, hunting)
     tied to each defend-* skill. Deep per-surface work still needs the owner to point at a real asset.
 
+30. **2026-10-23 · "Search, find and install Impeccable skills."** → Found Impeccable v4.7.0 by
+    Paul Bakaus (github.com/pbakaus/impeccable, Apache 2.0): one frontend-design skill with ~25
+    sub-commands (shape, audit, critique, polish, bolder, quieter, typeset, colorize, animate,
+    harden, adapt, document, …). Copied to `.claude/skills/impeccable/` with its LICENSE and NOTICE.
+    No name clash. Not run yet: its launcher downloads a helper binary on first use, and its
+    optional design-detector hook was not turned on – both wait for the owner's yes.
+
 ## Open items waiting on the owner
+- Impeccable (item 30): say yes to let its launcher download its helper binary on first use,
+  and say whether to turn on its design-detector hook (`/impeccable hooks on`).
 - Security (item 29): point me at a real asset per surface (code, config, or logs) to go deep;
   work `security/baseline.md` on each live system.
 - Notes sync (item 25): follow `notes-sync/SIMPLENOTE-SETUP.md` on the iPhone and Zorin PC.
