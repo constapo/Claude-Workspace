@@ -217,14 +217,13 @@ Format: date · what was asked · what was done / status.
     *Waiting on:* owner to pick a service that works here and approve the one test clip at its quoted price.
 
 39. **2026-10-28 · "Add 3rd website of company: https://inonda.homes to your memory."** → Added to
-    the new `memory/company-websites.md` (list of all three Inonda sites: inonda.site, inonda.org,
-    inonda.homes). Hosting for inonda.homes is not known yet — say if it is also on Wasmer.
+    the new `memory/websites.md` (list of all three Inonda sites: inonda.site, inonda.org,
+    inonda.homes). Owner confirmed inonda.homes is also on Wasmer; added to `tools/wasmer/README.md`.
 
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
-- Websites (item 32, 39): confirm where inonda.homes is hosted.
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
-  `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org.
+  `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org / inonda.homes.
 - Security (item 29): point me at a real asset per surface (code, config, or logs) to go deep;
   work `security/baseline.md` on each live system.
 - Notes sync (item 25): follow `notes-sync/SIMPLENOTE-SETUP.md` on the iPhone and Zorin PC.

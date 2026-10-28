@@ -1,8 +1,8 @@
-# Updating inonda.site and inonda.org (Wasmer Edge)
+# Updating inonda.site, inonda.org and inonda.homes (Wasmer Edge)
 
-Both sites are Wasmer Edge apps under the account `constapo`. Every update follows the
+All three sites are Wasmer Edge apps under the account `constapo`. Every update follows the
 `wasmer-safe-site-update` skill: back up, change only what was asked, test, show the change,
-deploy only after the owner says yes, then check both sites still load.
+deploy only after the owner says yes, then check all three sites still load.
 
 ## One-time setup on your PC (Zorin OS)
 
@@ -16,7 +16,7 @@ deploy only after the owner says yes, then check both sites still load.
 ## What Claude then does
 
 1. Runs `bash tools/wasmer/find-sites.sh` to list every Wasmer project folder on the PC
-   (read-only), and `wasmer app list` to match folders to inonda.site / inonda.org.
+   (read-only), and `wasmer app list` to match folders to inonda.site / inonda.org / inonda.homes.
 2. Records the folder of each site in `memory/websites.md`, so later sessions skip the search.
 3. Makes the change you ask for, following the safe-update steps.
 
@@ -33,7 +33,8 @@ before publishing, and blocks commands that could take a site offline:
     "Bash(wasmer --version)", "Bash(wasmer whoami)",
     "Bash(wasmer app list:*)", "Bash(wasmer app get:*)", "Bash(wasmer app info:*)",
     "Bash(wasmer run:*)",
-    "Bash(curl -sI https://inonda.site)", "Bash(curl -sI https://inonda.org)"
+    "Bash(curl -sI https://inonda.site)", "Bash(curl -sI https://inonda.org)",
+    "Bash(curl -sI https://inonda.homes)"
   ],
   "ask": ["Bash(wasmer deploy:*)", "Bash(wasmer login:*)"],
   "deny": [
