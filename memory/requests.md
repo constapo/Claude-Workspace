@@ -216,8 +216,13 @@ Format: date · what was asked · what was done / status.
     Prompt is ready (shot-list V01-01 + realism guard, `inonda-youtube-videos/higgsfield/v01-scene1.sh 1`).
     *Waiting on:* owner to pick a service that works here and approve the one test clip at its quoted price.
 
+39. **2026-10-28 · "Add 3rd website of company: https://inonda.homes to your memory."** → Added to
+    the new `memory/company-websites.md` (list of all three Inonda sites: inonda.site, inonda.org,
+    inonda.homes). Hosting for inonda.homes is not known yet — say if it is also on Wasmer.
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
+- Websites (item 32, 39): confirm where inonda.homes is hosted.
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org.
 - Security (item 29): point me at a real asset per surface (code, config, or logs) to go deep;
