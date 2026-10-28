@@ -37,14 +37,15 @@ def fetch(prompt, seed, path):
         return
     q = urllib.parse.quote(f"{prompt}, {STYLE}")
     url = f"https://image.pollinations.ai/prompt/{q}?width=1920&height=1080&nologo=true&seed={seed}"
-    for attempt in range(4):  # free service, no cost to retry
+    time.sleep(20)  # the free tier rate-limits (HTTP 402) when requests come too fast
+    for attempt in range(8):  # free service, no cost to retry
         try:
             data = urllib.request.urlopen(url, timeout=180).read()
             if len(data) > 20000:
                 open(path, "wb").write(data); return
         except Exception as e:
             print("retry", path, e)
-        time.sleep(5 * (attempt + 1))
+        time.sleep(30 * (attempt + 1))
     raise SystemExit(f"could not fetch {path}")
 
 def duration(path):

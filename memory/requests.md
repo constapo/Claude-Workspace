@@ -220,6 +220,13 @@ Format: date · what was asked · what was done / status.
     the new `memory/websites.md` (list of all three Inonda sites: inonda.site, inonda.org,
     inonda.homes). Owner confirmed inonda.homes is also on Wasmer; added to `tools/wasmer/README.md`.
 
+40. **2026-10-28 · "Use any free AI tools… I want this video done, 30 fps."** → Video 01 built with free
+    tools only: 32 Pollinations.ai stills (no account/credits) + slow camera moves, film grain, 30 fps,
+    1920x1080, Emma narration, end card with all three sites. 5:13, 93 MB. Script:
+    `inonda-youtube-videos/free-build/build_v01.py` (re-runnable; free tier rate-limits, so it waits
+    20s between pictures). Video file sent in chat (not committed, too large). Stills are not true
+    video and FILM shots (owner on camera) are stand-in rooms — swap in real footage when you have it.
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
