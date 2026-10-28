@@ -210,6 +210,12 @@ Format: date · what was asked · what was done / status.
     point Claude Code's `ANTHROPIC_BASE_URL` at it), and caveats (routes prompts through third-party
     free providers — nothing private; weaker than Claude; keys stay local). No install performed here.
 
+38. **2026-10-28 · "Make that video now."** → Read as test clip V01-01 (Video 01 hook: cracked
+    shower tile). Nothing generated, no credits spent. Blockers: Artlist tools did not load in this
+    session; HF_KEY (Higgsfield) is not set here; ElevenLabs refused video (needs a paid plan).
+    Prompt is ready (shot-list V01-01 + realism guard, `inonda-youtube-videos/higgsfield/v01-scene1.sh 1`).
+    *Waiting on:* owner to pick a service that works here and approve the one test clip at its quoted price.
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
@@ -224,7 +230,7 @@ Format: date · what was asked · what was done / status.
 - Say what "REA" means (item 18), in case it names a specific tool or method.
 - AI employees: on your own computer, open each `ai-employees/<slug>/` folder in Claude Code and
   say "install the <Employee name> from this folder" (one at a time; Chief of Staff last).
-- Artlist connected by the owner (2026-10-11) – start a NEW session so its tools load, then
-  price and approve test clip V01-01.
+- Test clip V01-01 (item 38): Artlist tools still not loaded (2026-10-28); pick a working service
+  (Artlist / Higgsfield key / Krea) and approve the single test clip at its quoted price.
 - Real job details for videos 17 and 20 (scripts and narration).
 - Fill `[ADD REAL PRICE]`, `[ADD REAL DURATION]`, `[ADD PHONE/WHATSAPP]` placeholders in scripts.
