@@ -284,6 +284,13 @@ Format: date · what was asked · what was done / status.
     delivery, and which skills to use at each step). Standing role: video ideas from the owner go
     through this skill.
 
+51. **2026-10-29 · Ran the "video production setup" meta prompt (find/check/install every skill for
+    idea → finished video; test idea "replacing floor tiles").** → Mapped 18 stages: 17 already covered
+    by installed skills/plugins; free stock video is the one real gap. Proposed (not installed): iart-ai/
+    tiktok-video-skills (short-form-video, caption-animation; MIT), digitalsamba/claude-code-video-toolkit
+    `ffmpeg` (MIT, 12K installs). Rejected: browser-use/video-use (needs pasted ElevenLabs key), reelary
+    (desktop app, Pro), mirror copies. 30 s floor-tiles test plan drafted. Waiting on owner's yes.
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
@@ -302,3 +309,4 @@ Format: date · what was asked · what was done / status.
   (Artlist / Higgsfield key / Krea) and approve the single test clip at its quoted price.
 - Real job details for videos 17 and 20 (scripts and narration).
 - Fill `[ADD REAL PRICE]`, `[ADD REAL DURATION]`, `[ADD PHONE/WHATSAPP]` placeholders in scripts.
+- Video skills (item 51): say yes/no to installing iart-ai short-form + captions and the ffmpeg skill; approve the free 30 s floor-tiles test.
