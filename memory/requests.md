@@ -306,7 +306,15 @@ Format: date · what was asked · what was done / status.
     `.impeccable/` and `ai-employees/` from Dope (`.anchor/` was never committed there). Dope keeps
     only business files. Start future sessions with claude-workspace selected so the rules load.
 
+54. **2026-10-29 · "Remove any activity done with Dope from GitHub and delete the Dope repository."** →
+    Owner chose to keep the business files first. Every Dope branch is archived in Claude-Workspace as
+    `dope-archive/<branch>` (5 branches, tips verified identical), and Dope's latest business files
+    (index.html, inonda-youtube-videos/, notes/, notes-sync/, security/, tools/) are on main, checked file
+    by file. Deleting the repository itself is blocked for Claude (no permission); the owner deletes it in
+    GitHub: Dope → Settings → Danger Zone → Delete this repository.
+
 ## Open items waiting on the owner
+- Dope (item 54): delete the Dope repository in GitHub settings (everything is safely in Claude-Workspace).
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org / inonda.homes.
