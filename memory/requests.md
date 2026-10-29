@@ -269,6 +269,14 @@ Format: date · what was asked · what was done / status.
     heygen-com/hyperframes (hyperframes, talking-head-recut, media-use), remotion-dev/skills (already
     available as the remotion plugin), browser-use/video-use. Nothing installed; waiting on the owner.
 
+49. **2026-10-29 · "Install hyperframes."** → Added the 7 official HyperFrames skills from
+    heygen-com/hyperframes (commit 838f878, Apache-2.0, LICENSE kept in each folder): `hyperframes`,
+    `hyperframes-cli`, `hyperframes-registry`, `media-use`, `remotion-to-hyperframes`, `slideshow`,
+    and `hyperframes-figma` (renamed from `figma` to avoid confusion with the Figma plugin; `/figma`
+    references updated). The CLI (`npx hyperframes`) renders HTML to video locally for free. House rules:
+    HeyGen-paid features in `media-use` (avatars, HeyGen voices, cloud render) need the owner's yes and a
+    price first; for narration keep Kokoro `am_michael`. Bundled scripts not run.
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
@@ -287,4 +295,3 @@ Format: date · what was asked · what was done / status.
   (Artlist / Higgsfield key / Krea) and approve the single test clip at its quoted price.
 - Real job details for videos 17 and 20 (scripts and narration).
 - Fill `[ADD REAL PRICE]`, `[ADD REAL DURATION]`, `[ADD PHONE/WHATSAPP]` placeholders in scripts.
-- Video-editing skill (item 48): pick one of the suggested skills to install, or none.
