@@ -259,10 +259,50 @@ Format: date · what was asked · what was done / status.
     Kokoro `am_michael` (speed 0.90) for all narrated videos, with Greek subtitles and the silent
     bilingual end card. Owner approved the reel `Inonda_Reel_bathroom_90s_Michael_GR.mp4`.
 
-47. **2026-10-29 · "Move anything that belongs to Claude from Dope to a new repository called Claude Workspace on GitHub."** → Owner chose "move all out of Dope". Claude files (`.claude/`, `CLAUDE.md`, `memory/`, `.anchor/`, `.impeccable/`, `ai-employees/`) copied into a local `claude-workspace` repo (1,439 files, 37 MB). Creating the GitHub repo was refused (403: the Claude GitHub integration cannot create repositories). Waiting for the owner to create an empty private repo `constapo/claude-workspace`; then push, and only after the push is confirmed, delete those files from Dope.
+47. **2026-10-29 · "Install repo skill called Find Skills."** → Added `.claude/skills/find-skills/`
+    (SKILL.md + MIT LICENSE) copied unchanged from vercel-labs/skills (commit 92a9a34). It helps find
+    and suggest skills from skills.sh / `npx skills find`. Per house rules it only searches and
+    suggests: any `npx skills add` install still needs the owner's yes. (A plugin copy,
+    `zizi-skills:find-skills`, also exists; the repo copy makes it available in every session.)
+
+48. **2026-10-29 · "Find a skill for video editing."** → Searched skills.sh with find-skills. Top picks:
+    heygen-com/hyperframes (hyperframes, talking-head-recut, media-use), remotion-dev/skills (already
+    available as the remotion plugin), browser-use/video-use. Nothing installed; waiting on the owner.
+
+49. **2026-10-29 · "Install hyperframes."** → Added the 7 official HyperFrames skills from
+    heygen-com/hyperframes (commit 838f878, Apache-2.0, LICENSE kept in each folder): `hyperframes`,
+    `hyperframes-cli`, `hyperframes-registry`, `media-use`, `remotion-to-hyperframes`, `slideshow`,
+    and `hyperframes-figma` (renamed from `figma` to avoid confusion with the Figma plugin; `/figma`
+    references updated). The CLI (`npx hyperframes`) renders HTML to video locally for free. House rules:
+    HeyGen-paid features in `media-use` (avatars, HeyGen voices, cloud render) need the owner's yes and a
+    price first; for narration keep Kokoro `am_michael`. Bundled scripts not run.
+
+50. **2026-10-29 · "You now have the assignment of movie / video clip / short video producer, making
+    them from simple prompted ideas using all possible skills; make a meta prompt of what I wrote."** →
+    Wrote the meta prompt as a skill: `.claude/skills/video-producer/SKILL.md` (role, hard rules from
+    CLAUDE.md, 8-step pipeline idea → brief → script → shot list → sources → sound → edit → QC →
+    delivery, and which skills to use at each step). Standing role: video ideas from the owner go
+    through this skill.
+
+51. **2026-10-29 · Ran the "video production setup" meta prompt (find/check/install every skill for
+    idea → finished video; test idea "replacing floor tiles").** → Mapped 18 stages: 17 already covered
+    by installed skills/plugins; free stock video is the one real gap. Proposed (not installed): iart-ai/
+    tiktok-video-skills (short-form-video, caption-animation; MIT), digitalsamba/claude-code-video-toolkit
+    `ffmpeg` (MIT, 12K installs). Rejected: browser-use/video-use (needs pasted ElevenLabs key), reelary
+    (desktop app, Pro), mirror copies. 30 s floor-tiles test plan drafted. Waiting on owner's yes.
+
+52. **2026-10-29 · Ran the "design setup" meta prompt (find/check/install skills to design anything;
+    test idea "Instagram post for our tile-replacement offer").** → 20 stages mapped; all covered by
+    installed skills/connectors except icon search, Lottie animation and interior-layout expertise.
+    Proposed (not installed): better-auth/better-icons (MIT, 6K), diffusionstudio/lottie text-to-lottie
+    (MIT, 10.8K), curiositech interior-design-expert (MIT, 1.1K). Rejected: rknall SVG Logo Designer
+    (no license), baoyu-infographic (needs image backend; dataink covers it), eachlabs/muapi (paid APIs),
+    mirror copies. Waiting on owner's yes.
+
+53. **2026-10-29 · "Move anything that belongs to Claude from Dope to a new repository called Claude Workspace on GitHub."** → Owner chose "move all out of Dope". Claude files (`.claude/`, `CLAUDE.md`, `memory/`, `.anchor/`, `.impeccable/`, `ai-employees/`) copied into a local `claude-workspace` repo (1,439 files, 37 MB). Creating the GitHub repo was refused (403: the Claude GitHub integration cannot create repositories). Waiting for the owner to create an empty private repo `constapo/claude-workspace`; then push, and only after the push is confirmed, delete those files from Dope.
 
 ## Open items waiting on the owner
-- Claude Workspace (item 47): create an empty private repo named claude-workspace on GitHub, then tell me.
+- Claude Workspace (item 53): create an empty private repo named claude-workspace on GitHub, then tell me.
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org / inonda.homes.
@@ -280,3 +320,5 @@ Format: date · what was asked · what was done / status.
   (Artlist / Higgsfield key / Krea) and approve the single test clip at its quoted price.
 - Real job details for videos 17 and 20 (scripts and narration).
 - Fill `[ADD REAL PRICE]`, `[ADD REAL DURATION]`, `[ADD PHONE/WHATSAPP]` placeholders in scripts.
+- Video skills (item 51): say yes/no to installing iart-ai short-form + captions and the ffmpeg skill; approve the free 30 s floor-tiles test.
+- Design skills (item 52): yes/no to better-icons, text-to-lottie, interior-design-expert; approve the free Instagram test post.
