@@ -41,8 +41,6 @@ LINES = [
   "Ερχόμαστε, ακούμε τι θέλετε και σας δίνουμε σαφή γραπτή προσφορά πριν ξεκινήσουμε."),
  ("Bathroom, kitchen, damp wall or leaking terrace? We would love to hear from you.",
   "Μπάνιο, κουζίνα, τοίχος με υγρασία ή ταράτσα που στάζει; Θα χαρούμε να σας ακούσουμε."),
- ("Message us on WhatsApp: plus three five seven, nine four, zero nine one, six one six.",
-  "Στείλτε μας μήνυμα στο WhatsApp: +357 94 091 616"),
 ]
 
 
@@ -94,15 +92,51 @@ def greek_ass(cues, out):
     open(out, "w").write(head + "\n".join(rows) + "\n")
 
 
+def cta_card(out, logo):
+    """Silent end card: on-screen call to contact us and follow us (no narration over it)."""
+    accent = "0x4FC3F7"
+    lines = [
+        ("Inonda Ltd", 86, 330, "white"), ("Repairs - Renovations - Maintenance - Cyprus", 40, 440, "white"),
+        ("CONTACT US TODAY", 66, 560, accent), ("Free inspection and written quote", 40, 650, "white"),
+        ("Irina, Director", 44, 730, "white"), ("+357 94 091 616", 64, 790, "white"),
+        ("Constantin, Foreman", 44, 890, "white"), ("+357 94 091 613", 64, 950, "white"),
+        ("WhatsApp  -  Viber  -  Call", 40, 1045, "white"), ("inonda2026@outlook.com", 44, 1115, "white"),
+        ("FOLLOW US", 66, 1240, accent),
+        ("Facebook: inondalimited", 44, 1335, "white"), ("Instagram: @inondaltd", 44, 1400, "white"),
+        ("TikTok: @inonda26", 44, 1465, "white"), ("YouTube: @InondaLTD", 44, 1530, "white"),
+        ("inonda.site  |  inonda.org  |  inonda.homes", 38, 1640, "white"),
+        ("29 Charalampou Mouskou, 2014 Strovolos, Nicosia", 30, 1715, "white"),
+    ]
+    dt = ",".join(
+        f"drawtext=fontfile={base.FONT}:text='{t.replace(':', chr(92) + ':')}':fontsize={sz}:fontcolor={c}"
+        f":x=(w-tw)/2:y={y}:alpha='min(1,max(0,(t-{0.12*i:.2f})/0.4))'" for i, (t, sz, y, c) in enumerate(lines))
+    inputs = ["-f", "lavfi", "-i", f"color=c=0x16232b:s={base.W}x{base.H}:r={base.FPS}:d={base.CARD_SECS}"]
+    if logo and os.path.exists(logo):
+        inputs += ["-loop", "1", "-i", logo]
+        fc = f"[1:v]scale=280:-1[l];[0:v][l]overlay=(W-w)/2:60,{dt},format=yuv420p"
+    else:
+        fc = f"[0:v]{dt},format=yuv420p"
+    base.run("ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", fc, "-t", str(base.CARD_SECS),
+             "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", out)
+
+
 def main():
     work = sys.argv[1]
     cues, voice_end = voice_track(work)
     print("voice ends at", round(voice_end, 1), "s")
     greek_ass(cues, f"{work}/reel_gr.ass")
-    # reuse the clips already rendered by build_reel_v01.py (same order and timing)
+    card_start = base.TOTAL - base.CARD_SECS
+    if voice_end > card_start:
+        raise SystemExit(f"voice runs into the silent end card ({voice_end:.1f} s > {card_start:.1f} s)")
+    # reuse the picture clips rendered by build_reel_v01.py; swap in the silent call-to-action card
+    card = f"{work}/rclips/card_cta.mp4"
+    cta_card(card, f"{work}/logo.png")
+    clips = [l.strip()[6:-1] for l in open(f"{work}/reel_list.txt") if not l.strip().endswith("card.mp4'")]
+    with open(f"{work}/reel_list_cta.txt", "w") as f:
+        f.writelines(f"file '{c}'\n" for c in clips + [card])
     final = f"{work}/Inonda_Reel_bathroom_90s_George_GR.mp4"
     ass = f"{work}/reel_gr.ass".replace(":", r"\:")
-    base.run("ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", f"{work}/reel_list.txt",
+    base.run("ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", f"{work}/reel_list_cta.txt",
              "-i", f"{work}/reel_george.m4a", "-vf", f"subtitles={ass},fps={base.FPS}", "-map", "0:v", "-map",
              "1:a", "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-c:a", "copy", "-t", str(base.TOTAL),
              "-movflags", "+faststart", final)

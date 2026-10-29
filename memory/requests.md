@@ -240,6 +240,11 @@ Format: date · what was asked · what was done / status.
     older sound) and burned-in Greek subtitles, one per sentence; script trimmed so the voice ends at
     86 s. Same pictures and contact card. Script: `inonda-youtube-videos/free-build/build_reel_v01_george.py`.
     Reel sent in chat (not committed). Open question: should the contact card also be in Greek?
+43. **2026-10-29 · "Ending video has to not be narrated at all; encourage to contact us and follow us on
+    social media, shown on screen."** → Removed the spoken WhatsApp line; the voice now stops at 79 s and
+    the last 11 s are silent. New end card shows "CONTACT US TODAY" (both phones, WhatsApp/Viber/Call,
+    email) and "FOLLOW US" (Facebook, Instagram, TikTok, YouTube), plus the 3 websites and address.
+    Builder: `build_reel_v01_george.py`. Reel sent in chat.
 
 ## Open items waiting on the owner
 - Reel (item 42): say if the contact card should be in Greek, and whether George's voice is right.
