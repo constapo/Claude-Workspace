@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dope Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: asymmetric split hero (copy left, live 3D object right), then a quiet editorial grid.
+   To rebrand: change the tokens below + the copy. The 3D object reads --accent and --accent-2. */
+:root {
+  --bg: #eef0f3;
+  --surface: #ffffff;
+  --fg: #12151b;
+  --muted: #5b6270;
+  --line: #d5d9e0;
+  --accent: #0e8f8a;
+  --accent-2: #ff6b4a;
+  --font-display: "Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+  --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: clamp(1.5rem, 2.5vw, 2rem);
+  --step-3: clamp(2.6rem, 6.5vw, 5.4rem);
+  --radius: 14px;
+  --max: 1180px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d1015; --surface: #151a22; --fg: #eef1f5; --muted: #98a1b0;
+    --line: #262d38; --accent: #2cc7bf; --accent-2: #ff7d5e; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d1015; --surface: #151a22; --fg: #eef1f5; --muted: #98a1b0;
+  --line: #262d38; --accent: #2cc7bf; --accent-2: #ff7d5e; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 400 var(--step-0)/1.6 var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: var(--max); margin: 0 auto; padding-inline: max(16px, 4vw); }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; letter-spacing: -0.02em; }
+.label {
+  font: 500 0.75rem/1 var(--font-mono);
+  text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted);
+}
+
+/* Nav */
+nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 22px; }
+.logo { font: 800 1.35rem/1 var(--font-display); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+.logo i { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); box-shadow: 8px 0 0 var(--accent-2); margin-right: 8px; }
+.links { display: flex; gap: 24px; font-weight: 500; }
+.links a { text-decoration: none; color: var(--muted); }
+.links a:hover { color: var(--fg); }
+
+/* Hero */
+.hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 32px; align-items: center; padding-block: 32px 64px; }
+.hero > * { min-width: 0; }
+.hero h1 { font-size: var(--step-3); line-height: 0.95; font-weight: 800; }
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero p.lede { font-size: var(--step-1); color: var(--muted); max-width: 34ch; margin: 24px 0 32px; }
+.ctas { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn {
+  display: inline-flex; align-items: center; gap: 10px; padding: 14px 22px; border-radius: 999px;
+  font: 600 1rem/1 var(--font-body); text-decoration: none; border: 1px solid var(--fg); cursor: pointer;
+  transition: transform .2s ease, background .2s ease, color .2s ease;
+}
+.btn.primary { background: var(--fg); color: var(--bg); }
+.btn:hover { transform: translateY(-2px); }
+.btn.ghost { background: transparent; color: var(--fg); }
+.stage { position: relative; aspect-ratio: 1 / 1; max-width: 100%; width: 100%; }
+.stage canvas { position: absolute; inset: 0; width: 100% !important; height: 100% !important; display: block; cursor: grab; }
+.stage .fallback {
+  position: absolute; inset: 12%; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, var(--accent-2), var(--accent) 60%, transparent 72%);
+  filter: blur(2px);
+}
+.stage .readout {
+  position: absolute; left: 0; bottom: 4%; display: flex; gap: 18px; flex-wrap: wrap;
+  font: 400 0.72rem/1.4 var(--font-mono); color: var(--muted); font-variant-numeric: tabular-nums;
+}
+
+/* Sections */
+section { padding-block: 72px; border-top: 1px solid var(--line); }
+.sec-head { display: grid; grid-template-columns: 1fr 2fr; gap: 32px; margin-bottom: 40px; }
+.sec-head > * { min-width: 0; }
+.sec-head h2 { font-size: var(--step-2); font-weight: 700; max-width: 22ch; }
+
+.services { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.service { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; display: grid; gap: 12px; align-content: start; }
+.service h3 { font-size: var(--step-1); }
+.service p { margin: 0; color: var(--muted); }
+.service .tag { font: 400 0.75rem/1 var(--font-mono); color: var(--accent); }
+
+.process { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; counter-reset: step; }
+.process li { padding: 0 24px 0 0; display: grid; gap: 10px; align-content: start; counter-increment: step; }
+.process li::before {
+  content: "0" counter(step); font: 500 0.8rem/1 var(--font-mono); color: var(--accent);
+  padding-bottom: 14px; border-bottom: 2px solid var(--line);
+}
+.process li:first-child::before { border-color: var(--accent); }
+.process h3 { font-size: var(--step-1); margin-top: 6px; }
+.process p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+.contact { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: end; }
+.contact > * { min-width: 0; }
+.contact h2 { font-size: var(--step-3); line-height: .95; font-weight: 800; }
+.mail { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.mail code { font: 500 1.05rem/1 var(--font-mono); padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); user-select: all; overflow-wrap: anywhere; }
+
+footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 28px 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+
+@media (max-width: 860px) {
+  .hero, .sec-head, .contact { grid-template-columns: 1fr; }
+  .stage { max-width: 520px; margin-inline: auto; }
+  .services { grid-template-columns: 1fr; }
+  .process { grid-template-columns: 1fr 1fr; row-gap: 32px; }
+  .links { display: none; }
+}
+@media (max-width: 480px) { .process { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="logo" href="#top" aria-label="Dope Studio home"><i></i>Dope</a>
+    <div class="links">
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div>
+      <p class="label">Digital product studio</p>
+      <h1>We build things people <em>actually</em> want to touch.</h1>
+      <p class="lede">Brand, product and web experiences for teams who'd rather stand out than blend in.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#contact">Start a project →</a>
+        <a class="btn ghost" href="#services">See what we do</a>
+      </div>
+    </div>
+    <div class="stage" id="stage" aria-label="Interactive 3D shape. Drag to rotate.">
+      <div class="fallback" id="fallback"></div>
+      <div class="readout" aria-hidden="true">
+        <span>MESH · <b id="faces">—</b> faces</span>
+        <span>ROT · <b id="rot">0.0</b>°</span>
+        <span>DRAG TO SPIN</span>
+      </div>
+    </div>
+  </header>
+
+  <section id="services">
+    <div class="sec-head">
+      <p class="label">What we do</p>
+      <h2>Three disciplines, one team, no hand-offs.</h2>
+    </div>
+    <div class="services">
+      <article class="service">
+        <span class="tag">/brand</span>
+        <h3>Brand identity</h3>
+        <p>Naming, logo systems, type and color that hold up from favicon to billboard.</p>
+      </article>
+      <article class="service">
+        <span class="tag">/product</span>
+        <h3>Product design</h3>
+        <p>Research-led UX and interfaces for web and mobile apps, shipped as a working design system.</p>
+      </article>
+      <article class="service">
+        <span class="tag">/web</span>
+        <h3>3D &amp; web</h3>
+        <p>Fast marketing sites with real-time 3D, motion and WebGL that still score well on Core Web Vitals.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="process">
+    <div class="sec-head">
+      <p class="label">How it works</p>
+      <h2>From first call to launch in about eight weeks.</h2>
+    </div>
+    <ol class="process">
+      <li><h3>Discover</h3><p>Workshops, audits and goals. Week 1.</p></li>
+      <li><h3>Design</h3><p>Concepts, prototypes and weekly reviews. Weeks 2–4.</p></li>
+      <li><h3>Build</h3><p>Production code, CMS and QA. Weeks 5–7.</p></li>
+      <li><h3>Launch</h3><p>Go-live, analytics and handover. Week 8.</p></li>
+    </ol>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Got an idea? Let's make it real.</h2>
+      <div>
+        <p class="label" style="margin-bottom:12px">Write to us</p>
+        <div class="mail">
+          <code id="email">hello@dope.studio</code>
+          <button class="btn ghost" id="copy" type="button">Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Dope Studio</span>
+    <span>Template · edit tokens &amp; copy in index.html</span>
+  </footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function () {
+  // Copy email
+  const copyBtn = document.getElementById('copy');
+  copyBtn.addEventListener('click', () => {
+    const text = document.getElementById('email').textContent;
+    const done = () => { copyBtn.textContent = 'Copied'; setTimeout(() => copyBtn.textContent = 'Copy', 1600); };
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(text).then(done).catch(selectIt);
+    } else selectIt();
+    function selectIt() {
+      const r = document.createRange(); r.selectNodeContents(document.getElementById('email'));
+      const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    }
+  });
+
+  if (!window.THREE) return; // CSS fallback blob stays visible
+  const stage = document.getElementById('stage');
+  let renderer;
+  try { renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true }); }
+  catch (e) { return; }
+  document.getElementById('fallback').remove();
+  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  stage.prepend(renderer.domElement);
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(35, 1, 0.1, 100);
+  camera.position.set(0, 0, 6.2);
+
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const geo = new THREE.IcosahedronGeometry(1.45, 22);
+  const base = geo.attributes.position.array.slice();
+  document.getElementById('faces').textContent = (geo.attributes.position.count / 3).toLocaleString();
+
+  const mat = new THREE.MeshPhysicalMaterial({
+    color: css('--accent'), roughness: 0.28, metalness: 0.15,
+    clearcoat: 1, clearcoatRoughness: 0.15, flatShading: true
+  });
+  const mesh = new THREE.Mesh(geo, mat);
+  scene.add(mesh);
+
+  const ringMat = new THREE.MeshStandardMaterial({ color: css('--accent-2'), roughness: 0.35, metalness: 0.3 });
+  const ring = new THREE.Mesh(new THREE.TorusGeometry(2.15, 0.035, 16, 160), ringMat);
+  ring.rotation.x = Math.PI / 2.4;
+  scene.add(ring);
+  const moon = new THREE.Mesh(new THREE.SphereGeometry(0.16, 32, 32), ringMat);
+  scene.add(moon);
+
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x334455, 0.75));
+  const key = new THREE.DirectionalLight(0xffffff, 1.1); key.position.set(3, 4, 5); scene.add(key);
+  const rim = new THREE.PointLight(new THREE.Color(css('--accent-2')), 1.4, 20); rim.position.set(-4, -2, 2); scene.add(rim);
+
+  // Re-read brand colors when the theme changes
+  const syncColors = () => { mat.color.set(css('--accent')); ringMat.color.set(css('--accent-2')); rim.color.set(css('--accent-2')); };
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', syncColors);
+  new MutationObserver(syncColors).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function resize() {
+    const s = stage.clientWidth;
+    renderer.setSize(s, s, false);
+    camera.aspect = 1; camera.updateProjectionMatrix();
+    if (reduce) renderer.render(scene, camera);
+  }
+  new ResizeObserver(resize).observe(stage); resize();
+
+  // Drag to spin, with inertia
+  let dragging = false, lx = 0, ly = 0, vx = 0.004, vy = 0;
+  const el = renderer.domElement;
+  el.addEventListener('pointerdown', e => { dragging = true; lx = e.clientX; ly = e.clientY; el.setPointerCapture(e.pointerId); el.style.cursor = 'grabbing'; });
+  el.addEventListener('pointermove', e => {
+    if (!dragging) return;
+    vx = (e.clientX - lx) * 0.004; vy = (e.clientY - ly) * 0.004; lx = e.clientX; ly = e.clientY;
+  });
+  const end = () => { dragging = false; el.style.cursor = 'grab'; };
+  el.addEventListener('pointerup', end); el.addEventListener('pointercancel', end);
+
+  const pos = geo.attributes.position;
+  const rotOut = document.getElementById('rot');
+
+  function deform(t) {
+    const a = pos.array;
+    for (let i = 0; i < a.length; i += 3) {
+      const x = base[i], y = base[i + 1], z = base[i + 2];
+      const n = Math.sin(x * 2.1 + t) * Math.cos(y * 2.3 + t * 0.8) * Math.sin(z * 1.9 + t * 1.2);
+      const k = 1 + 0.16 * n;
+      a[i] = x * k; a[i + 1] = y * k; a[i + 2] = z * k;
+    }
+    pos.needsUpdate = true;
+    geo.computeVertexNormals();
+  }
+
+  let visible = true;
+  new IntersectionObserver(([en]) => { visible = en.isIntersecting; }).observe(stage);
+
+  function frame(ms) {
+    const t = ms * 0.0006;
+    if (visible) {
+      deform(t);
+      mesh.rotation.y += vx; mesh.rotation.x += vy;
+      if (!dragging) { vx += (0.004 - vx) * 0.03; vy *= 0.94; }
+      moon.position.set(Math.cos(t * 1.6) * 2.15, Math.sin(t * 1.6) * 0.8, Math.sin(t * 1.6) * 1.9);
+      ring.rotation.z = t * 0.2;
+      rotOut.textContent = ((mesh.rotation.y * 180 / Math.PI) % 360 + 360) % 360 | 0;
+      renderer.render(scene, camera);
+    }
+    if (!reduce) requestAnimationFrame(frame);
+  }
+  if (reduce) { deform(1.2); mesh.rotation.set(0.3, 0.6, 0); renderer.render(scene, camera); }
+  else requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
