@@ -227,6 +227,14 @@ Format: date · what was asked · what was done / status.
     20s between pictures). Video file sent in chat (not committed, too large). Stills are not true
     video and FILM shots (owner on camera) are stand-in rooms — swap in real footage when you have it.
 
+41. **2026-10-28 · "I wanted a short video for reels, 1 min 30 sec, as an advert; end with contact details
+    and social links from the websites."** → Built a 90 s vertical reel (1080x1920, 30 fps): Emma's
+    narration cut to the strongest lines (hook, who we are, survey, honest strip-out, waterproofing,
+    sealant, written quote, WhatsApp CTA), free Pollinations 9:16 stills with slow moves, burned-in
+    captions, and an 11 s contact card (logo, Irina + Constantin phones, email, 3 websites, Facebook,
+    Instagram, TikTok, YouTube, Strovolos address). Script: `inonda-youtube-videos/free-build/build_reel_v01.py`.
+    Contact details saved in `memory/websites.md`. Reel sent in chat (not committed, 34 MB).
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
