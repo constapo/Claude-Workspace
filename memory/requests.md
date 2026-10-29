@@ -259,6 +259,12 @@ Format: date · what was asked · what was done / status.
     Kokoro `am_michael` (speed 0.90) for all narrated videos, with Greek subtitles and the silent
     bilingual end card. Owner approved the reel `Inonda_Reel_bathroom_90s_Michael_GR.mp4`.
 
+47. **2026-10-29 · "Install repo skill called Find Skills."** → Added `.claude/skills/find-skills/`
+    (SKILL.md + MIT LICENSE) copied unchanged from vercel-labs/skills (commit 92a9a34). It helps find
+    and suggest skills from skills.sh / `npx skills find`. Per house rules it only searches and
+    suggests: any `npx skills add` install still needs the owner's yes. (A plugin copy,
+    `zizi-skills:find-skills`, also exists; the repo copy makes it available in every session.)
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
