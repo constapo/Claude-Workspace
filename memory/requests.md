@@ -254,9 +254,12 @@ Format: date · what was asked · what was done / status.
     Reel rebuilt with it (speed 0.90, voice ends 76 s, silent bilingual end card). Builder default is
     now Kokoro am_michael (`REEL_VOICE_ENGINE=edge` brings back the Edge voice). Standing choice:
     use `am_michael` for Inonda voiceovers unless the owner says otherwise.
+46. **2026-10-29 · "That's the video I wanted. Put in memory that voice to be used on all future
+    videos that require narration."** → Standing rule added to `/CLAUDE.md` ("Narration voice"):
+    Kokoro `am_michael` (speed 0.90) for all narrated videos, with Greek subtitles and the silent
+    bilingual end card. Owner approved the reel `Inonda_Reel_bathroom_90s_Michael_GR.mp4`.
 
 ## Open items waiting on the owner
-- Reel (item 45): confirm am_michael is the voice you picked in the past session.
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org / inonda.homes.

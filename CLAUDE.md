@@ -44,3 +44,13 @@ useful ones to `.claude/skills/`, so every future session has them.
    send anything, or handle credentials on its own. Don't run its scripts or install its
    hooks without the owner's yes.
 5. Log what was added in `memory/requests.md`, then commit and push.
+
+## Narration voice – owner's standing rule (2026-10-29)
+
+Every future video that needs narration uses the owner-approved free voice: **Kokoro TTS, voice
+`am_michael`** (local, no account, no credits; model files `kokoro-v1.0.onnx` + `voices-v1.0.bin`
+from github.com/thewh1teagle/kokoro-onnx release `model-files-v1.0`, kept in `~/.cache/kokoro`).
+Settings used in the approved reel: `speed=0.90`, `lang="en-us"`, 0.35 s pause between sentences.
+Reference builder: `inonda-youtube-videos/free-build/build_reel_v01_george.py`. Use another voice
+only if the owner asks for it. Keep the approved style too: Greek subtitles on all narration, and
+a silent (not narrated) bilingual English/Greek "Contact us / Follow us" end card.
