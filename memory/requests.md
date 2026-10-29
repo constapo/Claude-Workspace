@@ -291,6 +291,14 @@ Format: date · what was asked · what was done / status.
     `ffmpeg` (MIT, 12K installs). Rejected: browser-use/video-use (needs pasted ElevenLabs key), reelary
     (desktop app, Pro), mirror copies. 30 s floor-tiles test plan drafted. Waiting on owner's yes.
 
+52. **2026-10-29 · Ran the "design setup" meta prompt (find/check/install skills to design anything;
+    test idea "Instagram post for our tile-replacement offer").** → 20 stages mapped; all covered by
+    installed skills/connectors except icon search, Lottie animation and interior-layout expertise.
+    Proposed (not installed): better-auth/better-icons (MIT, 6K), diffusionstudio/lottie text-to-lottie
+    (MIT, 10.8K), curiositech interior-design-expert (MIT, 1.1K). Rejected: rknall SVG Logo Designer
+    (no license), baoyu-infographic (needs image backend; dataink covers it), eachlabs/muapi (paid APIs),
+    mirror copies. Waiting on owner's yes.
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
@@ -310,3 +318,4 @@ Format: date · what was asked · what was done / status.
 - Real job details for videos 17 and 20 (scripts and narration).
 - Fill `[ADD REAL PRICE]`, `[ADD REAL DURATION]`, `[ADD PHONE/WHATSAPP]` placeholders in scripts.
 - Video skills (item 51): say yes/no to installing iart-ai short-form + captions and the ffmpeg skill; approve the free 30 s floor-tiles test.
+- Design skills (item 52): yes/no to better-icons, text-to-lottie, interior-design-expert; approve the free Instagram test post.
