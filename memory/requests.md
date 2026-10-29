@@ -249,9 +249,14 @@ Format: date · what was asked · what was done / status.
     (headings, services, staff titles, quote offer, call options, address); phones, email, social
     handles and websites shown once. Reel sent in chat.
     Owner confirmed (2026-10-29) the Greek names are correct: Ιρίνα, Κωνσταντίν.
+45. **2026-10-29 · "You showed me some male voices in a past session; use the one I chose."** → The past
+    session's record (item 23/35, 2026-10-15) names one male voice: free local Kokoro `am_michael`.
+    Reel rebuilt with it (speed 0.90, voice ends 76 s, silent bilingual end card). Builder default is
+    now Kokoro am_michael (`REEL_VOICE_ENGINE=edge` brings back the Edge voice). Standing choice:
+    use `am_michael` for Inonda voiceovers unless the owner says otherwise.
 
 ## Open items waiting on the owner
-- Reel (item 42): say whether George's voice is right.
+- Reel (item 45): confirm am_michael is the voice you picked in the past session.
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org / inonda.homes.

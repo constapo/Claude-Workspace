@@ -9,8 +9,12 @@ import edge_tts, edge_tts.communicate
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import build_reel_v01 as base
 
-VOICE, RATE, PITCH = "en-GB-ThomasNeural", "-3%", "-14Hz"  # lower pitch: an older man
-GAP = 0.20  # pause between sentences, seconds
+# Owner's chosen voice (2026-10-15 session): free local Kokoro "am_michael". Edge voice kept as fallback.
+ENGINE = os.environ.get("REEL_VOICE_ENGINE", "kokoro")
+KOKORO_VOICE, KOKORO_SPEED = "am_michael", 0.90
+KOKORO_DIR = os.path.expanduser("~/.cache/kokoro")  # kokoro-v1.0.onnx + voices-v1.0.bin (thewh1teagle/kokoro-onnx)
+VOICE, RATE, PITCH = "en-GB-ThomasNeural", "-3%", "-14Hz"  # Edge fallback: lower pitch, an older man
+GAP = 0.35  # pause between sentences, seconds
 CA = "/root/.ccr/ca-bundle.crt"  # sandbox proxy CA; ignored where it does not exist
 
 # (spoken English, Greek subtitle)
@@ -44,6 +48,19 @@ LINES = [
 ]
 
 
+_kokoro = None
+
+
+def say_kokoro(text, out):
+    global _kokoro
+    import soundfile
+    from kokoro_onnx import Kokoro
+    if _kokoro is None:
+        _kokoro = Kokoro(f"{KOKORO_DIR}/kokoro-v1.0.onnx", f"{KOKORO_DIR}/voices-v1.0.bin")
+    samples, sr = _kokoro.create(text, voice=KOKORO_VOICE, speed=KOKORO_SPEED, lang="en-us")
+    soundfile.write(out, samples, sr)
+
+
 async def say(text, out):
     if os.path.exists(CA):
         edge_tts.communicate._SSL_CTX = ssl.create_default_context(cafile=CA)
@@ -58,12 +75,13 @@ def duration(path):
 
 def voice_track(work):
     """One mp3 per sentence -> one wav with GAP between; returns [(start, end, greek)]."""
-    os.makedirs(f"{work}/george", exist_ok=True)
+    folder = f"{work}/voice_{ENGINE}"
+    os.makedirs(folder, exist_ok=True)
     parts, cues, t = [], [], 0.4
     for i, (en, gr) in enumerate(LINES):
-        mp3 = f"{work}/george/{i:02d}.mp3"
+        mp3 = f"{folder}/{i:02d}." + ("wav" if ENGINE == "kokoro" else "mp3")
         if not os.path.exists(mp3):
-            asyncio.run(say(en, mp3))
+            say_kokoro(en, mp3) if ENGINE == "kokoro" else asyncio.run(say(en, mp3))
         d = duration(mp3)
         cues.append((t, t + d, gr))
         parts.append((mp3, d))
@@ -139,7 +157,7 @@ def main():
     clips = [l.strip()[6:-1] for l in open(f"{work}/reel_list.txt") if not l.strip().endswith("card.mp4'")]
     with open(f"{work}/reel_list_cta.txt", "w") as f:
         f.writelines(f"file '{c}'\n" for c in clips + [card])
-    final = f"{work}/Inonda_Reel_bathroom_90s_George_GR.mp4"
+    final = f"{work}/Inonda_Reel_bathroom_90s_Michael_GR.mp4"
     ass = f"{work}/reel_gr.ass".replace(":", r"\:")
     base.run("ffmpeg", "-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", f"{work}/reel_list_cta.txt",
              "-i", f"{work}/reel_george.m4a", "-vf", f"subtitles={ass},fps={base.FPS}", "-map", "0:v", "-map",
