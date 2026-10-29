@@ -299,10 +299,14 @@ Format: date · what was asked · what was done / status.
     (no license), baoyu-infographic (needs image backend; dataink covers it), eachlabs/muapi (paid APIs),
     mirror copies. Waiting on owner's yes.
 
-53. **2026-10-29 · "Move anything that belongs to Claude from Dope to a new repository called Claude Workspace on GitHub."** → Owner chose "move all out of Dope". Claude files (`.claude/`, `CLAUDE.md`, `memory/`, `.anchor/`, `.impeccable/`, `ai-employees/`) copied into a local `claude-workspace` repo (1,439 files, 37 MB). Creating the GitHub repo was refused (403: the Claude GitHub integration cannot create repositories). Waiting for the owner to create an empty private repo `constapo/claude-workspace`; then push, and only after the push is confirmed, delete those files from Dope.
+53. **2026-10-29 · "Move anything that belongs to Claude from Dope to a new repository called Claude Workspace on GitHub."** → Owner chose "move all out of Dope". Claude files (`.claude/`, `CLAUDE.md`, `memory/`, `.anchor/`, `.impeccable/`, `ai-employees/`) copied into a local `claude-workspace` repo (1,439 files, 37 MB). Creating the GitHub repo was refused (403: the Claude GitHub integration cannot create repositories). Owner created `constapo/claude-workspace` (it already held 5 earlier commits: Superpowers and
+    i-have-adhd skills/hooks, an early copy of the video scripts and 3D landing page). Merged without
+    losing anything; `.claude/settings.json` now runs both sets of hooks. Pushed and checked file by file
+    (all 1,750 identical except 3 Python cache files). Then removed `.claude/`, `CLAUDE.md`, `memory/`,
+    `.impeccable/` and `ai-employees/` from Dope (`.anchor/` was never committed there). Dope keeps
+    only business files. Start future sessions with claude-workspace selected so the rules load.
 
 ## Open items waiting on the owner
-- Claude Workspace (item 53): create an empty private repo named claude-workspace on GitHub, then tell me.
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org / inonda.homes.
