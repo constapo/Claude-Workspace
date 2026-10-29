@@ -277,6 +277,13 @@ Format: date · what was asked · what was done / status.
     HeyGen-paid features in `media-use` (avatars, HeyGen voices, cloud render) need the owner's yes and a
     price first; for narration keep Kokoro `am_michael`. Bundled scripts not run.
 
+50. **2026-10-29 · "You now have the assignment of movie / video clip / short video producer, making
+    them from simple prompted ideas using all possible skills; make a meta prompt of what I wrote."** →
+    Wrote the meta prompt as a skill: `.claude/skills/video-producer/SKILL.md` (role, hard rules from
+    CLAUDE.md, 8-step pipeline idea → brief → script → shot list → sources → sound → edit → QC →
+    delivery, and which skills to use at each step). Standing role: video ideas from the owner go
+    through this skill.
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
