@@ -234,8 +234,15 @@ Format: date · what was asked · what was done / status.
     captions, and an 11 s contact card (logo, Irina + Constantin phones, email, 3 websites, Facebook,
     Instagram, TikTok, YouTube, Strovolos address). Script: `inonda-youtube-videos/free-build/build_reel_v01.py`.
     Contact details saved in `memory/websites.md`. Reel sent in chat (not committed, 34 MB).
+42. **2026-10-29 · "Greek subtitles! Replace Emma with the voice of an old man, George" / "the voiceover
+    has to be freeware, an old male"** → ElevenLabs George ($0.16) was not approved, so not used. Rebuilt
+    the 90 s reel with a free Microsoft Edge neural voice (en-GB-ThomasNeural, pitch lowered for an
+    older sound) and burned-in Greek subtitles, one per sentence; script trimmed so the voice ends at
+    86 s. Same pictures and contact card. Script: `inonda-youtube-videos/free-build/build_reel_v01_george.py`.
+    Reel sent in chat (not committed). Open question: should the contact card also be in Greek?
 
 ## Open items waiting on the owner
+- Reel (item 42): say if the contact card should be in Greek, and whether George's voice is right.
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org / inonda.homes.
