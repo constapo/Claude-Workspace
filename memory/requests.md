@@ -248,6 +248,7 @@ Format: date · what was asked · what was done / status.
 44. **2026-10-29 · "Contact card can be both languages."** → End card is now English + Greek
     (headings, services, staff titles, quote offer, call options, address); phones, email, social
     handles and websites shown once. Reel sent in chat.
+    Owner confirmed (2026-10-29) the Greek names are correct: Ιρίνα, Κωνσταντίν.
 
 ## Open items waiting on the owner
 - Reel (item 42): say whether George's voice is right.

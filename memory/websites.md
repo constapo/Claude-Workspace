@@ -14,3 +14,5 @@ When working on "the company websites", include all three.
 - Email: inonda2026@outlook.com
 - Address: 29 Charalampou Mouskou, 2014 Strovolos, Nicosia, Cyprus
 - Facebook: facebook.com/inondalimited · Instagram: @inondaltd · TikTok: @inonda26 · YouTube: @InondaLTD
+
+Greek names (confirmed by owner 2026-10-29): Irina = Ιρίνα (Διευθύντρια), Constantin = Κωνσταντίν (Εργοδηγός).
