@@ -93,23 +93,28 @@ def greek_ass(cues, out):
 
 
 def cta_card(out, logo):
-    """Silent end card: on-screen call to contact us and follow us (no narration over it)."""
+    """Silent bilingual (English/Greek) end card: on-screen call to contact us and follow us (no narration over it)."""
     accent = "0x4FC3F7"
-    lines = [
-        ("Inonda Ltd", 86, 330, "white"), ("Repairs - Renovations - Maintenance - Cyprus", 40, 440, "white"),
-        ("CONTACT US TODAY", 66, 560, accent), ("Free inspection and written quote", 40, 650, "white"),
-        ("Irina, Director", 44, 730, "white"), ("+357 94 091 616", 64, 790, "white"),
-        ("Constantin, Foreman", 44, 890, "white"), ("+357 94 091 613", 64, 950, "white"),
-        ("WhatsApp  -  Viber  -  Call", 40, 1045, "white"), ("inonda2026@outlook.com", 44, 1115, "white"),
-        ("FOLLOW US", 66, 1240, accent),
-        ("Facebook: inondalimited", 44, 1335, "white"), ("Instagram: @inondaltd", 44, 1400, "white"),
-        ("TikTok: @inonda26", 44, 1465, "white"), ("YouTube: @InondaLTD", 44, 1530, "white"),
-        ("inonda.site  |  inonda.org  |  inonda.homes", 38, 1640, "white"),
-        ("29 Charalampou Mouskou, 2014 Strovolos, Nicosia", 30, 1715, "white"),
+    lines = [  # English line, then its Greek version
+        ("Inonda Ltd", 80, 325, "white"),
+        ("Repairs - Renovations - Maintenance - Cyprus", 34, 425, "white"),
+        ("Επισκευές - Ανακαινίσεις - Συντήρηση - Κύπρος", 34, 470, "white"),
+        ("CONTACT US TODAY", 60, 555, accent), ("ΕΠΙΚΟΙΝΩΝΗΣΤΕ ΜΑΖΙ ΜΑΣ", 48, 625, accent),
+        ("Free inspection and written quote", 34, 695, "white"),
+        ("Δωρεάν αυτοψία και γραπτή προσφορά", 34, 740, "white"),
+        ("Irina, Director  ·  Ιρίνα, Διευθύντρια", 36, 815, "white"), ("+357 94 091 616", 60, 865, "white"),
+        ("Constantin, Foreman  ·  Κωνσταντίν, Εργοδηγός", 34, 955, "white"), ("+357 94 091 613", 60, 1003, "white"),
+        ("WhatsApp  -  Viber  -  Call / Κλήση", 36, 1090, "white"), ("inonda2026@outlook.com", 42, 1150, "white"),
+        ("FOLLOW US", 60, 1245, accent), ("ΑΚΟΛΟΥΘΗΣΤΕ ΜΑΣ", 48, 1315, accent),
+        ("Facebook: inondalimited", 42, 1390, "white"), ("Instagram: @inondaltd", 42, 1450, "white"),
+        ("TikTok: @inonda26", 42, 1510, "white"), ("YouTube: @InondaLTD", 42, 1570, "white"),
+        ("inonda.site  |  inonda.org  |  inonda.homes", 36, 1660, "white"),
+        ("29 Charalampou Mouskou, 2014 Strovolos, Nicosia", 28, 1730, "white"),
+        ("Χαραλάμπου Μούσκου 29, 2014 Στρόβολος, Λευκωσία", 28, 1770, "white"),
     ]
     dt = ",".join(
         f"drawtext=fontfile={base.FONT}:text='{t.replace(':', chr(92) + ':')}':fontsize={sz}:fontcolor={c}"
-        f":x=(w-tw)/2:y={y}:alpha='min(1,max(0,(t-{0.12*i:.2f})/0.4))'" for i, (t, sz, y, c) in enumerate(lines))
+        f":x=(w-tw)/2:y={y}:alpha='min(1,max(0,(t-{0.10*i:.2f})/0.4))'" for i, (t, sz, y, c) in enumerate(lines))
     inputs = ["-f", "lavfi", "-i", f"color=c=0x16232b:s={base.W}x{base.H}:r={base.FPS}:d={base.CARD_SECS}"]
     if logo and os.path.exists(logo):
         inputs += ["-loop", "1", "-i", logo]

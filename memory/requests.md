@@ -245,9 +245,12 @@ Format: date · what was asked · what was done / status.
     the last 11 s are silent. New end card shows "CONTACT US TODAY" (both phones, WhatsApp/Viber/Call,
     email) and "FOLLOW US" (Facebook, Instagram, TikTok, YouTube), plus the 3 websites and address.
     Builder: `build_reel_v01_george.py`. Reel sent in chat.
+44. **2026-10-29 · "Contact card can be both languages."** → End card is now English + Greek
+    (headings, services, staff titles, quote offer, call options, address); phones, email, social
+    handles and websites shown once. Reel sent in chat.
 
 ## Open items waiting on the owner
-- Reel (item 42): say if the contact card should be in Greek, and whether George's voice is right.
+- Reel (item 42): say whether George's voice is right.
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org / inonda.homes.
