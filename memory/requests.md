@@ -265,6 +265,10 @@ Format: date · what was asked · what was done / status.
     suggests: any `npx skills add` install still needs the owner's yes. (A plugin copy,
     `zizi-skills:find-skills`, also exists; the repo copy makes it available in every session.)
 
+48. **2026-10-29 · "Find a skill for video editing."** → Searched skills.sh with find-skills. Top picks:
+    heygen-com/hyperframes (hyperframes, talking-head-recut, media-use), remotion-dev/skills (already
+    available as the remotion plugin), browser-use/video-use. Nothing installed; waiting on the owner.
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
@@ -283,3 +287,4 @@ Format: date · what was asked · what was done / status.
   (Artlist / Higgsfield key / Krea) and approve the single test clip at its quoted price.
 - Real job details for videos 17 and 20 (scripts and narration).
 - Fill `[ADD REAL PRICE]`, `[ADD REAL DURATION]`, `[ADD PHONE/WHATSAPP]` placeholders in scripts.
+- Video-editing skill (item 48): pick one of the suggested skills to install, or none.
