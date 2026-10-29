@@ -259,7 +259,10 @@ Format: date · what was asked · what was done / status.
     Kokoro `am_michael` (speed 0.90) for all narrated videos, with Greek subtitles and the silent
     bilingual end card. Owner approved the reel `Inonda_Reel_bathroom_90s_Michael_GR.mp4`.
 
+47. **2026-10-29 · "Move anything that belongs to Claude from Dope to a new repository called Claude Workspace on GitHub."** → Owner chose "move all out of Dope". Claude files (`.claude/`, `CLAUDE.md`, `memory/`, `.anchor/`, `.impeccable/`, `ai-employees/`) copied into a local `claude-workspace` repo (1,439 files, 37 MB). Creating the GitHub repo was refused (403: the Claude GitHub integration cannot create repositories). Waiting for the owner to create an empty private repo `constapo/claude-workspace`; then push, and only after the push is confirmed, delete those files from Dope.
+
 ## Open items waiting on the owner
+- Claude Workspace (item 47): create an empty private repo named claude-workspace on GitHub, then tell me.
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org / inonda.homes.
