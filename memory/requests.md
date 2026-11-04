@@ -319,8 +319,10 @@ Format: date · what was asked · what was done / status.
     Re-archived all 7 Dope branches as `dope-archive/<branch>`, tips verified identical. Deleting the
     repo itself still has to be done by the owner in GitHub.
 
+56. **2026-11-04 · "Dope is not for deleting at all; other purposes will be with this repository. Now back on video."** →
+    Deletion cancelled; Dope stays as it is (the dope-archive/* branches in Claude-Workspace remain as a backup).
+
 ## Open items waiting on the owner
-- Dope (item 54): delete the Dope repository in GitHub settings (everything is safely in Claude-Workspace).
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org / inonda.homes.
