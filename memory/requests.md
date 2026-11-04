@@ -331,6 +331,16 @@ Format: date · what was asked · what was done / status.
     wrong action) and remade; "smartphone" removed from prompts because models drew phones.
     Reel 90.0 s, 1080x1920, 30 fps, sent in chat (not committed).
 
+58. **2026-11-04 · "End page must be re-edited: my company logo above the company name, on a light
+    background; both phone numbers with a phone symbol; all social media IDs in their original brand
+    colours (never monochrome)." Then: "that symbol of Phone is classic and I don't like it at all."** →
+    Done: new standard end card `Dope/inonda-youtube-videos/free-build/end_card_brand.py` — logo on a
+    white panel above "Inonda Ltd", both numbers with a modern smartphone icon (not the classic
+    handset) and who answers (Irina / Constantin), WhatsApp + Viber + Facebook + Instagram + TikTok +
+    YouTube as app tiles in brand colours (Simple Icons, CC0), email, websites, bilingual, silent.
+    Tile reel rebuilt (90.0 s) and sent. House rule added to `inonda-youtube-videos/README.md`; Dope
+    commit cb03bf7.
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
