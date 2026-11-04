@@ -54,3 +54,14 @@ Settings used in the approved reel: `speed=0.90`, `lang="en-us"`, 0.35 s pause b
 Reference builder: `inonda-youtube-videos/free-build/build_reel_v01_george.py`. Use another voice
 only if the owner asks for it. Keep the approved style too: Greek subtitles on all narration, and
 a silent (not narrated) bilingual English/Greek "Contact us / Follow us" end card.
+
+## End card – owner's standing rule (2026-11-04)
+
+Every future video (reel, short, YouTube, ad, any length) ends with the approved Inonda end card,
+no exceptions. The approved picture is `brand/end-card-standard.png` (copy also in Dope at
+`inonda-youtube-videos/brand/end-card-standard.png`); generate it with
+`Dope/inonda-youtube-videos/free-build/end_card_brand.py` (`from end_card_brand import end_card`).
+It shows the logo on a light panel above "Inonda Ltd", both phone numbers with modern smartphone
+icons (never the classic handset), WhatsApp/Viber/Facebook/Instagram/TikTok/YouTube in their
+original brand colours (never monochrome), email and websites; bilingual EN/GR, silent, ~6 s.
+Do not redesign it unless the owner asks; if the owner approves a new version, replace the picture.

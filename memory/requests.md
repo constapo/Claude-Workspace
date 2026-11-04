@@ -341,6 +341,10 @@ Format: date · what was asked · what was done / status.
     Tile reel rebuilt (90.0 s) and sent. House rule added to `inonda-youtube-videos/README.md`; Dope
     commit cb03bf7.
 
+59. **2026-11-04 · "End card must be used in absolutely all future videos — save picture as rule!!!" (also: "find a popular and new one").** →
+    Saved the approved card as `brand/end-card-standard.png` (here and in Dope) and added a standing rule to
+    CLAUDE.md. "Find a popular and new one" asked back to the owner (unclear: new card style or new phone icon).
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
