@@ -326,6 +326,10 @@ Format: date · what was asked · what was done / status.
     (free), so the 18 stills are fetched with `Dope/inonda-youtube-videos/free-build/stills_tiles.py`
     (prompts follow the Realism standard), then built with `build_tiles_photo.py` (am_michael 0.90,
     Greek subtitles, logo top-left, silent bilingual end card, 90 s).
+    Done 2026-11-04: Pollinations 402'd after 2 stills, so the rest came from AI Horde (anonymous,
+    Juggernaut XL; needs a User-Agent header). 5 stills rejected by eye (white tiles, phones in shot,
+    wrong action) and remade; "smartphone" removed from prompts because models drew phones.
+    Reel 90.0 s, 1080x1920, 30 fps, sent in chat (not committed).
 
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
