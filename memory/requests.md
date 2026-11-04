@@ -313,6 +313,12 @@ Format: date · what was asked · what was done / status.
     by file. Deleting the repository itself is blocked for Claude (no permission); the owner deletes it in
     GitHub: Dope → Settings → Danger Zone → Delete this repository.
 
+55. **2026-11-04 · Owner typed "constapo/Dope" (the delete-confirmation text) in chat.** → Dope still
+    existed and had new work since item 54 (tile-reel commits, a Spec Kit merge, and branches
+    `claude/pending-claude-workspace-skills` and `claude/project-init-claude-integration-7rawyu`).
+    Re-archived all 7 Dope branches as `dope-archive/<branch>`, tips verified identical. Deleting the
+    repo itself still has to be done by the owner in GitHub.
+
 ## Open items waiting on the owner
 - Dope (item 54): delete the Dope repository in GitHub settings (everything is safely in Claude-Workspace).
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
