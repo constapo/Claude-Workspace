@@ -57,11 +57,12 @@ a silent (not narrated) bilingual English/Greek "Contact us / Follow us" end car
 
 ## End card – owner's standing rule (2026-11-04)
 
-Every future video (reel, short, YouTube, ad, any length) ends with the approved Inonda end card,
-no exceptions. The approved picture is `brand/end-card-standard.png` (copy also in Dope at
-`inonda-youtube-videos/brand/end-card-standard.png`); generate it with
-`Dope/inonda-youtube-videos/free-build/end_card_brand.py` (`from end_card_brand import end_card`).
-It shows the logo on a light panel above "Inonda Ltd", both phone numbers with modern smartphone
-icons (never the classic handset), WhatsApp/Viber/Facebook/Instagram/TikTok/YouTube in their
-original brand colours (never monochrome), email and websites; bilingual EN/GR, silent, ~6 s.
-Do not redesign it unless the owner asks; if the owner approves a new version, replace the picture.
+Every future video (reel, short, YouTube, ad, any length) ends with an approved Inonda end card,
+built with `Dope/inonda-youtube-videos/free-build/end_card_brand.py`. Do not redesign without the owner.
+- **Default, for almost all videos: the glassy card** — `end_card_glass(bg)`. Pass a photo of the
+  video's finished job as `bg` (blurred, darkened, behind frosted-glass panels); `end_card_glass(None)`
+  gives the navy-to-teal version. Pictures: `brand/end-card-glass-photo.png`, `brand/end-card-glass-plain.png`.
+- **Alternative, kept for occasional use: the classic card** — `end_card()`; `brand/end-card-classic.png`.
+Both: logo on a light panel above "Inonda Ltd"; both phone numbers with modern smartphone icons (never
+the classic handset); WhatsApp/Viber/Facebook/Instagram/TikTok/YouTube in original brand colours (never
+monochrome); email, websites; bilingual EN/GR; silent; ~6 s. Pictures also in Dope `inonda-youtube-videos/brand/`.

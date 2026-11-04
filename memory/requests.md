@@ -345,6 +345,11 @@ Format: date · what was asked · what was done / status.
     Saved the approved card as `brand/end-card-standard.png` (here and in Dope) and added a standing rule to
     CLAUDE.md. "Find a popular and new one" asked back to the owner (unclear: new card style or new phone icon).
 
+60. **2026-11-04 · "Use glassy end card in almost all future videos and keep also another one as potential uses."** →
+    Glassy card (`end_card_glass`, photo of the finished job behind it, plain navy-teal when no photo) is now the
+    default in CLAUDE.md and the Dope README; the classic card is kept as the alternative (`brand/end-card-classic.png`).
+    Tile reel rebuilt with the glassy card.
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
