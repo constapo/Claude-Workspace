@@ -322,6 +322,11 @@ Format: date · what was asked · what was done / status.
 56. **2026-11-04 · "Dope is not for deleting at all; other purposes will be with this repository. Now back on video."** →
     Deletion cancelled; Dope stays as it is (the dope-archive/* branches in Claude-Workspace remain as a backup).
 
+57. **2026-11-04 · "Back on video" → owner picked: finish the tile reel.** → Pollinations answers again
+    (free), so the 18 stills are fetched with `Dope/inonda-youtube-videos/free-build/stills_tiles.py`
+    (prompts follow the Realism standard), then built with `build_tiles_photo.py` (am_michael 0.90,
+    Greek subtitles, logo top-left, silent bilingual end card, 90 s).
+
 ## Open items waiting on the owner
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
