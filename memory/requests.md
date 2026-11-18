@@ -356,6 +356,12 @@ Format: date · what was asked · what was done / status.
    plus 2 grey plastic top guide blocks running in a top track with a brush strip. Gave a shopping and measuring
    checklist. Open: the owner takes an old roller to the shop and confirms the size.
 
+62. **2026-11-18 · "Find shop names and furniture hardware suppliers in Cyprus that can sell these rollers."** →
+   Found (web search): Panicos Elia (Limassol, Vasileos Pavlou 56, 25 560662, sliding systems page); Kokkinos Group
+   (Limassol, Häfele + Sisco, +357 25 56 55 55); GVS Furniture Fitting (Larnaca + Paphos shops, OPK sliding systems);
+   Vapsis (furniture fittings, online shop); Zalonis (furniture parts, zalonis.eu); Leroy Merlin Cyprus (furniture rollers);
+   Sliding Wardrobes Direct (maker, 7000 0076, may supply or repair). Opening hours and exact stock not checked.
+
 ## Open items waiting on the owner
 - Wardrobe rollers (item 61): take an old roller + top guide to the supplier and match the profile size.
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
