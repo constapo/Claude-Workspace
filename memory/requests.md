@@ -416,10 +416,11 @@ Format: date · what was asked · what was done / status.
     with "small jobs of a few hours" accepted (estimator page and its network section), "budget range" now
     "price". 49 JS + 21 Python tests pass; checked in a browser in EN/EL/RU/HE. Not done yet: urgent-repair
     option (waits until the repo is private), inonda.org and inonda.site wording, town names in RU/UK/HE/RO.
-    Pull request #6 opened on owner request the same day.
+    Pull request #6 opened on owner request the same day. Owner approved updating the preserve-content
+    safeguard; on "update estimator now" it was merged (d32bded) and deployed — live on inonda.homes 2026-11-18.
 
 ## Open items waiting on the owner
-- Inonda price update (items 61–62): prices are in the estimator branch; check them with Irina, make the repos private, then merge pull request #6 (constapo/inonda-service-estimator) when ready.
+- Inonda price update (items 61–62): new prices are live on inonda.homes; still to do: review the estimated prices with Irina, make the repos private, urgent-repair option, inonda.org / inonda.site wording.
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org / inonda.homes.
