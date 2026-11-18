@@ -380,6 +380,11 @@ Format: date · what was asked · what was done / status.
     server. Checked the estimator repo: no GitHub Pages workflow, no gh-pages branch and no CNAME file,
     and the language folders (/en/ etc.) that the live site serves are not in main (they are built at
     publish time). So whatever publishes inonda.homes is set up outside the repo; must verify after merge.
+    2026-11-18: owner: research Cyprus prices for supplying and installing an AC set (inverter indoor
+    unit + outdoor compressor) and add 20% because the install is subcontracted to licensed technicians.
+    Done: `inonda-pricing/03-ac-installation-prices.md` + CSV (client prices incl VAT: 9k EUR655,
+    12k EUR690, 18k EUR1,030, 24k EUR1,270; extra pipe EUR25/m; old unit removal EUR30). Waiting for
+    the owner and Irina to approve.
 
 ## Open items waiting on the owner
 - Inonda price update (item 61): approve the price Sheet with Irina once delivered; merge the PR yourself.
