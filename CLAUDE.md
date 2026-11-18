@@ -66,3 +66,10 @@ built with `Dope/inonda-youtube-videos/free-build/end_card_brand.py`. Do not red
 Both: logo on a light panel above "Inonda Ltd"; both phone numbers with modern smartphone icons (never
 the classic handset); WhatsApp/Viber/Facebook/Instagram/TikTok/YouTube in original brand colours (never
 monochrome); email, websites; bilingual EN/GR; silent; ~6 s. Pictures also in Dope `inonda-youtube-videos/brand/`.
+
+## Pricing rules are confidential – owner's standing rule (2026-11-18)
+
+How Inonda charges clients (uplifts, multipliers, travel charges, factors, margins, cost shares) must
+never be published: not on any website, in client-facing text, page code, PDFs, WhatsApp text, or in
+any public repository. Clients see only final prices. Before committing pricing notes, check the
+repository is private; if it is public, keep the rules out of the commit and tell the owner.

@@ -389,6 +389,11 @@ Format: date · what was asked · what was done / status.
     included); maintenance-contract clients keep priority call-outs at their contract rate. The 4x factor
     is internal: clients see only the final price. Still open: other missing services priced or
     'price on request'.
+    2026-11-18: STANDING RULE from the owner: the rules for how clients are charged (uplifts,
+    multipliers, travel, factors, margins) must never be published. Found: Claude-Workspace and
+    inonda-service-estimator are PUBLIC repos, and the estimator's README and browser code contain rules.
+    Owner chose to make the repos private himself. Until he confirms, no further pricing-rule details
+    are committed to any public repo.
 
 ## Open items waiting on the owner
 - Inonda price update (item 61): approve the price Sheet with Irina once delivered; merge the PR yourself.
