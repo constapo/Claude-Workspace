@@ -1,0 +1,67 @@
+﻿job_id,variant_id,en,el,ru,uk,he,ro
+flooring,,Flooring & tiling,Δάπεδα & πλακάκια,Полы и плитка,Підлога та плитка,ריצוף ואריחים,Pardoseli și faianță
+flooring,tiles,"Floor tiles, laid","Πλακάκια δαπέδου, τοποθέτηση",Укладка напольной плитки,Укладання підлогової плитки,הנחת אריחי רצפה,Montaj gresie
+flooring,laminate,Laminate / vinyl flooring,Laminate / βινυλικό δάπεδο,Ламинат / виниловый пол,Ламінат / вінілова підлога,פרקט למינציה / ויניל,Parchet laminat / vinil
+flooring,removal,Removal of old tiles,Αφαίρεση παλιών πλακακιών,Демонтаж старой плитки,Демонтаж старої плитки,פירוק אריחים ישנים,Demontare gresie veche
+kitchen,,Kitchen renovation,Ανακαίνιση κουζίνας,Ремонт кухни,Ремонт кухні,שיפוץ מטבח,Renovare bucătărie
+kitchen,kstd,Kitchen units – standard,Ντουλάπια κουζίνας – standard,Кухонные модули – стандарт,Кухонні модулі – стандарт,ארונות מטבח – סטנדרט,Mobilier bucătărie – standard
+kitchen,kprem,Kitchen units – premium,Ντουλάπια κουζίνας – premium,Кухонные модули – премиум,Кухонні модулі – преміум,ארונות מטבח – פרימיום,Mobilier bucătărie – premium
+kitchen,kworktop,Worktop replacement,Αντικατάσταση πάγκου,Замена столешницы,Заміна стільниці,החלפת משטח עבודה,Înlocuire blat
+bathroom,,Bathroom renovation,Ανακαίνιση μπάνιου,Ремонт ванной,Ремонт ванної,שיפוץ חדר רחצה,Renovare baie
+bathroom,brefresh,Bathroom refresh,Ανανέωση μπάνιου,Обновление ванной,Оновлення ванної,רענון חדר רחצה,Reîmprospătare baie
+bathroom,bfull,Full bathroom renovation,Πλήρης ανακαίνιση μπάνιου,Полный ремонт ванной,Повний ремонт ванної,שיפוץ מלא של חדר רחצה,Renovare completă baie
+bathroom,walkin,Bath to walk-in shower,Μπανιέρα σε walk-in ντουζιέρα,Ванна → душ walk-in,Ванна → душ walk-in,מאמבטיה למקלחון walk-in,Cadă → duș walk-in
+painting,,Painting,Βαψίματα,Покраска,Фарбування,צביעה,Zugrăveli
+painting,pint,Interior walls & ceilings,Εσωτερικοί τοίχοι & οροφές,Стены и потолки внутри,Стіни та стелі всередині,קירות ותקרות פנים,Pereți și tavane interioare
+painting,pext,Exterior facade,Εξωτερική πρόσοψη,Наружный фасад,Зовнішній фасад,חזית חיצונית,Fațadă exterioară
+gypsum,,Gypsum & plastering,Γυψοσανίδες & σοβάδες,Гипсокартон и штукатурка,Гіпсокартон і штукатурка,גבס וטיח,Rigips și tencuieli
+gypsum,lining,Wall lining (board on walls),Επένδυση τοίχου με γυψοσανίδα,Обшивка стен гипсокартоном,Обшивка стін гіпсокартоном,חיפוי קירות בגבס,Placare pereți cu rigips
+gypsum,liningins,Wall lining with insulation,Επένδυση τοίχου με μόνωση,Обшивка стен с утеплением,Обшивка стін з утепленням,חיפוי קירות עם בידוד,Placare pereți cu izolație
+gypsum,ceiling,Ceiling – plain,Ψευδοροφή – απλή,Потолок – обычный,Стеля – звичайна,תקרה – רגילה,Tavan – simplu
+gypsum,ceilingins,Ceiling – insulated,Ψευδοροφή – με μόνωση,Потолок – с утеплением,Стеля – з утепленням,תקרה – עם בידוד,Tavan – izolat
+gypsum,partition,Partition wall – no insulation,Χώρισμα – χωρίς μόνωση,Перегородка – без изоляции,Перегородка – без ізоляції,קיר הפרדה – ללא בידוד,Perete despărțitor – fără izolație
+gypsum,partitionins,Partition wall – insulated (rock wool),Χώρισμα – με μόνωση (πετροβάμβακας),Перегородка – с изоляцией (минвата),Перегородка – з ізоляцією (мінвата),קיר הפרדה – עם בידוד (צמר סלעים),Perete despărțitor – izolat (vată bazaltică)
+gypsum,plaster,Wall plastering,Σοβάτισμα τοίχων,Штукатурка стен,Штукатурення стін,טיח קירות,Tencuire pereți
+plumbing,,Plumbing,Υδραυλικά,Сантехника,Сантехніка,אינסטלציה,Instalații sanitare
+plumbing,wpoint,New water / drain point,Νέο σημείο νερού / αποχέτευσης,Новая точка воды / канализации,Нова точка води / каналізації,נקודת מים / ניקוז חדשה,Punct nou de apă / scurgere
+plumbing,heater,Water heater replacement,Αντικατάσταση θερμοσίφωνα,Замена водонагревателя,Заміна водонагрівача,החלפת דוד מים,Înlocuire boiler
+electrical,,Electrical works,Ηλεκτρολογικά,Электромонтаж,Електромонтаж,עבודות חשמל,Lucrări electrice
+electrical,epoint,New socket / light point,Νέα πρίζα / σημείο φωτισμού,Новая розетка / точка освещения,Нова розетка / точка освітлення,שקע / נקודת תאורה חדשה,Priză / punct de lumină nou
+electrical,board,Distribution board replacement,Αντικατάσταση ηλεκτρικού πίνακα,Замена электрощита,Заміна електрощита,החלפת לוח חשמל,Înlocuire tablou electric
+roofing,,Roofing & waterproofing,Στέγες & στεγανοποίηση,Кровля и гидроизоляция,Покрівля та гідроізоляція,גגות ואיטום,Acoperișuri și hidroizolații
+roofing,liquid,Liquid waterproofing membrane,Υγρή στεγανωτική μεμβράνη,Жидкая гидроизоляционная мембрана,Рідка гідроізоляційна мембрана,ממברנת איטום נוזלית,Membrană hidroizolantă lichidă
+roofing,torch,Torch-on bitumen membrane,Ασφαλτική μεμβράνη με φλόγιστρο,Наплавляемая битумная мембрана,Наплавна бітумна мембрана,יריעה ביטומנית בהלחמה,Membrană bituminoasă aplicată cu flacără
+roofing,tilerep,Roof tile repair,Επισκευή κεραμιδιών,Ремонт черепицы,Ремонт черепиці,תיקון רעפים,Reparație țiglă
+doors,,Doors & carpentry,Πόρτες & ξυλουργικά,Двери и столярные работы,Двері та столярні роботи,דלתות ונגרות,Uși și tâmplărie
+doors,idoor,"Interior door, supplied & fitted",Εσωτερική πόρτα με τοποθέτηση,Межкомнатная дверь с установкой,Міжкімнатні двері з монтажем,דלת פנים כולל התקנה,Ușă interioară cu montaj
+doors,wardrobe,Built-in wardrobe,Εντοιχισμένη ντουλάπα,Встроенный шкаф,Вбудована шафа,ארון קיר,Dulap încastrat
+outdoor,,Outdoor works,Εξωτερικές εργασίες,Наружные работы,Зовнішні роботи,עבודות חוץ,Lucrări exterioare
+outdoor,paving,Paving,Πλακόστρωση,Мощение,Мощення,ריצוף חוץ,Pavaj
+outdoor,decking,Terrace decking,Deck βεράντας,Террасная доска,Терасна дошка,דק למרפסת,Deck terasă
+outdoor,fence,Fencing,Περίφραξη,Ограждение,Огорожа,גידור,Împrejmuire
+aluminium,,Aluminium works,Κατασκευές αλουμινίου,Алюминиевые конструкции,Алюмінієві конструкції,עבודות אלומיניום,Lucrări din aluminiu
+aluminium,windows,Thermal-break windows & doors,Παράθυρα και πόρτες θερμοδιακοπής,Окна и двери с терморазрывом,Вікна та двері з терморозривом,חלונות ודלתות עם גשר תרמי,Ferestre și uși cu barieră termică
+aluminium,sliding,Sliding / lift-and-slide doors,Συρόμενες / ανυψούμενες-συρόμενες πόρτες,Раздвижные / подъёмно-раздвижные двери,Розсувні / підйомно-розсувні двері,דלתות הזזה / הרמה-הזזה,Uși glisante / glisante cu ridicare
+aluminium,shutters,Roller shutters,Ρολά,Рольставни,Ролети,תריסי גלילה,Rulouri exterioare
+aluminium,enclosure,Veranda / balcony enclosure,Κλείσιμο βεράντας / μπαλκονιού,Остекление веранды / балкона,Скління веранди / балкона,סגירת מרפסת,Închidere terasă / balcon
+aluminium,pergola,Bioclimatic pergola,Βιοκλιματική πέργκολα,Биоклиматическая пергола,Біокліматична пергола,פרגולה ביו-אקלימית,Pergolă bioclimatică
+hpl,,HPL cladding,Επενδύσεις HPL,Облицовка HPL,Облицювання HPL,חיפוי HPL,Placări HPL
+hpl,interior,Interior wall panelling,Εσωτερική επένδυση τοίχων,Внутренняя облицовка стен,Внутрішнє облицювання стін,חיפוי קירות פנימי,Placare interioară a pereților
+hpl,facade,Ventilated facade,Αεριζόμενη πρόσοψη,Вентилируемый фасад,Вентильований фасад,חזית מאווררת,Fațadă ventilată
+hpl,compact,Compact HPL partitions,Χωρίσματα compact HPL,Перегородки из компакт-HPL,Перегородки з компакт-HPL,מחיצות HPL קומפקט,Compartimentări HPL compact
+decor,,Decorative panels,Διακοσμητικά πάνελ,Декоративные панели,Декоративні панелі,פאנלים דקורטיביים,Panouri decorative
+decor,pvc,PVC marble-effect sheets,Φύλλα PVC με όψη μαρμάρου,Листы ПВХ под мрамор,Листи ПВХ під мармур,לוחות PVC בדמוי שיש,Plăci PVC cu aspect de marmură
+decor,wpc,WPC / fluted panels,Πάνελ WPC / με ραβδώσεις,Панели ДПК / реечные,Панелі ДПК / рейкові,לוחות WPC / מחורצים,Panouri WPC / riflate
+decor,acoustic,Acoustic slat panels,Ακουστικά πάνελ με πηχάκια,Акустические реечные панели,Акустичні рейкові панелі,לוחות סלאט אקוסטיים,Panouri acustice cu lamele
+welding,,Welding & metalwork,Συγκολλήσεις & σιδηροκατασκευές,Сварка и металлоконструкции,Зварювання та металоконструкції,ריתוך ומסגרות,Sudură și confecții metalice
+welding,railing,"Steel railing, painted","Σιδερένιο κάγκελο, βαμμένο","Стальные перила, окрашенные","Сталеві перила, пофарбовані",מעקה פלדה צבוע,"Balustradă din oțel, vopsită"
+welding,railinggalv,Galvanised steel railing,Γαλβανιζέ κάγκελο,Оцинкованные стальные перила,Оцинковані сталеві перила,מעקה פלדה מגולוון,Balustradă din oțel zincat
+welding,steelfence,Steel fence,Σιδερένια περίφραξη,Стальной забор,Сталевий паркан,גדר פלדה,Gard din oțel
+welding,gateswing,Steel swing gate,Σιδερένια ανοιγόμενη αυλόπορτα,Стальные распашные ворота,Сталеві розпашні ворота,שער פלדה נפתח,Poartă batantă din oțel
+welding,gatesliding,Steel sliding gate (no motor),Σιδερένια συρόμενη αυλόπορτα (χωρίς μοτέρ),Стальные откатные ворота (без привода),Сталеві відкотні ворота (без приводу),שער פלדה נגרר (ללא מנוע),Poartă glisantă din oțel (fără motor)
+welding,grille,Window security grille,Σίδερα ασφαλείας παραθύρου,Решётка на окно,Ґрати на вікно,סורג ביטחון לחלון,Grilaj de siguranță pentru fereastră
+welding,canopy,Steel frame / canopy / pergola,Μεταλλικός σκελετός / στέγαστρο / πέργκολα,Стальной каркас / навес / пергола,Сталевий каркас / навіс / пергола,שלד פלדה / סככה / פרגולה,Structură din oțel / copertină / pergolă
+renovation,,Renovation,Ανακαίνιση,Ремонт,Ремонт,שיפוץ,Renovare
+renovation,cosmetic,Cosmetic refresh,Αισθητική ανανέωση,Косметическое обновление,Косметичне оновлення,רענון קוסמטי,Reîmprospătare cosmetică
+renovation,partial,Partial refurbishment,Μερική ανακαίνιση,Частичный ремонт,Частковий ремонт,שיפוץ חלקי,Renovare parțială
+renovation,full,Full finish refurbishment,Πλήρης ανακαίνιση τελειωμάτων,Полное обновление отделки,Повне оновлення оздоблення,חידוש גמרים מלא,Renovarea completă a finisajelor

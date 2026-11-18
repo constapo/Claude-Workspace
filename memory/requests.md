@@ -361,7 +361,9 @@ Format: date · what was asked · what was done / status.
     `constapo/inonda-service-estimator` (inonda.homes), `constapo/inonda-website` (inonda.site).
     Owner's answers: show **a single figure** per job (replaces today's ranges); quotation fees
     **free only under a maintenance contract** (the €50 / 10 km / city-surcharge lines stay for
-    one-off jobs). Status: ready to start step 1 (inventory).
+    one-off jobs). Step 1 done 2026-11-18: `inonda-pricing/01-inventory.md` + two 6-language CSVs
+    (17 services / 270 sub-services on inonda.org, 15 jobs / 50 types in the estimator; AC missing from
+    the estimator; 3 rule conflicts on inonda.org). Waiting on the owner's 4 scope decisions before step 2/3.
 
 ## Open items waiting on the owner
 - Inonda price update (item 61): approve the price Sheet with Irina once delivered; merge the PR yourself.
