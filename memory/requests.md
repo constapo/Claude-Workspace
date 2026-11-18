@@ -419,6 +419,8 @@ Format: date · what was asked · what was done / status.
     Pull request #6 opened on owner request the same day. Owner approved updating the preserve-content
     safeguard; on "update estimator now" it was merged (d32bded) and deployed — live on inonda.homes 2026-11-18.
 
+63. **2026-11-18 – "now i want a document Excel to be used internally on company with all variants of services with their prices and nicely organized – do a meta-prompt on this before execute any"; then "absolute all variants included with labor type".** Meta-prompt shown and approved via 4 questions (separate confidential rules sheet: yes; English only; prices with and without VAT; deliver in chat). Built `Inonda_Internal_Price_List_2026-11.xlsx`: Cover, All Prices (300 rows = every option x every labour type, x board type for gypsum; residential and commercial, incl./excl. VAT), Price Matrix, Summary, Quotation & Conditions, Calculator, Internal Rules (confidential). Prices come from the live estimator; all 600 residential/commercial prices checked against the website formula, 0 differences; 0 formula errors. Sent to the owner in chat. Kept OUT of every repo on purpose (pricing confidentiality; repos still public).
+
 ## Open items waiting on the owner
 - Inonda price update (items 61–62): new prices are live on inonda.homes; still to do: review the estimated prices with Irina, make the repos private, urgent-repair option, inonda.org / inonda.site wording.
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
