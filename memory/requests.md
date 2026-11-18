@@ -350,7 +350,21 @@ Format: date · what was asked · what was done / status.
     default in CLAUDE.md and the Dope README; the classic card is kept as the alternative (`brand/end-card-classic.png`).
     Tile reel rebuilt with the glassy card.
 
+61. **2026-11-18 · "Inonda estimator price update (inonda.org → inonda.homes)."** Price every
+    service on inonda.org for the Cyprus market, put the prices in the inonda.homes estimator, fix
+    every error found. Rules: 19% VAT included, materials included, no durations/costs/margins
+    shown, no short or urgent jobs outside maintenance contracts, no "years in business",
+    slogan "Quality above all", standard contact block. Steps: inventory (6 languages) → map the
+    estimator → price research (low/typical/high, sources, dates) → **Sheet for owner + Irina
+    approval before anything is written** → minimal changes on a branch → verify → PR (owner merges).
+    Repos found and readable: `constapo/inonda-cy-website` (inonda.org),
+    `constapo/inonda-service-estimator` (inonda.homes), `constapo/inonda-website` (inonda.site).
+    Owner's answers: show **a single figure** per job (replaces today's ranges); quotation fees
+    **free only under a maintenance contract** (the €50 / 10 km / city-surcharge lines stay for
+    one-off jobs). Status: ready to start step 1 (inventory).
+
 ## Open items waiting on the owner
+- Inonda price update (item 61): approve the price Sheet with Irina once delivered; merge the PR yourself.
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org / inonda.homes.
@@ -371,15 +385,3 @@ Format: date · what was asked · what was done / status.
 - Video skills (item 51): say yes/no to installing iart-ai short-form + captions and the ffmpeg skill; approve the free 30 s floor-tiles test.
 - Design skills (item 52): yes/no to better-icons, text-to-lottie, interior-design-expert; approve the free Instagram test post.
 
-32. **2026-11-18 · "Inonda estimator price update (inonda.org → inonda.homes)."** Price every
-    service on inonda.org for the Cyprus market, put the prices in the inonda.homes estimator, fix
-    every error found. Rules: 19% VAT included, materials included, no durations/costs/margins
-    shown, no short or urgent jobs outside maintenance contracts, no "years in business",
-    slogan "Quality above all", standard contact block. Steps: inventory (6 languages) → map the
-    estimator → price research (low/typical/high, sources, dates) → **Sheet for owner + Irina
-    approval before anything is written** → minimal changes on a branch → verify → PR (owner merges).
-    Repos found and readable: `constapo/inonda-cy-website` (inonda.org),
-    `constapo/inonda-service-estimator` (inonda.homes), `constapo/inonda-website` (inonda.site).
-    Owner's answers: show **a single figure** per job (replaces today's ranges); quotation fees
-    **free only under a maintenance contract** (the €50 / 10 km / city-surcharge lines stay for
-    one-off jobs). Status: ready to start step 1 (inventory).
