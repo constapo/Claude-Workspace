@@ -394,6 +394,10 @@ Format: date · what was asked · what was done / status.
     inonda-service-estimator are PUBLIC repos, and the estimator's README and browser code contain rules.
     Owner chose to make the repos private himself. Until he confirms, no further pricing-rule details
     are committed to any public repo.
+    2026-11-18: owner: the estimator shows only a price per job and one total; clients can select as many
+    services as they like. Every service on inonda.org gets its own price (only truly custom work stays
+    'price on request'). The separate skip & site preparation line goes: it is built into the big jobs'
+    prices. Next: step 3, price research for the full job list.
 
 ## Open items waiting on the owner
 - Inonda price update (item 61): approve the price Sheet with Irina once delivered; merge the PR yourself.
