@@ -368,8 +368,14 @@ Format: date · what was asked · what was done / status.
     `inonda-pricing/02-estimator-map.md` (16 findings; 3 new decisions: skip line, one-off quote fee wording,
     which host publishes main). Gortex could not be installed (get.gortex.dev blocked by network policy).
     2026-11-18: owner decided the skip & site preparation line is added only to big jobs
-    (renovations, kitchens, bathrooms, flooring). Still open: quotation-fee wording, which host publishes
-    main, AC installation and the other step-1 scope gaps.
+    (renovations, kitchens, bathrooms, flooring).
+    2026-11-18: owner decided (a) restore the quotation-fee rule exactly as removed on 11 Nov 2026
+    (free within 10 km of Strovolos; jobs up to EUR 1,000: EUR 50 beyond 10 km, charged in Limassol/
+    Larnaca/Agia Napa/Paphos; over EUR 1,000 included in the work; free under a maintenance contract), all
+    6 languages, all three sites; (b) ALLOW small one-off jobs of a few hours: estimator prices them
+    (minimum charge) and the quote fee applies. This REVERSES the earlier 'no short jobs outside
+    contracts' rule. Urgent repairs: not yet decided. Still open: which host publishes main, AC
+    installation and the other step-1 scope gaps.
 
 ## Open items waiting on the owner
 - Inonda price update (item 61): approve the price Sheet with Irina once delivered; merge the PR yourself.

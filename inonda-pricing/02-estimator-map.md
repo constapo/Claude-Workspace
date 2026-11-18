@@ -93,3 +93,14 @@ policy, so the map was made by reading the code directly.
   (amount, distance, which towns).
 - **Hosting:** which host publishes `main` to inonda.homes (Wasmer, the Python host or a
   static host)? I'll check that the change goes live the way you expect.
+
+## 4. Owner decisions (2026-11-18)
+- Single price per job, plus a total when several jobs are chosen.
+- Skip & site preparation: only on big jobs (renovations, kitchens, bathrooms, flooring).
+- Quotation fee: restore the rule removed on 11 Nov 2026, word for word, in all 6 languages on all
+  three sites: free within 10 km of the Strovolos office; jobs up to €1,000 cost €50 beyond 10 km and
+  are charged in Limassol, Larnaca, Agia Napa and Paphos; over €1,000 the quote is included in the
+  work; free under a maintenance contract.
+- **Small one-off jobs of a few hours are now allowed.** The estimator will price them with a minimum
+  charge, and the quote fee applies. This reverses the "no short jobs outside contracts" rule, so the
+  "more than one day of work" sentence on all three sites has to change too.
