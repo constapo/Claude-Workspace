@@ -104,3 +104,7 @@ policy, so the map was made by reading the code directly.
 - **Small one-off jobs of a few hours are now allowed.** The estimator will price them with a minimum
   charge, and the quote fee applies. This reverses the "no short jobs outside contracts" rule, so the
   "more than one day of work" sentence on all three sites has to change too.
+- **Urgent repairs (2026-11-18): open to one-off clients at 4× the normal price, VAT included.**
+  Maintenance-contract clients keep priority call-outs at their contract rate. The ×4 factor is
+  internal and is never shown; the estimator gets an "urgent" option that shows only the final
+  price. The urgent-repairs page on inonda.org must change from contract-only wording.

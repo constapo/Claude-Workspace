@@ -385,6 +385,10 @@ Format: date · what was asked · what was done / status.
     Done: `inonda-pricing/03-ac-installation-prices.md` + CSV (client prices incl VAT: 9k EUR655,
     12k EUR690, 18k EUR1,030, 24k EUR1,270; extra pipe EUR25/m; old unit removal EUR30). Waiting for
     the owner and Irina to approve.
+    2026-11-18: owner: urgent repairs are now open to one-off clients at 4x the normal price (VAT
+    included); maintenance-contract clients keep priority call-outs at their contract rate. The 4x factor
+    is internal: clients see only the final price. Still open: other missing services priced or
+    'price on request'.
 
 ## Open items waiting on the owner
 - Inonda price update (item 61): approve the price Sheet with Irina once delivered; merge the PR yourself.
