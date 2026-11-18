@@ -367,6 +367,9 @@ Format: date · what was asked · what was done / status.
     2026-11-18: owner confirmed a single price per job plus a total for several jobs. Step 2 done:
     `inonda-pricing/02-estimator-map.md` (16 findings; 3 new decisions: skip line, one-off quote fee wording,
     which host publishes main). Gortex could not be installed (get.gortex.dev blocked by network policy).
+    2026-11-18: owner decided the skip & site preparation line is added only to big jobs
+    (renovations, kitchens, bathrooms, flooring). Still open: quotation-fee wording, which host publishes
+    main, AC installation and the other step-1 scope gaps.
 
 ## Open items waiting on the owner
 - Inonda price update (item 61): approve the price Sheet with Irina once delivered; merge the PR yourself.

@@ -85,7 +85,7 @@ policy, so the map was made by reading the code directly.
     carpentry list (`carpentry_catalog.json`). It must be refreshed if the list changes.
 
 ## 3. Decisions needed from you
-- **Skip & site preparation:** keep it switched on by default, switch it off by default, or
+- **Skip & site preparation — DECIDED 2026-11-18: big jobs only** (renovations, kitchens, bathrooms, flooring). Original question: keep it switched on by default, switch it off by default, or
   only add it to bigger jobs such as renovations, kitchens, bathrooms and flooring.
   (Recommended: only bigger jobs.)
 - **Quotation fees for one-off jobs:** the old rules no longer exist on any site. Either
