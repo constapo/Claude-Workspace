@@ -350,7 +350,14 @@ Format: date · what was asked · what was done / status.
     default in CLAUDE.md and the Dope README; the classic card is kept as the alternative (`brand/end-card-classic.png`).
     Tile reel rebuilt with the glassy card.
 
+61. **2026-11-18 · "Need sliding mechanism to buy in Cyprus for a client, to replace the old ones on wardrobe doors" (2 videos).** →
+   Looked at both videos. It is a bottom-running aluminium-frame system: each door has 2 grey plastic bottom
+   rollers, sprung and with a horizontal pin, sitting in the bottom of the door profile (the tyres have broken up),
+   plus 2 grey plastic top guide blocks running in a top track with a brush strip. Gave a shopping and measuring
+   checklist. Open: the owner takes an old roller to the shop and confirms the size.
+
 ## Open items waiting on the owner
+- Wardrobe rollers (item 61): take an old roller + top guide to the supplier and match the profile size.
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org / inonda.homes.
