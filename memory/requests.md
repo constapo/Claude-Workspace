@@ -398,6 +398,10 @@ Format: date · what was asked · what was done / status.
     services as they like. Every service on inonda.org gets its own price (only truly custom work stays
     'price on request'). The separate skip & site preparation line goes: it is built into the big jobs'
     prices. Next: step 3, price research for the full job list.
+    2026-11-18: step 3 draft delivered to the owner as a spreadsheet (89 jobs, client price per job incl.
+    VAT, market low/typical/high excl. VAT, sources, dates, approval column). Only 10 rows are backed by a
+    published Cyprus price; 79 are marked Estimate. Kept OUT of this public repo on purpose (pricing
+    confidentiality); copy is in the session scratchpad. Waiting for owner + Irina approval/corrections.
 
 ## Open items waiting on the owner
 - Inonda price update (item 61): approve the price Sheet with Irina once delivered; merge the PR yourself.
