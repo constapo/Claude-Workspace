@@ -364,6 +364,9 @@ Format: date · what was asked · what was done / status.
     one-off jobs). Step 1 done 2026-11-18: `inonda-pricing/01-inventory.md` + two 6-language CSVs
     (17 services / 270 sub-services on inonda.org, 15 jobs / 50 types in the estimator; AC missing from
     the estimator; 3 rule conflicts on inonda.org). Waiting on the owner's 4 scope decisions before step 2/3.
+    2026-11-18: owner confirmed a single price per job plus a total for several jobs. Step 2 done:
+    `inonda-pricing/02-estimator-map.md` (16 findings; 3 new decisions: skip line, one-off quote fee wording,
+    which host publishes main). Gortex could not be installed (get.gortex.dev blocked by network policy).
 
 ## Open items waiting on the owner
 - Inonda price update (item 61): approve the price Sheet with Irina once delivered; merge the PR yourself.
