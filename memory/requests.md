@@ -374,8 +374,12 @@ Format: date · what was asked · what was done / status.
     Larnaca/Agia Napa/Paphos; over EUR 1,000 included in the work; free under a maintenance contract), all
     6 languages, all three sites; (b) ALLOW small one-off jobs of a few hours: estimator prices them
     (minimum charge) and the quote fee applies. This REVERSES the earlier 'no short jobs outside
-    contracts' rule. Urgent repairs: not yet decided. Still open: which host publishes main, AC
-    installation and the other step-1 scope gaps.
+    contracts' rule. Urgent repairs: not yet decided. Still open: AC installation and the other step-1
+    scope gaps; urgent repairs for one-off customers.
+    2026-11-18: owner says hosting is GitHub itself for now, until the sites move to the owner's own
+    server. Checked the estimator repo: no GitHub Pages workflow, no gh-pages branch and no CNAME file,
+    and the language folders (/en/ etc.) that the live site serves are not in main (they are built at
+    publish time). So whatever publishes inonda.homes is set up outside the repo; must verify after merge.
 
 ## Open items waiting on the owner
 - Inonda price update (item 61): approve the price Sheet with Irina once delivered; merge the PR yourself.
