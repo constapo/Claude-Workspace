@@ -409,8 +409,16 @@ Format: date · what was asked · what was done / status.
     incl. Hebrew RTL. Left for step 5: place names in RU/UK/HE/RO, skip line folding, quote-fee and
     small-job/urgent wording, prices; chat copy on inonda.org/.site still says HE490415.
 
+62. **2026-11-18 – "do what must be done and update Estimator with prices you got".** Done on
+    inonda-service-estimator branch `claude/sharp-wright-8y6uny` (commit 5b7d341, not merged): new single
+    prices for every job from the draft price table, about 40 more services plus Air conditioning and Small
+    jobs sections in 6 languages, skip line removed as a separate line, quotation-visit fee wording restored
+    with "small jobs of a few hours" accepted (estimator page and its network section), "budget range" now
+    "price". 49 JS + 21 Python tests pass; checked in a browser in EN/EL/RU/HE. Not done yet: urgent-repair
+    option (waits until the repo is private), inonda.org and inonda.site wording, town names in RU/UK/HE/RO.
+
 ## Open items waiting on the owner
-- Inonda price update (item 61): approve the price Sheet with Irina once delivered; merge the PR yourself.
+- Inonda price update (items 61–62): prices are in the estimator branch; check them with Irina, make the repos private, then say if you want the pull request opened and merged.
 - claude-x-jev (item 36): decide whether to set OPENROUTER_API_KEY + enable the Jev gate hook (spends credits per Bash call).
 - Websites (item 32): on the PC, follow `tools/wasmer/README.md` (install Wasmer CLI,
   `wasmer login`, `claude remote-control`), then say what to change on inonda.site / inonda.org / inonda.homes.
