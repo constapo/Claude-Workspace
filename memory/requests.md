@@ -402,6 +402,12 @@ Format: date · what was asked · what was done / status.
     VAT, market low/typical/high excl. VAT, sources, dates, approval column). Only 10 rows are backed by a
     published Cyprus price; 79 are marked Estimate. Kept OUT of this public repo on purpose (pricing
     confidentiality); copy is in the session scratchpad. Waiting for owner + Irina approval/corrections.
+    2026-11-18: owner: 'go ahead with step 2 fixes'. Done on branch claude/sharp-wright-8y6uny of
+    inonda-service-estimator (not merged): single price per job + total, translated validation messages
+    (6 languages), whole-number quantities, slogan in footer, HE 490415 spacing, chat greeting no longer
+    covers the budget on phones. 48 JS + 21 Python tests pass; checked in a browser in all 6 languages
+    incl. Hebrew RTL. Left for step 5: place names in RU/UK/HE/RO, skip line folding, quote-fee and
+    small-job/urgent wording, prices; chat copy on inonda.org/.site still says HE490415.
 
 ## Open items waiting on the owner
 - Inonda price update (item 61): approve the price Sheet with Irina once delivered; merge the PR yourself.
